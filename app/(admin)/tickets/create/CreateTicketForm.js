@@ -22,7 +22,7 @@ export default function CreateTicketForm({ formTitle, user_id }) {
 
     const newTicket = { title, description, service }
 
-    const res = await fetch('http://localhost:3000/api/tickets', {
+    const res = await fetch('http://localhost:3000/api/tickets/create/', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(newTicket)
@@ -33,7 +33,7 @@ export default function CreateTicketForm({ formTitle, user_id }) {
     if(json.error){console.log('Error - ticket form: ',json.error)}
     if(json.data){
       router.refresh()
-      router.push(`/dashboard/users/${user_id}`)
+      router.push(`/users/${user_id}`)
     }
 
   }
