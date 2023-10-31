@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 
-
 //component
 export default function CreateTicketForm({ formTitle, user_id }) {
   const router = useRouter()
@@ -22,7 +21,7 @@ export default function CreateTicketForm({ formTitle, user_id }) {
 
     const newTicket = { title, description, service }
 
-    const res = await fetch('http://localhost:3000/api/tickets/create/', {
+    const res = await fetch('/api/tickets/create/', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(newTicket)

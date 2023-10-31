@@ -8,7 +8,6 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 import TktList from './TktList'
 
 
-
 // db call
 async function getTickets() {
   const supabase = createServerComponentClient({ cookies }) //conntect to the DB
@@ -23,8 +22,6 @@ async function getTickets() {
 export default async function tickets() {
 
   const tickets = await getTickets() // get the array from DB
-
-
 
   return (
 
