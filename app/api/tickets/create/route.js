@@ -1,6 +1,5 @@
 //////////////////////////////////////////////////
-// create a new ticket
-
+// create a new ticket in DB
 
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import {NextResponse} from 'next/server'
@@ -10,17 +9,12 @@ export const dynamic = 'force-dynamic' // force db refrech
 
 
 export async function POST(request) {
-  const tickets = await request.json()
   console.log('API REQUEST: api/tickets/')
 
-  // get supabase instance
+  const tickets = await request.json()
   const supabase = createRouteHandlerClient({cookies})
-
-  // get the current user session
-  const {data: {session}} = await supabase.auth.getSession()
-  console.log('debug tickeets api/ ', session)
-  // insert the data in supabase
-  const {data, error} = await supabase.from('pj_promo_service')
+  const {data: {session}} = await supabase.auth.getSession()   // get the current user session
+  const {data, error} = await supabase.from('pj_promo_service')  // insert the data in supabase
   .insert({
     ...tickets, // get all info from the form 
     user_email: session.user.email,

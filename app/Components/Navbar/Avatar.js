@@ -5,7 +5,7 @@ import LogoutButton from "./LogoutButton"
 import { useEffect } from "react"
 
 
-export default  async function Avatar({session}) {
+export default function Avatar({session}) {
 
 
     // import bootstrap 5 javascript

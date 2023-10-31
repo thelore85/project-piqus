@@ -29,7 +29,7 @@ export default function DeleteButton({ ticket }) {
   
     if(json.error){console.log('Error - ticket update: ',json.error)}
     if(!json.error){ 
-      router.push(`/dashboard/users/${ticket.user_id}`)
+      router.push(`/users/${ticket.user_id}`)
     }
   }
 
