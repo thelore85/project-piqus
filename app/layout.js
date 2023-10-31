@@ -19,8 +19,8 @@ export const dynamic = 'force-dynamic';
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'PIQUS LEAD - Spread your promo to the world',
-  description: 'Create your promotion landing page and generate discount code!',
+  title: 'PIQUS LEAD - Start your digital business, now',
+  description: 'Gain customers and clients with online marketing campaigns',
   icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
 };
 
@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="it">
+    <html lang="en">
       <body className={inter.className}>
         {children}
       </body>
