@@ -3,9 +3,10 @@ import { notFound } from "next/navigation"
 import { cookies } from 'next/headers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTicket } from '@fortawesome/free-solid-svg-icons'
-import Ticket from "../card/Ticket"
+import TicketCard from "@/app/(admin)/tickets/CompTicket/TicketCard"
 
 
+///////////////////////////////////////
 //metadata 
 export async function generateMetadata({ params }) {
 
@@ -20,6 +21,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
+
+/////////////////////////////////////////
 // db call
 async function getTicket(id) {
  
@@ -34,7 +37,7 @@ async function getTicket(id) {
 }
 
 
-
+///////////////////////////////////////////
 // page
 export default async function TicketDetails({ params }) {
   const ticket = await getTicket(params.id)
@@ -67,7 +70,7 @@ export default async function TicketDetails({ params }) {
 
         <div className="col-md-9">
           <div className="p-2 bg-white rounded">
-            <Ticket key={ticket.id} ticket={ticket} />
+            <TicketCard key={ticket.id} ticket={ticket} />
           </div>
         </div>
       </div>

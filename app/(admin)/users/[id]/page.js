@@ -4,7 +4,9 @@ import { cookies } from 'next/headers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
-import TktList from "../../tickets/TktList"
+
+//components
+import TktList from "@/app/(admin)/tickets/CompTicket/TktList"
 
 
 // PAGE FUNCTION

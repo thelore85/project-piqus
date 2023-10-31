@@ -9,14 +9,10 @@ import { useRouter } from 'next/navigation'
 // component function
 export default function DeleteButton({ ticket }) {
 
-  //NEXT setting
   const router = useRouter()
-  
   const [isLoading, setIsLoading] = useState(false)
 
-
   const handleDelete = async ()  => {
-    console.log('deleting id:', ticket)
     setIsLoading(true)
   
     const res = await fetch('/api/tickets/delete', {

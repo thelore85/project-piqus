@@ -2,12 +2,14 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import TicketButtons from './TicketButtons.js';
 import { useRouter } from 'next/navigation'
 export const dynamic = 'force-dynamic' // force db refrech
 
+// componets
+import TicketButtons from '@/app/(admin)/tickets/CompTicket/TicketButtons.js'
 
-//component
+
+// function component
 export default function  Ticket({ ticket }) {
 
   //NEXT setting

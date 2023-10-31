@@ -4,10 +4,11 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 
+/////////////////////////////
 // components
-import TktList from './TktList'
+import TktList from '@/app/(admin)/tickets/CompTicket/TktList'
 
-
+//////////////////////////////////
 // db call
 async function getTickets() {
   const supabase = createServerComponentClient({ cookies }) //conntect to the DB
@@ -17,8 +18,8 @@ async function getTickets() {
   return data
 }
 
-
-// page function
+////////////////////////////////
+// page
 export default async function tickets() {
 
   const tickets = await getTickets() // get the array from DB

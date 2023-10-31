@@ -1,4 +1,4 @@
-import Ticket from './card/Ticket.js';
+import TicketCard from '@/app/(admin)/tickets/CompTicket/TicketCard.js';
 
 // component function
 export default function TktList({ tickets, onUpdate }) {
@@ -6,7 +6,7 @@ export default function TktList({ tickets, onUpdate }) {
   return (
     <>
       {tickets.map((ticket) => (
-        <Ticket key={ticket.id} ticket={ticket} onUpdate={onUpdate} />
+        <TicketCard key={ticket.id} ticket={ticket} onUpdate={onUpdate} />
       ))}
 
       {tickets.length === 0 && (

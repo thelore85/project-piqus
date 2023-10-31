@@ -1,11 +1,16 @@
-import CreateTicketForm from "./CreateTicketForm.js";
-
+/////////////////////////////////////
+// create component form page
 import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 
 
+//////////////////////////////////
+// componetns
+import CreateTicketForm from "@/app/(admin)/tickets/CompTicket/CreateTicketForm.js";
 
 
+///////////////////////////////////
+// page
 export default async function create() {
 
   const supabase = createServerComponentClient({ cookies })

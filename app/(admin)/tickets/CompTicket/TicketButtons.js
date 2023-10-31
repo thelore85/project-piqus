@@ -1,4 +1,5 @@
-import DeleteButton from "./DeleteButton";
+import EditButton from "@/app/(admin)/tickets/CompTicket/EditButton";
+import DeleteButton from "@/app/(admin)/tickets/CompTicket/DeleteButton";
 
 export default function TicketButtons({ isEditing, handleCancel, handleEdit, handleSave, ticket}) {
 
@@ -12,7 +13,7 @@ export default function TicketButtons({ isEditing, handleCancel, handleEdit, han
           </div>
           ) : (
           <div className="p-2 bg-secondary-subtle rounded mt-4">
-            <button className="btn btn-sm btn-primary me-2" onClick={handleEdit}>Edit</button>
+            <EditButton handleEdit={handleEdit} />
             <DeleteButton ticket={ ticket } />
           </div>
         )}
