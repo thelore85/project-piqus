@@ -8,9 +8,8 @@ import FormAuth from '@/app/(auth)/Components/FormAuth.js'
 import { useRouter } from 'next/navigation'
 
 
-
 //page function
-export default function Login({ session }) {
+export default function Login() {
 
   const [errorLogin, setErrorLogin] = useState('')
   const router = useRouter()
@@ -37,7 +36,7 @@ export default function Login({ session }) {
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
       <div className="container" style={{'maxWidth':'500px'}}>
 
-      <FormAuth title = 'Log in' handleSubmit= {handleSubmit} />
+      <FormAuth title= {'Log in'} handleSubmit= {handleSubmit} />
       { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>}    
 
       </div>

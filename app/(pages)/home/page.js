@@ -1,8 +1,6 @@
 import Link from 'next/link'
 
 // comeponents
-import Footer from '@/app/Components/Footer/Footer'
-import Navbar from '@/app/Components/Navbar/Navbar';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
@@ -14,8 +12,6 @@ export const metadata = {
 export default async function lead() {
 
   return (
-    <>
-        <Navbar />
         <section id='hero' className="dark-bg min-vh-100 p-5 text-center d-flex justify-content-center align-items-center text-white">
           <div className="container">
    
@@ -37,7 +33,5 @@ export default async function lead() {
 
           </div>
         </section>
-      <Footer />
-    </>
   )
 }
