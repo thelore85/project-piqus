@@ -49,7 +49,7 @@ export default async function UsersList() {
           <div className="d-flex text-body-secondary pt-3">
             <div className="bg-primary-subtle p-1 me-3 rounded"></div>
             <ul className=' w-100 pb-3 mb-0 small lh-sm border-bottom fw-light list-unstyled'>
-              <li><Link  href={`/dashboard/users/${user.id}`}><span className="h5 fw-bold text-black d-block mb-2 text-decoration-underline">{user.email}</span></Link></li>
+              <li><Link  href={`/users/${user.id}`}><span className="h5 fw-bold text-black d-block mb-2 text-decoration-underline">{user.email}</span></Link></li>
               <li><span className="fw-bold">ID:</span> {user.id}</li>
               <li><span className="fw-bold">Account aperto il:</span> {date.toLocaleString('it-IT', dateOption)}</li>
             </ul>

@@ -7,9 +7,9 @@ export default function DashboardMenu() {
 
           <nav className="nav" aria-label="Secondary navigation">
             <Link className="nav-Link p-2 small fw-light text-secondary" href="/dashboard/">Dashboard</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/dashboard/users">Users</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/dashboard/tickets">Tickets</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/dashboard/tickets/create">New Promo</Link>
+            <Link className="nav-Link p-2 small fw-light text-secondary" href="/users">Users</Link>
+            <Link className="nav-Link p-2 small fw-light text-secondary" href="/tickets">Projects</Link>
+            <Link className="nav-Link p-2 small fw-light text-secondary" href="/tickets/create">New Project</Link>
           </nav>
 
         </div>

@@ -61,7 +61,7 @@ export default function  Ticket({ ticket }) {
 
         <ul className="w-100 pb-3 mb-0 small lh-sm border-bottom fw-light list-unstyled">
           <li>
-            <Link href={`/dashboard/tickets/${ticket.id}`}>
+            <Link href={`/tickets/${ticket.id}`}>
               <p>
                 <span className="h5 fw-bold text-black text-decoration-underline">
                   {isEditing ? 
@@ -73,7 +73,7 @@ export default function  Ticket({ ticket }) {
             </Link>
           </li>
           <li className="">
-            <Link href={`/dashboard/users/${ticket.user_id}`}>
+            <Link href={`/users/${ticket.user_id}`}>
               <span className="fw-bold"> {ticket.user_email} </span>
             </Link>
           </li>

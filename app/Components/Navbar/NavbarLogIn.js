@@ -48,8 +48,6 @@ export default function NavbarLogIn({session}) {
     
     <DashboardMenu />
 
-
-
     </>
 
   )

@@ -46,7 +46,7 @@ export default async function dashboard( ) {
         
           <div className="col-lg-4">
 
-            <Link href="/dashboard/tickets" >
+            <Link href="/tickets" >
               <div className="lh-1 bg-success rounded p-3 d-flex align-items-center">
               <FontAwesomeIcon icon={faRectangleAd} className="h2 me-3"/>
                 <div className="me-auto pe-2">
@@ -64,7 +64,7 @@ export default async function dashboard( ) {
           
           <div className="col-lg-4">
 
-            <Link href="/dashboard/users">
+            <Link href="/users">
               <div className="lh-1 bg-primary rounded p-3 d-flex align-items-center">
                 <FontAwesomeIcon icon={faUser} className="h2 me-3"/>
                 <div className="me-auto pe-2">
