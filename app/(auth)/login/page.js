@@ -28,7 +28,7 @@ export default function Login() {
     if(error){ setErrorLogin(error.message) }
     if(!error){ 
       router.refresh();
-      router.push(`/dashboard/users/${data.user.id}`) 
+      router.push(`/users/${data.user.id}`) 
     }
   }
 
