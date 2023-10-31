@@ -16,8 +16,8 @@ export default async function lead() {
           <div className="container">
    
             <div className="mb-5">
-              <h1 className=" fw-bolder mb-2">Push your business to the web and beyond</h1>
-              <p className=" lh-lg fw-lighter  mb-5">Gain customers and clients with online marketing campaigns</p>
+              <h1 className="h1 fw-bolder mb-2">Push your business to the web and beyond</h1>
+              <p className=" h5 lh-lg fw-lighter  mb-5">Build your web presence. Gain customers and clients for your online business</p>
               {/* <br />Sfrutta i canali digitali per raccogliere i contatti e attivarli con campagne mail.</p> */}
               <Link href="/">
                 {/* <button className="btn btn-light border-primary text-primary me-2">Learn More</button> */}
@@ -27,9 +27,9 @@ export default async function lead() {
               </Link>
             </div>
 
-            <div className=" rounded-5 p-2 m-auto" style={{'maxWidth':'300px', 'background':'rgb(0,0,0,0.4)'}}>
+            {/* <div className=" rounded-5 p-2 m-auto" style={{'maxWidth':'300px', 'background':'rgb(0,0,0,0.4)'}}>
               <span className="fw-lighter small">SEO - ADV - WEBSITES - CONTENTS</span>
-            </div>
+            </div> */}
 
           </div>
         </section>
