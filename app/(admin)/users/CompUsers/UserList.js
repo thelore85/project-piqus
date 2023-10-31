@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import { cookies } from 'next/headers'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { createClient } from '@supabase/supabase-js'
 
 
+//////////////////////////////////////
 // SUPABASE admin privilage
 const dotenv = require('dotenv');
 dotenv.config({ path: '.env.local' });
@@ -23,8 +22,6 @@ const adminAuthClient = supabase.auth.admin
 
 
 async function getUsers() {
-  const supabase = createServerComponentClient({ cookies }) //conntect to the DB
-
   const { data: { users }, error } = await adminAuthClient.listUsers()
   if(error){console.log('fetch error: ', error)}
 

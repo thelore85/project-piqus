@@ -27,10 +27,6 @@ export default async function lead() {
               </Link>
             </div>
 
-            {/* <div className=" rounded-5 p-2 m-auto" style={{'maxWidth':'300px', 'background':'rgb(0,0,0,0.4)'}}>
-              <span className="fw-lighter small">SEO - ADV - WEBSITES - CONTENTS</span>
-            </div> */}
-
           </div>
         </section>
   )

@@ -8,14 +8,17 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 // components
 import TicketList from '@/app/(admin)/tickets/CompTicket/TicketList'
 
+
 //////////////////////////////////
 // db call
 async function getTickets() {
-  const supabase = createServerComponentClient({ cookies }) //conntect to the DB
-  const { data, error } = await supabase.from('pj_promo_service') // fetch data from DB
+
+  const supabase = createServerComponentClient({ cookies })
+  const { data, error } = await supabase.from('pj_promo_service')
     .select() // serlect all tickets from the table (return an array)
-  if (error) { console.log(error.message) }
-  return data
+  
+    if (error) { console.log(error.message) }
+    return data
 }
 
 ////////////////////////////////

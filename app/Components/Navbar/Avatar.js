@@ -3,10 +3,12 @@
 import Link from "next/link"
 import LogoutButton from "./LogoutButton"
 import { useEffect } from "react"
+import Image from "next/image";
+
+export const dynamic = 'force-dynamic' // force db refrech
 
 
-export default function Avatar({session}) {
-
+export default function Avatar({ session }) {
 
     // import bootstrap 5 javascript
     useEffect(() => {
@@ -16,10 +18,11 @@ export default function Avatar({session}) {
   return (
     <div className="dropdown">
       <span href="#" className="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="/img/user_img.jpg" alt="mdo" width="32" height="32" className="rounded-circle" />
+
+        <Image src="/img/user_img.jpg" alt="mdo" width="32" height="32" className="rounded-circle" />
       </span>
       <ul className="dropdown-menu text-small">
-        <li><Link className="dropdown-item border-bottom text-primary" href={ session ? (`/users/${session?.user.id}`) : '/#'} >My Profile</Link></li>
+        <li><Link className="dropdown-item border-bottom text-primary" href={ `/users/${session?.user.id}`} >My Profile</Link></li>
         <li><Link className="dropdown-item" href="/dashboard/tickets/create">Nuovo Progetto</Link></li>
         <li><Link className="dropdown-item" href="#">Cambia Password</Link></li>
         <li><Link className="dropdown-item" href="#">Supporto</Link></li>

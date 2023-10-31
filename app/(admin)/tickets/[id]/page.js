@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 
 
 /////////////////////////////////////////
-// db call
+// get ticket from db
 async function getTicket(id) {
  
   const supabase = createServerComponentClient({ cookies })
@@ -32,6 +32,8 @@ async function getTicket(id) {
     .eq('id', id)
     .single()
 
+  console.log('debugging tiket id page: ', data)
+  
   if (!data) { notFound() }
     return data
 }
@@ -70,7 +72,7 @@ export default async function TicketDetails({ params }) {
 
         <div className="col-md-9">
           <div className="p-2 bg-white rounded">
-            <TicketCard key={ticket.id} ticket={ticket} />
+            <TicketCard ticket={ticket} />
           </div>
         </div>
       </div>

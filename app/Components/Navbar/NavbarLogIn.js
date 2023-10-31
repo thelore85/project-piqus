@@ -5,13 +5,13 @@ import Avatar from './Avatar';
 import DashboardMenu from './DashboardMenu';
 
 
+///////////////////////////
 // component
 export default function NavbarLogIn({session}) {
 
   return (
-
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary " aria-label="Eleventh navbar example">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm " aria-label="Eleventh navbar example">
       <div className="container">
 
           <div>
@@ -47,6 +47,5 @@ export default function NavbarLogIn({session}) {
     <DashboardMenu />
 
     </>
-
   )
 }

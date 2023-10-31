@@ -17,7 +17,7 @@ export default function NavbarLogOut() {
   return (
 
 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary " aria-label="Eleventh navbar example">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm " aria-label="Eleventh navbar example">
       <div className="container">
 
           <div>

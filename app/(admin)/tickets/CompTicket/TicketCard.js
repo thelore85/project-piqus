@@ -10,7 +10,7 @@ import TicketButtons from '@/app/(admin)/tickets/CompTicket/TicketButtons.js'
 
 
 // function component
-export default function  Ticket({ ticket }) {
+export default function  TicketCard({ ticket, user }) {
 
   //NEXT setting
   const router = useRouter()
