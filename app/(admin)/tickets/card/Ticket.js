@@ -38,7 +38,7 @@ export default function  Ticket({ ticket }) {
  // EDIT SUBMISSION - call api/tickets/edit
  const onUpdate = async (updatedTicket)  => {
   
-  const res = await fetch('http://localhost:3000/api/tickets/edit', {
+  const res = await fetch('/api/tickets/edit', {
     method: "PUT",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(updatedTicket)

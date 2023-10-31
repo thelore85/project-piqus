@@ -19,7 +19,7 @@ export default function DeleteButton({ ticket }) {
     console.log('deleting id:', ticket)
     setIsLoading(true)
   
-    const res = await fetch('http://localhost:3000/api/tickets/delete', {
+    const res = await fetch('/api/tickets/delete', {
       method: "DELETE",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(ticket.id)
