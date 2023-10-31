@@ -28,7 +28,7 @@ export default function NavbarLogIn({session}) {
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
             <ul className="navbar-nav mb-2 me-auto mb-lg-0">
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="#">Pricing</Link>
               </li>
               <li className="nav-item">
@@ -36,12 +36,10 @@ export default function NavbarLogIn({session}) {
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="#">Contacts</Link>
-              </li> */}
+              </li>
             </ul>
             <Avatar session={session}/>
           </div>
-          
-
 
       </div>
     </nav>
