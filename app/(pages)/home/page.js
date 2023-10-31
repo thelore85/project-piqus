@@ -16,14 +16,14 @@ export default async function lead() {
           <div className="container">
    
             <div className="mb-5">
-              <h1 className=" fw-bolder mb-2">Start your digital presence, now</h1>
+              <h1 className=" fw-bolder mb-2">Push your business to the web and beyond</h1>
               <p className=" lh-lg fw-lighter  mb-5">Gain customers and clients with online marketing campaigns</p>
               {/* <br />Sfrutta i canali digitali per raccogliere i contatti e attivarli con campagne mail.</p> */}
               <Link href="/">
                 {/* <button className="btn btn-light border-primary text-primary me-2">Learn More</button> */}
               </Link>
               <Link href="/signup">
-                <button className="btn btn-primary m-2">Go Online Now</button>
+                <button className="btn btn-primary m-2">Start Your Project Now</button>
               </Link>
             </div>
 

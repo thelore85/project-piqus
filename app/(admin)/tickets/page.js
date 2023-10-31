@@ -6,7 +6,7 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 
 /////////////////////////////
 // components
-import TktList from '@/app/(admin)/tickets/CompTicket/TktList'
+import TicketList from '@/app/(admin)/tickets/CompTicket/TicketList'
 
 //////////////////////////////////
 // db call
@@ -36,7 +36,7 @@ export default async function tickets() {
         </div>
 
         <div className="bg-white rounded">
-          <TktList tickets={tickets} />
+          <TicketList tickets={tickets} />
         </div>
       </>
       

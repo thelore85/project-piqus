@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 // components
-import UsersList from './UserList'
+import UsersList from '@/app/(admin)/users/CompUsers/UserList'
 
 
 // page function

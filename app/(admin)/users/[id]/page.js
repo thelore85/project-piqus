@@ -6,7 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
 
 //components
-import TktList from "@/app/(admin)/tickets/CompTicket/TktList"
+import TicketList from "@/app/(admin)/tickets/CompTicket/TicketList"
 
 
 // PAGE FUNCTION
@@ -57,7 +57,7 @@ export default async function userDetails({ params }) {
 
         <div className="col-md-9">
           <div className="bg-white rounded">
-            <TktList tickets={tickets} />
+            <TicketList tickets={tickets} />
           </div>
         </div>
 
