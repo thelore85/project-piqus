@@ -1,7 +1,7 @@
 // comeponents
 import Hero from './CompHome/Hero';
 import Features from './CompHome/Features';
-import Tools from './CompHome/Tools';
+import Tech from './CompHome/Tech';
 import About from './CompHome/About';
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default function home() {
       <>
         <Hero />
         <Features />
-        <Tools />
+        <Tech />
         <About />
       </>
   )

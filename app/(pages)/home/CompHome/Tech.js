@@ -18,12 +18,12 @@ import { faFigma } from '@fortawesome/free-brands-svg-icons'
 // components
 
 
-export default function Tools() {
+export default function Tech() {
 
   return (
-    <section id="tools" className="bg-body-tertiary d-flex justify-content-center align-items-center p-5" style={{minHeight: '40%'}}>
-      <div className=" w-75 text-center">
-        <h1 className="mb-4 fw-bold h2">Access the finest technology</h1>
+    <section id="tech" className="bg-body-tertiary d-flex justify-content-center align-items-center p-5" style={{minHeight: '40%'}}>
+      <div className=" text-center">
+        <h1 className="mb-4 fw-bold" style={{ fontSize:"2.5rem", lineHeight:"2.7rem" }}>Access the finest web technology</h1>
 
         <div>
 

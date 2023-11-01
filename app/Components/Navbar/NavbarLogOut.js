@@ -38,7 +38,7 @@ export default function NavbarLogOut() {
                 <Link className="nav-link active" aria-current="page" href="#features">Services</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#tools">Tech</Link>
+                <Link className="nav-link active" aria-current="page" href="#tech">Tech</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="#about">About</Link>

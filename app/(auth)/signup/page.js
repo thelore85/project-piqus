@@ -39,7 +39,7 @@ export default function SignUp() {
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
       <div className="container" style={{'maxWidth':'500px'}}>
 
-      <FormAuth title = 'Crea un account'  handleSubmit= {handleSubmit} />
+      <FormAuth title = 'Create your account'  handleSubmit= {handleSubmit} />
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       </div>
