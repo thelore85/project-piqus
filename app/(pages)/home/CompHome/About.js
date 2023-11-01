@@ -17,8 +17,8 @@ export default function About() {
               <div className="col-8 text-white text-start">
                 <h4>Passion for digital</h4>
                 <p className="fw-lighter small">With a decade of experience in online communication, I bring an international perspective as a seasoned freelancer and collaborator with multinational companies in finance, healthcare, entertainment, and fashion. </p>
-                <p className="fw-lighter small">I've mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
-                <p className="fw-lighter small">In 2023, I completed an intensive web development course to stay at the forefront of industry techniques. Explore my portfolio for limitless digital possibilities.</p>
+                <p className="fw-lighter small">I&#39ve mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
+                <p className="fw-lighter small">In 2023, I completed an intensive web development course to stay at the forefront of industry techniques.</p>
               </div>
 
             </div>
