@@ -23,7 +23,7 @@ export default function Tools() {
   return (
     <section id="tools" className="bg-body-tertiary d-flex justify-content-center align-items-center p-5" style={{minHeight: '40%'}}>
       <div className=" w-75 text-center">
-        <h1 className="mb-4 fw-bold h2">The best technology at your disposal</h1>
+        <h1 className="mb-4 fw-bold h2">Access the finest technology</h1>
 
         <div>
 

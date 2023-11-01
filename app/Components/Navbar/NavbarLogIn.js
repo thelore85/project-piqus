@@ -34,7 +34,7 @@ export default function NavbarLogIn({session}) {
                 <Link className="nav-link active" aria-current="page" href="#tools">Tech</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#contacts">Contacts</Link>
+                <Link className="nav-link active" aria-current="page" href="#about">About</Link>
               </li>
             </ul>
             <Avatar session={session}/>

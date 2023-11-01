@@ -22,10 +22,10 @@ export default function Features() {
 
       <div className="col d-flex flex-column align-items-start gap-2">
         <h2 className="fw-bold h1">Grow your business, online.</h2>
-        <p className=" fw-lighter">Planning to bring your business online? <br/>We can provide the best solution to guide you throgh all the steps.</p>
-        <p className=" fw-lighter">Already online? <br/>We can help to scale up with the latest Marketing tecnology, Analytics and CRM tools</p>
+        <p className=" fw-lighter">Considering going online? <br />I can study the best solution and guide you through all the steps.</p>
+        <p className=" fw-lighter">Already online? <br />I can help you scale up with the latest marketing technology, analytics, and CRM tools.</p>
         <Link href="/signup">
-          <button className="btn btn-primary m-2">Start Now</button>
+          <button className="btn btn-primary m-2">Start Youe Project</button>
         </Link>
       </div>
 
@@ -35,37 +35,33 @@ export default function Features() {
     
           <div className="col">
             <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Web Developing</h4>
-            <p className="fw-lighter">Ecommerce, Simple Website or a personal Blog? Develop your project and go live with a full featured web product.</p>
+            <p className="fw-lighter">E-commerce, a simple website, or a personal blog? Develop your project and go live with a fully-featured web product.</p>
           </div>
     
           <div className="col">
             <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Advertising</h4>
-            <p className="fw-lighter">Gain web traffic and customers leveraging the online marketing tools available today!</p>
+            <p className="fw-lighter">Gain web traffic and attract customers by leveraging the online marketing tools available today!</p>
           </div>
     
           <div className="col">
             <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> Content Creation</h4>
-            <p className="fw-lighter">Enrich your blog with relevant content, scale SEO rancking and catch the interest of users.</p>
+            <p className="fw-lighter">Enrich your blog with relevant content, improve your SEO ranking, and capture the interest of users.</p>
           </div>
     
           <div className="col">
             <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCreditCard} className="me-2" /> Payment process</h4>
-            <p className="fw-lighter">Manage online payments throgh your ecommerce and keep track of your orders.</p>
+            <p className="fw-lighter">Manage online payments through your e-commerce and keep track of your orders.</p>
           </div>
 
           <div className="col">
             <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
-            <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decision.</p>
+            <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
           </div>
 
           <div className="col">
             <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>Privacy Policy</h4>
-            <p className="fw-lighter">Make your platform legal proof, manage the cookie the right way, respect the latest GDPR policy</p>
-          </div>
-
-
-    
-      
+            <p className="fw-lighter">Make your platform legally compliant, manage cookies correctly, and adhere to the latest GDPR policies.</p>
+          </div>  
 
         </div>
       </div>
