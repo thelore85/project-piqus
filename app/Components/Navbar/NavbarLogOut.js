@@ -33,15 +33,15 @@ export default function NavbarLogOut() {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
-            <ul className="navbar-nav mb-2 me-auto mb-lg-0">
+          <ul className="navbar-nav mb-2 me-auto mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">Pricing</Link>
+                <Link className="nav-link active" aria-current="page" href="#features">Services</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">Services</Link>
+                <Link className="nav-link active" aria-current="page" href="#tools">Tech</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">Contacts</Link>
+                <Link className="nav-link active" aria-current="page" href="#contacts">Contacts</Link>
               </li>
             </ul>
             <LoginButtons />
