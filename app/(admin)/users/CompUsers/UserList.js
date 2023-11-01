@@ -20,7 +20,6 @@ const supabase = createClient(supabase_url, service_role_key, {
 // Access auth admin api
 const adminAuthClient = supabase.auth.admin
 
-
 async function getUsers() {
   const { data: { users }, error } = await adminAuthClient.listUsers()
   if(error){console.log('fetch error: ', error)}
