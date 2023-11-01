@@ -5,11 +5,11 @@ export default function DashboardMenu() {
       <div className="nav-scroller bg-black shadow-sm">
         <div className="container">
 
-          <nav className="nav" aria-label="Secondary navigation">
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/dashboard/">Dashboard</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/users">Users</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/tickets">Projects</Link>
-            <Link className="nav-Link p-2 small fw-light text-secondary" href="/tickets/create">New Project</Link>
+          <nav className="nav text-white" aria-label="Secondary navigation">
+            <Link className="nav-Link p-2 small fw-lighter" href="/dashboard/">Dashboard</Link>
+            <Link className="nav-Link p-2 small fw-lighter" href="/users">Users</Link>
+            <Link className="nav-Link p-2 small fw-lighter" href="/tickets">Projects</Link>
+            <Link className="nav-Link p-2 small fw-lighter" href="/tickets/create">New Project</Link>
           </nav>
 
         </div>

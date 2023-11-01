@@ -15,7 +15,7 @@ export default async function authLayout({children}) {
 const supabase = createServerComponentClient({ cookies })    
 const { data } = await supabase.auth.getSession()
 
-if(data.session){ redirect(`/users/${data.session.user.id}`) } //protect the page from logged-in users 
+if(data.session){ redirect(`/profile/${data.session.user.id}`) } //protect the page from logged-in users 
 
 
   return (

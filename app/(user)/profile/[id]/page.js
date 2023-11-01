@@ -5,25 +5,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
 
+
+/////////////////////////////////////////////
 //components
 import ProjectList from "@/app/(user)/profile/CompProfile/ProjectList"
 
 
-// PAGE FUNCTION
+
+//////////////////////////////////////////
+// page
 export default async function userDetails({ params }) {
   
-  // get DB table: tickets
-  async function getUserTickets(id) {
-    const supabase = createServerComponentClient({ cookies })
-    const { data } = await supabase.from('pj_promo_service')
-      .select()
-      .eq('user_id', id)
+  // get tickets
+  const supabase = createServerComponentClient({ cookies })
+  const { data: tickets } = await supabase.from('pj_promo_service')
+    .select()
+    .eq('user_id', params.id)
 
-    if ( data === null) { console.log('error: ', data); notFound() }
-    return data
-  }
-
-  const tickets = await getUserTickets(params.id)
+  if ( tickets === null) { console.log('error: ', data); notFound() }
+  
+  //get user data
+  const { data: { user } } = await supabase.auth.getUser()
+  if(user === null){console.log('fetch error: ', error)}
+    
 
   return (
     <>
@@ -36,7 +40,7 @@ export default async function userDetails({ params }) {
               <h1 className="h5 mb-1 text-white lh-1">My Projects</h1>
               <small>{ 'Find your project list here' ?? 'Still  no projects! Click the button aside to start a new one!'}</small>
             </div>
-            <Link href="/tickets/create" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
+            <Link href="/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
           </div>
         </div>
         
@@ -47,7 +51,10 @@ export default async function userDetails({ params }) {
         <div className="col-md-3">
           <div className="bg-white rounded p-3">
             <ul className=" list-unstyled text-secondary">
-              <li><small className="fw-bold text-black">{tickets[0]?.user_email}</small></li>
+              <li><small className="fw-bold text-black">{user.email}</small></li>
+              <li><small className=" fw-normal">{user.user_metadata.name ?? null}</small></li>
+              <li><small className=" fw-normal">{user.phone ?? null}</small></li>
+              <li><small className=" fw-normal">{user.role ?? null}</small></li>
             </ul>
           </div>
         </div>
