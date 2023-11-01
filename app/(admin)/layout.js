@@ -6,8 +6,9 @@ import { redirect } from 'next/navigation'
 
 //////////////////////////////
 // components
-import Footer from '../Components/Footer/Footer'
+import Footer from '@/app//Components/Footer/Footer'
 import Navbar from '@/app/Components/Navbar/Navbar';
+import AdminMenu from '@/app/Components/Navbar/AdminMenu';
 
 
 //////////////////////////////////////
@@ -24,6 +25,7 @@ export default async function layout({children}) {
   return (
     <>
       <Navbar />
+      <AdminMenu />
       <div className=" min-vh-100 container py-5">
         {children}
       </div>

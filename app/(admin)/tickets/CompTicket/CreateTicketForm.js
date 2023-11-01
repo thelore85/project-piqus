@@ -32,7 +32,7 @@ export default function CreateTicketForm({ formTitle, user_id }) {
     if(json.error){console.log('Error - ticket form: ',json.error)}
     if(json.data){
       router.refresh()
-      router.push(`/users/${user_id}`)
+      router.push(`/profile/${user_id}`)
     }
 
   }
