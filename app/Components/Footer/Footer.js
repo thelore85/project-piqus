@@ -49,8 +49,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p className="fw-lighter small">© 2023 Piqus, Inc. All rights reserved.</p>
+      <div className="d-flex  justify-content-center align-items-center py-4 my-4 border-top">
+        <p className="fw-lighter small me-4">© 2023 Piqus, Inc. All rights reserved.</p>
         <ul className="list-unstyled d-flex fs-3">
           <Link href="https://github.com/thelore85" target='_blank'>
             <FontAwesomeIcon icon={faGithub} className="me-3" />
