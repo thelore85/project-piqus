@@ -1,26 +1,67 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
+
+/////////////////////////////
+// components
+import LoginButtons from '../Navbar/LoginButtons';
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-5 px-3 w-100">
-      <div className="container text-center">
+  <footer className="p-4 bg-black text-white">
+    <div className="container py-5">
 
-        <div className="legal-line fs-6 text-white-50 fw-lighter">
-          <p className=" fw-medium text-white">Piqus Lead - Potenzia il tuo Marketing</p>
-          <p>Il Cliente o Brand sponsorizzato non è responsabile della gestione diretta dei dati raccolti.
-          <br /> Per informazioni sulla gestione dei dati e sulla privacy, si prega di contattare il Titolare del Sito.</p>
+      <div className="row">
+
+        <div className="col-4 col-md-2 mb-5">
+          <h5 className="small">Piqus</h5>
+          <ul className="nav flex-column small">
+            <li className="nav-item mb-2"><Link href="/#features" className="fw-lighter p-0">Services</Link></li>
+            <li className="nav-item mb-2"><Link href="/#tech" className="fw-lighter p-0">Tech</Link></li>
+            <li className="nav-item mb-2"><Link href="/#about" className="fw-lighter p-0">About</Link></li>
+          </ul>
+        </div>
+
+        <div className="col-4 col-md-2 mb-4">
+            <h5 className="small">Admin</h5>
+            <ul className="nav flex-column small">
+              <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
+              <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>
+              <li className="nav-item mb-2"><Link href="/dashboard" className="fw-lighter p-0">Dashboard</Link></li>
+            </ul>
+        </div>
+
+        <div className="col-4 col-md-2 mb-4">
+            <h5 className="small">Contacts</h5>
+            <ul className="nav flex-column small">
+              <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://api.whatsapp.com/send/?phone=393933222446&text&type=phone_number&app_absent=0" target='_blank'>Whatsapp</Link></li>
+              <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://github.com/thelore85" target='_blank'>GitHub</Link></li>
+              <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://www.linkedin.com/in/lorenzo-garofalo-digital/" target='_blank'>Linkedin</Link></li>
+            </ul>
         </div>
 
 
-        <div className="footer-menu">
-          <p className="fs-6  fw-lighter text-white">
-            <Link href="/login">LOGIN - </Link>
-            <Link href="/privacy">PRIVACY - </Link>
-            <Link href="/terms">CONDIZIONI</Link>
-          </p>
+        <div className="col-md-6 mb-3 text-center">
+          <h5 className="">Your business online</h5>
+          <p className="small fw-lighter">Create your web project right now!</p>
+          <LoginButtons />
         </div>
-
       </div>
-    </footer>
+
+      <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p className="fw-lighter small">© 2023 Piqus, Inc. All rights reserved.</p>
+        <ul className="list-unstyled d-flex fs-3">
+          <Link href="https://github.com/thelore85" target='_blank'>
+            <FontAwesomeIcon icon={faGithub} className="me-3" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/lorenzo-garofalo-digital/" target="_blank" >
+            <FontAwesomeIcon icon={faLinkedin} className="me-3" />
+          </Link>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
   )
 }

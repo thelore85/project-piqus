@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function DashboardMenu() {
   return (
-      <div className="nav-scroller bg-black shadow-sm">
+      <div className="nav-scroller bg-dark shadow-sm">
         <div className="container">
 
           <nav className="nav text-white" aria-label="Secondary navigation">

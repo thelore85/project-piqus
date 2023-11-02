@@ -18,10 +18,10 @@ export default function home() {
       <>
         <Hero />
         <Features />
-        <Tech />
+        <About />
         <Ecommerce />
         <Application />
-        <About />
+        <Tech />
       </>
   )
 }
