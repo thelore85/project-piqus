@@ -19,8 +19,8 @@ export const dynamic = 'force-dynamic';
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'PIQUS LEAD - Start your digital business, now',
-  description: 'Gain customers and clients with online marketing campaigns',
+  title: 'Piqus - Bring your business online',
+  description: 'Build your web presence. Gain customers and clients. Scale your business online.',
   icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
 };
 
