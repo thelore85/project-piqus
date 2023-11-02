@@ -59,7 +59,7 @@ export default function Features() {
           </div>
 
           <div className="col">
-            <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>Privacy Policy</h4>
+            <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>GDPR ready</h4>
             <p className="fw-lighter">Make your platform legally compliant, manage cookies correctly, and adhere to the latest GDPR policies.</p>
           </div>  
 

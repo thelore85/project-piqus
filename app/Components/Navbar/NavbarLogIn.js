@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import Avatar from './Avatar';
+import Navigation from './Navigation';
 
 
 ///////////////////////////
@@ -26,17 +27,7 @@ export default function NavbarLogIn({session}) {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
-            <ul className="navbar-nav mb-2 me-auto mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#features">Services</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#tech">Tech</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#about">About</Link>
-              </li>
-            </ul>
+            <Navigation />
             <Avatar session={session}/>
           </div>
 

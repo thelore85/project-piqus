@@ -4,6 +4,7 @@ import Features from './CompHome/Features';
 import Tech from './CompHome/Tech';
 import About from './CompHome/About';
 import Ecommerce from './CompHome/Ecommerce';
+import Application from './CompHome/Application';
 
 export const metadata = {
   title: 'Crea la tua promo online, gratis! - PIQUS LEAD',
@@ -19,8 +20,8 @@ export default function home() {
         <Features />
         <Tech />
         <Ecommerce />
+        <Application />
         <About />
-
       </>
   )
 }
