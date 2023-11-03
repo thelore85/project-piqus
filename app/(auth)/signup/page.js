@@ -13,8 +13,8 @@ export default function SignUp() {
   const [formError, setFormError] = useState('') //manage form error
   const router = useRouter();
 
-  const url = location.origin
-  console.log('debugging signUp v2: ', `${location.origin}/api/auth/callback`)
+  // const url = location.origin
+  // console.log('debugging signUp v2: ', `${location.origin}/api/auth/callback`)
 
 
 
@@ -36,7 +36,7 @@ export default function SignUp() {
     return url
   }
 
-  console.log('debugging signUp v3: ', `${getURL()}api/auth/callback/`)
+  console.log('debugging signUp v3: ', `${getURL()}`)
 
 
   const handleSubmit = async ( e, email, password ) => {
