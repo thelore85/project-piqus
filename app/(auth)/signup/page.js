@@ -13,6 +13,8 @@ export default function SignUp() {
   const [formError, setFormError] = useState('') //manage form error
   const router = useRouter();
 
+  console.log('debugging sign in page: ', location.origin)
+
 
   ////////////////////////////////////////
   // submit new user to DB
