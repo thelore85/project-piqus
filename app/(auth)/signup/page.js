@@ -14,6 +14,7 @@ export default function SignUp() {
   const router = useRouter();
 
   const url = location.origin
+  console.log('debugging signUp: ', `${location.origin}/api/auth/callback`)
 
 
   ////////////////////////////////////////
@@ -27,7 +28,7 @@ export default function SignUp() {
       email,
       password,
       option:{
-        emailRedirectTo: `${url}/api/auth/callback`
+        emailRedirectTo: `${location.origin}/api/auth/callback`
       }
     })
 

@@ -7,6 +7,8 @@ import { NextResponse } from "next/server"
 
 export async function GET(request){
 
+  console.log('API CALL: email auth')
+
   const url = new URL(request.url)
   const code =  url.searchParams.get('token')
   
