@@ -16,8 +16,6 @@ export default function SignUp() {
   // const url = location.origin
   // console.log('debugging signUp v2: ', `${location.origin}/api/auth/callback`)
 
-
-
   ////////////////////////////////////////
   // submit new user to DB
 
@@ -36,7 +34,7 @@ export default function SignUp() {
     return url
   }
 
-  console.log('debugging signUp v3: ', `${getURL()}`)
+  console.log('debugging signUp v4: ', `${getURL()}`)
 
 
   const handleSubmit = async ( e, email, password ) => {
