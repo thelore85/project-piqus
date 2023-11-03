@@ -13,7 +13,7 @@ export default function SignUp() {
   const [formError, setFormError] = useState('') //manage form error
   const router = useRouter();
 
-  console.log('debugging sign in page: ', location.origin)
+  const url = location.origin
 
 
   ////////////////////////////////////////
@@ -27,7 +27,7 @@ export default function SignUp() {
       email,
       password,
       option:{
-        emailRedirectTo: `${location.origin}/api/auth/callback`
+        emailRedirectTo: `${url}/api/auth/callback`
       }
     })
 
