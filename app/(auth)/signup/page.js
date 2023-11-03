@@ -14,11 +14,29 @@ export default function SignUp() {
   const router = useRouter();
 
   const url = location.origin
-  console.log('debugging signUp: ', `${location.origin}/api/auth/callback`)
+  console.log('debugging signUp v2: ', `${location.origin}/api/auth/callback`)
+
 
 
   ////////////////////////////////////////
   // submit new user to DB
+
+  // generate url
+  const getURL = () => {
+    let url =
+      process?.env?.NEXT_PUBLIC_SITE_URL ?? // Set this to your site URL in production env.
+      process?.env?.NEXT_PUBLIC_VERCEL_URL ?? // Automatically set by Vercel.
+      'http://localhost:3000/'
+    // Make sure to include `https://` when not localhost.
+    url = url.includes('http') ? url : `https://${url}`
+    // Make sure to include a trailing `/`.
+    url = url.charAt(url.length - 1) === '/' ? url : `${url}/`
+    return url
+  }
+
+  console.log('debugging signUp v3: ', `${getURL()}api/auth/callback/`)
+
+
   const handleSubmit = async ( e, email, password ) => {
     e.preventDefault() //don't reload the page
 
@@ -28,7 +46,7 @@ export default function SignUp() {
       email,
       password,
       option:{
-        emailRedirectTo: `${location.origin}/api/auth/callback`
+        emailRedirectTo: `${getURL()}api/auth/callback/`
       }
     })
 
