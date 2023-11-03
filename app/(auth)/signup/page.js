@@ -46,7 +46,7 @@ export default function SignUp() {
       email,
       password,
       option:{
-        emailRedirectTo: `${getURL()}api/auth/callback/`
+        emailRedirectTo: getURL(),
       }
     })
 
