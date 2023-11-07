@@ -12,12 +12,12 @@ export default function Marketing() {
       <div className="mb-5">
 
         <div className="row align-items-center g-3">
-          <div className="col-9">
-            <h3 className="h5">Why you should consider it</h3>
-            <p className="text-secondary">A good website is necessary, but it is not enough! To reach your business goals, you need to draw your audience in and convert their behavior into sales or contacts. 
+          <div className="col-12 col-md-9">
+            <h3 className="h5">Why marketing metter</h3>
+            <p className="text-secondary">A good website is necessary, but it is not enough! To reach your business goals, you need to draw your audience in and convert their behavior into sales. 
             This is where marketing comes into play.</p>
           </div>
-          <div className="col-3 text-end">
+          <div className="col-12 col-md-3 text-center">
             <img src='img/home/customer.jpeg' width="150" />
           </div>
         </div>
