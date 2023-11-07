@@ -2,6 +2,18 @@ import Image from "next/image";
 import profilePic from "@/public/img/home/about_img.jpg"
 import Link from "next/link";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
+import geeks from '@/public/img/home/about/4geek_academy.png'
+import google from '@/public/img/home/about/google_ads_certification.jpeg'
+import ztm from '@/public/img/home/about/zero_to_masgery_academy.png'
+import poli from '@/public/img/home/about/politecnico_milano.png'
+import sole24 from '@/public/img/home/about/sole24ore.png'
+
+
 
 export default function About() {
   return (
@@ -10,20 +22,83 @@ export default function About() {
             
             <div className="row d-flex align-items-center">  
               <div className="col-md-4">
-                <Image  src={profilePic} width={250} className=" rounded-circle mb-4" alt="lorenzo garofalo"/>
+                <Image src={profilePic} width={250} className=" rounded-circle mb-4" alt="lorenzo garofalo"/>
                 {/* <div className=" m-auto  rounded-circle" style={{ backgroundImage : "url(/img/home/about_img.jpg)", backgroundSize:'cover', backgroundPosition: 'top',  width: '100%', maxWidth: '300px', minHeight:'300px',  }}></div> */}
               </div>
 
               <div className="col-md-8 text-white text-start py-4">
                 <h2 className="h1 text-white fw-bolder h1 mb-5">Connecting Businesses for Over 10 Years</h2>
-                <p className="fw-light small">With a decade of experience in online communication, I bring an international perspective as a seasoned freelancer and collaborator with multinational companies in finance, healthcare, entertainment, and fashion. </p>
-                <p className="fw-light small">I&#39;ve mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
-                <p className="fw-light small">In 2023, I completed an intensive web development course to stay at the forefront of industry techniques.</p>
-                <div className="mt-4">
-                  <Link href="https://api.whatsapp.com/send/?phone=393933222446&text&type=phone_number&app_absent=0" target="_blank">
-                    <button className="btn btn-primary me-4"> Contact Me</button>
-                  </Link>
-                  {/* <button className="btn btn-light border-primary text-primary">Download my cv</button> */}
+                <div className="mb-5">
+                  <p className="fw-light small">With a decade of experience in online communication, I bring an international perspective as a seasoned freelancer and collaborator with multinational companies in finance, healthcare, entertainment, and fashion. </p>
+                  <p className="fw-light small">I&#39;ve mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
+                </div>
+
+
+
+                <div className="accordion mb-5" >
+                  <div className="accordion-item">
+
+                    <h2 className="accordion-header">
+                      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Courses and Certification
+                      </button>
+                    </h2>
+
+                    <div id="collapseOne" className="accordion-collapse collapse" >
+                      <div className="accordion-body">
+                        
+                        <h6 className="ms-3">Courses</h6>
+                        <ul className="small">
+                          <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
+                          <li className="small">Bachelor in <strong>Design</strong> - Politecnico di milano - 2009</li>
+                          <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
+                          <li className="small"><strong>Web Developer</strong> Complete course - ZTM academy -  2023</li>
+                          <li className="small"><strong>Next.js</strong> advanced course - ZTM academy - 2023</li>
+                        </ul>
+
+                        <h6 className="ms-3">Certification</h6>
+                        <ul className="certification small">
+                          <li className="small"><strong>Google Analytics</strong> advance - Coursera - 2022</li>
+                          <li className="small"><strong>Google ADS</strong> advance - LinkedIn Learn - 2021</li>
+                          <li className="small"><strong>HTML</strong> foundamentals - LinkedIn Learn - 2014</li>
+                          <li className="small"><strong>CSS</strong> foundamentals - LinkedIn Learn - 2014</li>
+                          <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
+                        </ul>
+
+                        <div className="border-top p-3 mt-4">
+                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Milano Politecnico University" src={poli} />
+                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="ZTM academy" src={ztm} />
+                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Sole 24 Business School" src={sole24} />
+                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="4 Geeks Academy" src={geeks} />
+                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Google Ads" src={google} />
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <div className="mt-4 d-flex justify-content-between">
+
+                  <div className="d-inline fs-3" >
+                    
+                      <Link className="me-3" href="https://api.whatsapp.com/send/?phone=393933222446&text&type=phone_number&app_absent=0" target="_blank">
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                      </Link>
+                      <Link href="https://github.com/thelore85" target='_blank'>
+                        <FontAwesomeIcon icon={faGithub} className="me-3" />
+                      </Link>
+                      <Link href="https://www.linkedin.com/in/lorenzo-garofalo-digital/" target="_blank" >
+                        <FontAwesomeIcon icon={faLinkedin} className="" />
+                      </Link>
+                    
+                  </div>
+
+
                 </div>
               </div>
 

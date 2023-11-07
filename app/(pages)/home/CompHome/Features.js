@@ -34,33 +34,45 @@ export default function Features() {
 
     
           <div className="col">
-            <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Web Developing</h4>
-            <p className="fw-lighter">E-commerce, a simple website, or a personal blog? Develop your project and go live with a fully-featured web product.</p>
+            <Link href="#ecommerce" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Web Developing</h4>
+              <p className="fw-lighter">E-commerce, a simple website, or a personal blog? Develop your project and go live with a fully-featured web product.</p>
+            </Link>
           </div>
     
           <div className="col">
-            <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Advertising</h4>
-            <p className="fw-lighter">Gain web traffic and attract customers by leveraging the online marketing tools available today!</p>
+            <Link href="#marketing" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Advertising</h4>
+              <p className="fw-lighter">Gain web traffic and attract customers by leveraging the online marketing tools available today!</p>
+            </Link>
           </div>
     
           <div className="col">
-            <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> Content Creation</h4>
-            <p className="fw-lighter">Enrich your blog with relevant content, improve your SEO ranking, and capture the interest of users.</p>
+            <Link href="#marketing" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> Content Creation</h4>
+              <p className="fw-lighter">Enrich your blog with relevant content, improve your SEO ranking, and capture the interest of users.</p>
+            </Link>
           </div>
     
           <div className="col">
-            <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCreditCard} className="me-2" /> Payment process</h4>
-            <p className="fw-lighter">Manage online payments through your e-commerce and keep track of your orders.</p>
+            <Link href="#ecommerce" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCreditCard} className="me-2" /> Payment process</h4>
+              <p className="fw-lighter">Manage online payments through your e-commerce and keep track of your orders.</p>
+            </Link>
           </div>
 
           <div className="col">
-            <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
-            <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
+            <Link href="#marketing">
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
+              <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
+            </Link>
           </div>
 
           <div className="col">
-            <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>GDPR ready</h4>
-            <p className="fw-lighter">Make your platform legally compliant, manage cookies correctly, and adhere to the latest GDPR policies.</p>
+            <Link href="#ecommerce" >
+              <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>GDPR ready</h4>
+              <p className="fw-lighter">Make your platform legally compliant, manage cookies correctly, and adhere to the latest GDPR policies.</p>
+            </Link>
           </div>  
 
         </div>

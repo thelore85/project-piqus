@@ -5,6 +5,7 @@ import Tech from './CompHome/Tech';
 import About from './CompHome/About';
 import Ecommerce from './CompHome/Ecommerce';
 import Application from './CompHome/Application';
+import Marketing from './CompHome/Marketing';
 
 
 export default function home() {
@@ -14,9 +15,10 @@ export default function home() {
         <Hero />
         <Features />
         <About />
+        <Tech />
         <Ecommerce />
         <Application />
-        <Tech />
+        <Marketing />
       </>
   )
 }

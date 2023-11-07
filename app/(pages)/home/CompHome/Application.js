@@ -6,8 +6,8 @@ export default function Application() {
     <section id="application" className="bg-black d-flex justify-content-center align-items-center py-5 px-4" style={{ minHeight:'70%'}}>
       <div className="container text-white" style={{maxWidth:'1000px'}}>
 
-        <h3 className=" text-decoration-underline small mb-4">Web Application</h3>
-        <h2 className="h1 fw-bolder mb-5 text-en">Build with <span className="text-success">Performance</span> in mind</h2>
+        <h2 className=" text-decoration-underline small mb-4">Web Application</h2>
+        <h3 className="h1 fw-bolder mb-5 text-en">Take care of <span className="text-success">Web Performance</span></h3>
 
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-sm-2">
@@ -22,7 +22,7 @@ export default function Application() {
           </div>
         </div>
 
-        <div className="row border-bottom py-5 g-4">
+        <div className="row py-5 g-4">
 
           <div className="col-md-4 mb-3">
             <div className="p-3 bg-white rounded-1 text-dark">

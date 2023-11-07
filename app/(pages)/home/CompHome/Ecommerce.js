@@ -7,8 +7,8 @@ export default function Ecommerce() {
     <section id="ecommerce" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
       <div className="container text-white pt-4" style={{maxWidth:'1000px'}}>
 
-        <h3 className=" text-decoration-underline small mb-4">Ecommerce</h3>
-        <h2 className="h1 fw-bolder mb-3">Bring Your <span className="text-primary">Business Online</span></h2>
+        <h2 className=" text-decoration-underline small mb-4">Ecommerce</h2>
+        <h3 className="h1 fw-bolder mb-3">Bring Your <span className="text-primary">Store Online</span></h3>
 
         <div className="row border-bottom py-4 g-4">
 
