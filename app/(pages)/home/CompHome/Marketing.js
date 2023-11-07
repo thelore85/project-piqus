@@ -28,11 +28,11 @@ export default function Marketing() {
       <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h4 className="accordion-header">
-              <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#seo" aria-expanded="false" aria-controls="collapseOne">
               <FontAwesomeIcon icon={faMagnifyingGlassChart}  className="h4 my-0 me-3"/>SEO and Content
               </button>
             </h4>
-            <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="seo" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
               <div className="accordion-body small">
                 <p>In the world of digital marketing, content is king. To thrive online, you need not just any content, but content that engages, educates, and converts. Our Content Creation and SEO Strategy service is your key to dominating the digital landscape.</p>
                 <p><strong>High-Quality Content</strong></p>
