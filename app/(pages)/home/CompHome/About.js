@@ -66,21 +66,18 @@ export default function About() {
                         </ul>
 
                         <div className="border-top p-3 mt-4">
-                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Milano Politecnico University" src={poli} />
-                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="ZTM academy" src={ztm} />
-                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Sole 24 Business School" src={sole24} />
-                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="4 Geeks Academy" src={geeks} />
-                          <Image className="me-2" style={{width:'10%', height:'auto'}} alt="Google Ads" src={google} />
+                          <Image className="me-2" style={{width:'14%', height:'auto'}} alt="Milano Politecnico University" src={poli} />
+                          <Image className="me-2" style={{width:'17%', height:'auto'}} alt="ZTM academy" src={ztm} />
+                          <Image className="me-2" style={{width:'17%', height:'auto'}} alt="Sole 24 Business School" src={sole24} />
+                          <Image className="me-2" style={{width:'17%', height:'auto'}} alt="4 Geeks Academy" src={geeks} />
+                          <Image className="me-2" style={{width:'17%', height:'auto'}} alt="Google Ads" src={google} />
                         </div>
-
 
                       </div>
                     </div>
 
                   </div>
                 </div>
-
-
 
                 <div className="mt-4 d-flex justify-content-between">
 
