@@ -6,6 +6,7 @@ import Link from "next/link";
 /////////////////////////////
 // components
 import LoginButtons from '../Navbar/LoginButtons';
+import Navigation from '../Navbar/Navigation';
 
 export default function Footer() {
   return (
@@ -16,20 +17,7 @@ export default function Footer() {
 
         <div className="col-4 col-md-2 mb-5">
           <h5 className="small">Piqus</h5>
-          <ul className="nav flex-column small">
-            <li className="nav-item mb-2"><Link href="/#features" className="fw-lighter p-0">Services</Link></li>
-            <li className="nav-item mb-2"><Link href="/#tech" className="fw-lighter p-0">Tech</Link></li>
-            <li className="nav-item mb-2"><Link href="/#about" className="fw-lighter p-0">About</Link></li>
-          </ul>
-        </div>
-
-        <div className="col-4 col-md-2 mb-4">
-            <h5 className="small">Admin</h5>
-            <ul className="nav flex-column small">
-              <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
-              <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>
-              <li className="nav-item mb-2"><Link href="/dashboard" className="fw-lighter p-0">Dashboard</Link></li>
-            </ul>
+          <Navigation />
         </div>
 
         <div className="col-4 col-md-2 mb-4">
@@ -41,6 +29,14 @@ export default function Footer() {
             </ul>
         </div>
 
+        <div className="col-4 col-md-2 mb-4">
+            <h5 className="small">Admin</h5>
+            <ul className="nav flex-column small">
+              <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
+              <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>
+              <li className="nav-item mb-2"><Link href="/dashboard" className="fw-lighter p-0">Dashboard</Link></li>
+            </ul>
+        </div>
 
         <div className="col-md-6 mb-3 text-center">
           <h5 className="">Your business online</h5>

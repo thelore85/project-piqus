@@ -39,7 +39,7 @@ export default function About() {
                   <div className="accordion-item">
 
                     <h2 className="accordion-header">
-                      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#courses" aria-expanded="true" aria-controls="collapseOne">
+                    <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#courses" aria-expanded="false" aria-controls="courses">
                         Courses and Certification
                       </button>
                     </h2>

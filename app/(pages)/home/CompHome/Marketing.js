@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartSimple, faMagnifyingGlassChart, faNewspaper, faPaperPlane, faRectangleAd } from '@fortawesome/free-solid-svg-icons'
+import { faChartSimple, faMagnifyingGlassChart, faNewspaper, faPaperPlane, faRectangleAd, faUser } from '@fortawesome/free-solid-svg-icons'
 
 export default function Marketing() {
   return (
@@ -89,7 +89,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faPaperPlane}  className="h4 my-0 me-3" />CRM and Email marketing
               </button>
             </h4>
-            <div id="crm" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="crm" className="accordion-collapse collapse" data-bs-parent="#crm" >
               <div className="accordion-body small">
                 <p>In the world of modern business, managing and engaging your customer base is essential for success. Our CRM Tool Configuration service equips you with the tools to effectively manage contacts and activate your customer base through targeted email marketing campaigns.</p>
                 <p><strong>Streamlined Contact Management</strong></p>
@@ -104,11 +104,30 @@ export default function Marketing() {
           </div>
           <div className="accordion-item">
             <h4 className="accordion-header">
+              <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#influencer" aria-expanded="false" aria-controls="influencer">
+              <FontAwesomeIcon icon={faUser}  className="h4 my-0 me-3" />Influencer Marketing
+              </button>
+            </h4>
+            <div id="influencer" className="accordion-collapse collapse" data-bs-parent="#influencer" >
+              <div className="accordion-body small">
+                <p>Influencer Marketing is a potent strategy for connecting with targeted audiences and generating direct returns in terms of traffic and conversions. Our service is designed to engage carefully selected influencers to activate specific audiences aligned with your goals.</p>
+                <p><strong>Strategic Influencer Selection</strong></p>
+                <p>We carefully curate a network of influencers whose followers align with your brand&apos;s target demographic. By partnering with the right influencers, we ensure that your message reaches the most receptive audience.</p>
+                <p><strong>Compelling Campaign Collaboration</strong></p>
+                <p>We collaborate with influencers to create authentic, engaging content that resonates with their followers. This approach ensures that your brand&apos;s message is received with trust and authenticity, increasing the likelihood of conversions.</p>
+                <p><strong>Measurable Results</strong></p>
+                <p>Our Influencer Marketing campaigns are designed for success, with clear KPIs to measure performance. We&apos;ll provide insights on reach, engagement, and conversions, allowing you to evaluate the direct impact on your business.</p>
+                <p>With our Influencer Marketing service, you&apos;ll have the means to harness the influential power of online personalities and direct it towards your business objectives. Reach a highly engaged, targeted audience and convert them into loyal customers. Contact us today to unlock the potential of influencer marketing for your brand!</p>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h4 className="accordion-header">
               <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
               <FontAwesomeIcon icon={faNewspaper}  className="h4 my-0 me-3" />Press and PR
               </button>
             </h4>
-            <div id="pr" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="pr" className="accordion-collapse collapse" data-bs-parent="#pr" >
               <div className="accordion-body small">
                 <p>In today&apos;s competitive market, building a strong brand presence is vital. Our Press Engagement and PR service is designed to elevate your brand by securing placements in relevant publications, arranging interviews with industry journalists, and facilitating participation in industry events.</p>
                 <p><strong>Strategic Media Outreach</strong></p>

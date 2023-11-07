@@ -12,7 +12,7 @@ import Link from 'next/link'
 export default function Features() {
   return (
 
-  <section id="features" className="px-4 py-5 min d-flex justify-content-center align-items-center bg-black text-white" style={{minHeight : '75%'}}>
+  <section id="services" className="px-4 py-5 min d-flex justify-content-center align-items-center bg-black text-white" style={{minHeight : '75%'}}>
 
   <div className="container">
 
@@ -39,6 +39,13 @@ export default function Features() {
               <p className="fw-lighter">E-commerce, a simple website, or a personal blog? Develop your project and go live with a fully-featured web product.</p>
             </Link>
           </div>
+
+          <div className="col">
+            <Link href="#marketing">
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
+              <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
+            </Link>
+          </div>
     
           <div className="col">
             <Link href="#marketing" >
@@ -58,13 +65,6 @@ export default function Features() {
             <Link href="#ecommerce" >
               <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCreditCard} className="me-2" /> Payment process</h4>
               <p className="fw-lighter">Manage online payments through your e-commerce and keep track of your orders.</p>
-            </Link>
-          </div>
-
-          <div className="col">
-            <Link href="#marketing">
-              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
-              <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
             </Link>
           </div>
 
