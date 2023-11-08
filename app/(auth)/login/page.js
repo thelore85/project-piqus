@@ -41,7 +41,7 @@ export default function Login() {
       { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>}    
 
       <div className="p-3 mt-4 rounded bg-white text-secondary">
-        <p className="mb-0">Don't have an account? <Link href="/signup" className="text-primary">Sign up Here</Link></p>
+        <p className="mb-0">Don&apos;t have an account? <Link href="/signup" className="text-primary">Sign up Here</Link></p>
       </div>
       
 
