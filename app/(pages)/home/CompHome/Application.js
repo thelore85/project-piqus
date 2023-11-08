@@ -1,5 +1,7 @@
 import Image from "next/image";
 import NextLogo from '@/public/img/home/next-logo.png'
+import Whatsapp from "@/app/Components/CallToAction/WhatsApp";
+import StartNow from "@/app/Components/CallToAction/StartNow";
 
 export default function Application() {
   return (
@@ -48,6 +50,11 @@ export default function Application() {
             </div>
           </div>
 
+        </div>
+
+        <div>
+          <Whatsapp size={'md'}/>
+          <StartNow size={'md'} />
         </div>
 
 

@@ -8,6 +8,10 @@ import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 import Link from 'next/link'
 
+//components
+import StartNow from '@/app/Components/CallToAction/StartNow'
+import Whatsapp from '@/app/Components/CallToAction/WhatsApp'
+
 
 export default function Features() {
   return (
@@ -16,17 +20,18 @@ export default function Features() {
 
   <div className="container">
 
-    {/* <h2 className="pb-2 border-bottom">Features with title</h2> */}
-
     <div className="row row-cols-1 row-cols-lg-2 g-5 py-5">
 
       <div className="col d-flex flex-column align-items-start gap-2">
         <h2 className="fw-bold h1">Grow your business, online.</h2>
         <p className=" fw-lighter">Considering going online? <br />I can study the best solution and guide you through all the steps.</p>
         <p className=" fw-lighter">Already online? <br />I can help you scale up with the latest marketing technology, analytics, and CRM tools.</p>
-        <Link href="/signup">
-          <button className="btn btn-primary m-2">Start Youe Project</button>
-        </Link>
+
+        <div>
+          <StartNow />
+          <Whatsapp />
+        </div>
+
       </div>
 
       <div className="col">

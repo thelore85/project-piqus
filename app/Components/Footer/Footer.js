@@ -5,8 +5,9 @@ import Link from "next/link";
 
 /////////////////////////////
 // components
-import LoginButtons from '../Navbar/LoginButtons';
 import Navigation from '../Navbar/Navigation';
+import Whatsapp from '../CallToAction/WhatsApp';
+import StartNow from '../CallToAction/StartNow';
 
 export default function Footer() {
   return (
@@ -41,7 +42,8 @@ export default function Footer() {
         <div className="col-md-6 mb-3 text-center">
           <h5 className="">Your business online</h5>
           <p className="small fw-lighter">Create your web project right now!</p>
-          <LoginButtons />
+          <StartNow size={"sm"}/>
+          <Whatsapp size={"sm"}/>
         </div>
       </div>
 

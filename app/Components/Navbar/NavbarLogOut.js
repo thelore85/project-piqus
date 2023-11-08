@@ -8,8 +8,9 @@ import { useEffect} from 'react';
 
 ///////////////////////////////////////
 //components
-import LoginButtons from './LoginButtons';
 import Navigation from './Navigation';
+import StartNow from '../CallToAction/StartNow';
+import Whatsapp from '../CallToAction/WhatsApp';
 
 
 export default function NavbarLogOut() {
@@ -39,7 +40,8 @@ export default function NavbarLogOut() {
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
             <Navigation />
-            <LoginButtons />
+            <StartNow size={"sm"}/>
+            <Whatsapp size={"sm"}/>
           </div>
 
       </div>

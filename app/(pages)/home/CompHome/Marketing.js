@@ -25,14 +25,14 @@ export default function Marketing() {
       </div>
 
 
-      <div className="accordion" id="accordionExample">
+      <div className="accordion" id="marketingServices">
           <div className="accordion-item">
             <h4 className="accordion-header">
               <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#seo" aria-expanded="false" aria-controls="collapseOne">
               <FontAwesomeIcon icon={faMagnifyingGlassChart}  className="h4 my-0 me-3"/>SEO and Content
               </button>
             </h4>
-            <div id="seo" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="seo" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>In the world of digital marketing, content is king. To thrive online, you need not just any content, but content that engages, educates, and converts. Our Content Creation and SEO Strategy service is your key to dominating the digital landscape.</p>
                 <p><strong>High-Quality Content</strong></p>
@@ -51,7 +51,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faRectangleAd}  className="h4 my-0 me-3" />Online Advertising
               </button>
             </h4>
-            <div id="adv" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="adv" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>In the dynamic digital landscape, Online Advertising and Search Engine Marketing (ADV and SEM) play a pivotal role in driving targeted traffic to your website and achieving your business objectives.</p>
                 <p><strong>Strategic Advertising Campaigns</strong></p>
@@ -70,7 +70,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faChartSimple}  className="h4 my-0 me-3" />Analytics Tools
               </button>
             </h4>
-            <div id="analytics" className="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+            <div id="analytics" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>In the data-driven digital era, understanding your website&apos;s performance is paramount. Our Analytics Configuration service empowers you to harness the power of data to monitor, analyze, and monetize your website traffic effectively.</p>
                 <p><strong>Comprehensive Tracking Setup</strong></p>
@@ -89,7 +89,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faPaperPlane}  className="h4 my-0 me-3" />CRM and Email marketing
               </button>
             </h4>
-            <div id="crm" className="accordion-collapse collapse" data-bs-parent="#crm" >
+            <div id="crm" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>In the world of modern business, managing and engaging your customer base is essential for success. Our CRM Tool Configuration service equips you with the tools to effectively manage contacts and activate your customer base through targeted email marketing campaigns.</p>
                 <p><strong>Streamlined Contact Management</strong></p>
@@ -108,7 +108,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faUser}  className="h4 my-0 me-3" />Influencer Marketing
               </button>
             </h4>
-            <div id="influencer" className="accordion-collapse collapse" data-bs-parent="#influencer" >
+            <div id="influencer" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>Influencer Marketing is a potent strategy for connecting with targeted audiences and generating direct returns in terms of traffic and conversions. Our service is designed to engage carefully selected influencers to activate specific audiences aligned with your goals.</p>
                 <p><strong>Strategic Influencer Selection</strong></p>
@@ -127,7 +127,7 @@ export default function Marketing() {
               <FontAwesomeIcon icon={faNewspaper}  className="h4 my-0 me-3" />Press and PR
               </button>
             </h4>
-            <div id="pr" className="accordion-collapse collapse" data-bs-parent="#pr" >
+            <div id="pr" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
               <div className="accordion-body small">
                 <p>In today&apos;s competitive market, building a strong brand presence is vital. Our Press Engagement and PR service is designed to elevate your brand by securing placements in relevant publications, arranging interviews with industry journalists, and facilitating participation in industry events.</p>
                 <p><strong>Strategic Media Outreach</strong></p>
