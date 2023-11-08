@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 
 //componentes
 import FormAuth from '@/app/(auth)/Components/FormAuth.js'
+import Link from 'next/link';
 
 //page function
 export default function SignUp() {
@@ -62,6 +63,14 @@ export default function SignUp() {
 
       <FormAuth title = 'Create your account'  handleSubmit= {handleSubmit} />
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
+
+      <div className="p-3 mt-4 mb-4 rounded bg-white text-secondary">
+        <p className="mb-0"> Already have an account? <Link href="/login" className="text-primary ">Login Here</Link></p>
+      </div>
+
+      <div className="">
+        <p className="mb-3 text-black-50 " style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
+      </div>
 
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import Link from 'next/link'
 
 
 //components
@@ -38,6 +39,11 @@ export default function Login() {
 
       <FormAuth title= {'Log in'} handleSubmit= {handleSubmit} />
       { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>}    
+
+      <div className="p-3 mt-4 rounded bg-white text-secondary">
+        <p className="mb-0">Don't have an account? <Link href="/signup" className="text-primary">Sign up Here</Link></p>
+      </div>
+      
 
       </div>
     </section>
