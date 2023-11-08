@@ -10,7 +10,9 @@ import { useEffect} from 'react';
 //components
 import Navigation from './Navigation';
 import StartNow from '../CallToAction/StartNow';
-import Whatsapp from '../CallToAction/WhatsApp';
+import Whatsapp from '@/app/Components/CallToAction/Whatsap'
+
+
 
 
 export default function NavbarLogOut() {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import NextLogo from '@/public/img/home/next-logo.png'
-import Whatsapp from "@/app/Components/CallToAction/WhatsApp";
+import Whatsapp from "@/app/Components/CallToAction/Whatsap";
 import StartNow from "@/app/Components/CallToAction/StartNow";
 
 export default function Application() {

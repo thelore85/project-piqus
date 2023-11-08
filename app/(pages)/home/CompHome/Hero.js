@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 //components
 import StartNow from '@/app/Components/CallToAction/StartNow'
-import Whatsapp from '@/app/Components/CallToAction/WhatsApp'
+import Whatsapp from '@/app/Components/CallToAction/Whatsap'
 
 export default function Hero() {
   return (

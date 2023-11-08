@@ -6,7 +6,7 @@ import Link from "next/link";
 /////////////////////////////
 // components
 import Navigation from '../Navbar/Navigation';
-import Whatsapp from '../CallToAction/WhatsApp';
+import Whatsapp from '../CallToAction/Whatsap';
 import StartNow from '../CallToAction/StartNow';
 
 export default function Footer() {
