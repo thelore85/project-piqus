@@ -34,7 +34,7 @@ export default function Login() {
   }
 
   return (
-    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
+    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
 
       <FormAuth title= {'Log in'} handleSubmit= {handleSubmit} />

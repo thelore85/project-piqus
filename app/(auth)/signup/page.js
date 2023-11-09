@@ -3,10 +3,10 @@
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import Link from 'next/link';
 
 //componentes
-import FormAuth from '@/app/(auth)/Components/FormAuth.js'
-import Link from 'next/link';
+import SignupForm from '../Components/SignupForm';
 
 //page function
 export default function SignUp() {
@@ -36,7 +36,7 @@ export default function SignUp() {
   }
 
 
-  const handleSubmit = async ( e, email, password ) => {
+  const handleSubmit = async ( e, name, phone, email, password) => {
     e.preventDefault()
 
     const supabase = createClientComponentClient() //call the database API
@@ -45,6 +45,10 @@ export default function SignUp() {
       email,
       password,
       option:{
+        data: {
+          first_name: name,
+          phone: phone,
+        },
         emailRedirectTo: getURL(),
       }
     })
@@ -56,10 +60,10 @@ export default function SignUp() {
   //////////////////////////////////////
   // Page html output
   return (
-    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center">
+    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-2.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
-
-      <FormAuth title = 'Create your account'  handleSubmit= {handleSubmit} />
+      
+      <SignupForm title = 'Create your account'  handleSubmit= {handleSubmit}/>
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       <div className="p-3 mt-4 mb-4 rounded bg-white text-secondary">
@@ -67,7 +71,7 @@ export default function SignUp() {
       </div>
 
       <div className="">
-        <p className="mb-3 text-black-50 " style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
+        <p className="mb-3 text-white fw-lighter" style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
       </div>
 
       </div>
