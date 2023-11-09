@@ -14,12 +14,12 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 // STOP NEXT.js to build static pages (use it in case you are using dynamic function eg: cookies, auth. etc.)
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Piqus - Bring your business online',
+  title: 'Think Big. Think Web',
   description: 'Build your web presence. Gain customers and clients. Scale your business online.',
   icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
 };

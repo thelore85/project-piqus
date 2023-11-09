@@ -19,7 +19,7 @@ export default async function create() {
 
   return (
     <section className="d-flex align-content-center justify-content-center ">
-      <CreateTicketForm formTitle="Start a new project" user_id={id}/>
+      <CreateTicketForm user_id={id}/>
     </section>
   )
 }

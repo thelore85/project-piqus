@@ -35,11 +35,9 @@ export default function SignUp() {
     return url
   }
 
-  console.log('debugging signUp v4: ', `${getURL()}`)
-
 
   const handleSubmit = async ( e, email, password ) => {
-    e.preventDefault() //don't reload the page
+    e.preventDefault()
 
     const supabase = createClientComponentClient() //call the database API
     const {error, data } = await supabase.auth

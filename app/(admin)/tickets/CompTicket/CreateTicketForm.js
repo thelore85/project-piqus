@@ -5,12 +5,12 @@ import { useState } from "react"
 
 
 //component
-export default function CreateTicketForm({ formTitle, user_id }) {
+export default function CreateTicketForm({ user_id }) {
   const router = useRouter()
 
+  const [service, setService] = useState('')
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [service, setService] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
 
@@ -38,11 +38,12 @@ export default function CreateTicketForm({ formTitle, user_id }) {
   }
 
   return (
+<>
 
     <div className="d-flex justify-content-center align-items-center">
       <div className="bg-white p-3 rounded text-center" >
 
-        <h2 className="h2 p-4">{formTitle}</h2>
+        <h2 className="h2 p-4">Select the project you need</h2>
 
         <form onSubmit={handleSubmit} className="">
           <div className="form-floating mb-3">
@@ -76,6 +77,8 @@ export default function CreateTicketForm({ formTitle, user_id }) {
       </div>
 
     </div>
+
+</>
    
   )
 }
