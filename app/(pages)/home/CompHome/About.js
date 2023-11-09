@@ -47,21 +47,27 @@ export default function About() {
                     <div id="courses" className="accordion-collapse collapse" >
                       <div className="accordion-body">
                         
+
+
+                        <h6 className="ms-3">Academy</h6>
+                          <ul>
+                            <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
+                            <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
+                            <li className="small">Bachelor in <strong>Design</strong> - Politecnico di Milano - 2009</li>
+                          </ul>
+
                         <h6 className="ms-3">Courses</h6>
                         <ul className="small">
-                          <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
-                          <li className="small">Bachelor in <strong>Design</strong> - Politecnico di milano - 2009</li>
-                          <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
                           <li className="small"><strong>Web Developer</strong> Complete course - ZTM academy -  2023</li>
                           <li className="small"><strong>Next.js</strong> advanced course - ZTM academy - 2023</li>
+                          <li className="small"><strong>HTML</strong> foundamentals - LinkedIn Learn - 2014</li>
+                          <li className="small"><strong>CSS</strong> foundamentals - LinkedIn Learn - 2014</li>
                         </ul>
 
                         <h6 className="ms-3">Certification</h6>
                         <ul className="certification small">
                           <li className="small"><strong>Google Analytics</strong> advance - Coursera - 2022</li>
                           <li className="small"><strong>Google ADS</strong> advance - LinkedIn Learn - 2021</li>
-                          <li className="small"><strong>HTML</strong> foundamentals - LinkedIn Learn - 2014</li>
-                          <li className="small"><strong>CSS</strong> foundamentals - LinkedIn Learn - 2014</li>
                           <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
                         </ul>
 

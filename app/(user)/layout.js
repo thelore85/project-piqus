@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { redirect } from 'next/navigation'
-// export const dynamic = 'force-dynamic'; // force realtime update
+export const dynamic = 'force-dynamic'; // force realtime update
 
 
 //////////////////////////////
@@ -24,9 +24,7 @@ export default async function layout({children}) {
   return (
     <>
       <Navbar />
-      <div className=" min-vh-100 container py-5">
         {children}
-      </div>
       <Footer/>
     </>
   )

@@ -3,9 +3,11 @@ import TicketCard from '@/app/(admin)/tickets/CompTicket/TicketCard.js';
 // component function
 export default function TktList({ tickets, onUpdate }) {
 
+  const reversedTickets = tickets.reverse();
+
   return (
     <>
-      {tickets.map((ticket) => (
+      {reversedTickets.map((ticket) => (
         <TicketCard key={ticket.id} ticket={ticket} onUpdate={onUpdate} />
       ))}
 

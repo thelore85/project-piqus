@@ -3,9 +3,11 @@ import ProjectCard from '@/app/(user)/profile/CompProfile/ProjectCard';
 // component function
 export default function TktList({ tickets, onUpdate }) {
 
+  const reversedTickets = tickets.reverse();
+
   return (
     <>
-      {tickets.map((ticket) => (
+      {reversedTickets.map((ticket) => (
         <ProjectCard key={ticket.id} ticket={ticket} onUpdate={onUpdate} />
       ))}
 

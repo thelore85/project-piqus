@@ -14,7 +14,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 // STOP NEXT.js to build static pages (use it in case you are using dynamic function eg: cookies, auth. etc.)
-// export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 
 
 // HEAD - metadata setting

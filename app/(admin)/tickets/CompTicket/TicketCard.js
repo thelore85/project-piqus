@@ -22,6 +22,7 @@ export default function  TicketCard({ ticket, user }) {
   //interection function
   const handleEdit = () => { setIsEditing(true); };
   const handleCancel = () => {  setIsEditing(false); };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEditedTicket({
@@ -60,62 +61,73 @@ export default function  TicketCard({ ticket, user }) {
       <div className="d-flex text-body-secondary">
         <div className="bg-secondary-subtle p-1 me-3 rounded"></div>
 
-        <ul className="w-100 pb-3 mb-0 small lh-sm border-bottom fw-light list-unstyled">
-          <li>
-            <Link href={`/tickets/${ticket.id}`}>
-              <p>
-                <span className="h5 fw-bold text-black text-decoration-underline">
-                  {isEditing ? 
-                  (<input type="text" name="title" value={editedTicket.title} onChange={handleChange} />) : 
-                  ( ticket.title)}
-                </span>
-                <span className="small h6 text-black-50"> / Ticket ID: {ticket.id} </span>
-              </p>
-            </Link>
-          </li>
-          <li className="">
-            <Link href={`/users/${ticket.user_id}`}>
-              <span className="fw-bold"> {ticket.user_email} </span>
-            </Link>
-          </li>
-          <li className="">
-            <span>Create at: </span> {new Date(ticket.created_at).toLocaleString("it-IT", {  day: "2-digit", month: "2-digit",  year: "numeric" })}
-          </li>
-          <li className="">
-            {isEditing ? 
-            ( <span>Promo Start: <input type="date" name="promo_start" value={editedTicket.promo_start ?? '' } onChange={handleChange} /> </span>) : 
-            (  ticket.promo_start ? <span>Promo Start: {ticket.promo_start}</span> : null )}
-          </li>
+        <div className="w-100 pb-3 mb-0 small lh-sm border-bottom fw-light list-unstyled">
+          
+          <Link href={`/tickets/${ticket.id}`}>
+            <p>
+              <span className="h5 fw-bold text-black text-decoration-underline">
+                {isEditing ? 
+                (<input type="text" name="title" value={editedTicket.title} onChange={handleChange} />) : 
+                ( ticket.title)}
+              </span>
+              <span className="small h6 text-black-50"> / Ticket ID: {ticket.id} </span>
+            </p>
+          </Link>
 
-          <li className="">
-            {isEditing ? 
-            ( <span>Promo End: <input type="date" name="promo_end" value={editedTicket.promo_end ?? ''} onChange={handleChange} /></span>) : 
-            (  ticket.promo_end ? <span>Promo End: {ticket.promo_end}</span> : null )}
-          </li>
-          <li className="">
-            <span>Promo Code:</span>{" "}
-            {isEditing ? 
-            ( <input type="text" name="promo_code" value={editedTicket.promo_code ?? ''} onChange={handleChange} />) : 
-            ( ticket.promo_code )}
-          </li>
+          <ul className="list-unstyled mb-2">
+
+            <li className="mb-1">
+              <Link href={`/users/${ticket.user_id}`}>
+                <span className="fw-bold"> {ticket.user_email} </span>
+              </Link>
+            </li>
+            <li className="mb-1">
+              <span>Create at: </span> {new Date(ticket.created_at).toLocaleString("it-IT", {  day: "2-digit", month: "2-digit",  year: "numeric" })}
+            </li>
+            <li className="mb-1">
+              {isEditing ? 
+              ( <span>Promo Start: <input type="date" name="promo_start" value={editedTicket.promo_start ?? '' } onChange={handleChange} /> </span>) : 
+              (  ticket.promo_start ? <span>Promo Start: {ticket.promo_start}</span> : null )}
+            </li>
+
+            <li className="mb-1">
+              {isEditing ? 
+              ( <span>Promo End: <input type="date" name="promo_end" value={editedTicket.promo_end ?? ''} onChange={handleChange} /></span>) : 
+              (  ticket.promo_end ? <span>Promo End: {ticket.promo_end}</span> : null )}
+            </li>
+
+            <li className="mb-1">
+              {isEditing ? 
+              ( <span>Promo Code: <input type="date" name="promo_end" value={editedTicket.promo_code ?? ''} onChange={handleChange} /></span>) : 
+              (  ticket.promo_end ? <span>Promo End: {ticket.promo_code}</span> : null )}
+            </li>
+          </ul>
+        
 
           <div>
             {isEditing ? ( 
-            <select name="status" id="status" onChange={handleChange} value={editedTicket.status}>
-              <option value='active' >Active</option>
-              <option value='pending'>Pending</option>
+            <select name="status" id="status" onChange={handleChange} value={editedTicket.status ?? ''}>
+              <option value="" disabled selected>Select status</option>
+              <option value='review' >Review</option>
+              <option value='approved'>Approved</option>
+              <option value='rejected'>Rejeced</option>
+              <option value='live'>Live</option>
               <option value='ended'>Ended</option>
+              
             </select>) : 
             (
-            ticket.status === 'active' ? ( <li><span className="mt-2 badge text-bg-success">Active</span></li>) : 
-            ticket.status === 'pending' ? ( <li><span className="mt-2 badge text-bg-warning">Pending</span></li>) : 
-            ticket.status === 'ended' ? ( <li><span className="mt-2 badge text-bg-secondary">Ended</span></li>) : null
+            ticket.status === '' ? ( <li><span className="badge text-bg-secondary">none</span></li>) : 
+            ticket.status === 'review' ? ( <li><span className="badge text-bg-secondary">Review</span></li>) : 
+            ticket.status === 'approved' ? ( <li><span className="badge text-bg-warning">Approved</span></li>) : 
+            ticket.status === 'rejected' ? ( <li><span className="badge text-bg-danger">Rejected</span></li>) : 
+            ticket.status === 'live' ? ( <li><span className="badge text-bg-success">Live</span></li>) : 
+            ticket.status === 'ended' ? ( <li><span className="badge text-bg-secondary">Ended</span></li>) : null
             ) }
           </div>
 
           <TicketButtons ticket={ticket} isEditing={isEditing} handleCancel={handleCancel} handleEdit={handleEdit} handleSave={handleSave}/>
 
-        </ul>
+        </div>
       </div>
     </div>
   );

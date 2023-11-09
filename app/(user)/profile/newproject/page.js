@@ -6,7 +6,8 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 
 //////////////////////////////////
 // componetns
-import CreateTicketForm from "@/app/(admin)/tickets/CompTicket/CreateTicketForm.js";
+import NewProjectForm from '../CompProfile/NewProjectForm';
+
 
 
 ///////////////////////////////////
@@ -18,8 +19,8 @@ export default async function create() {
   const id =  session.session.user.id;
 
   return (
-    <section className="d-flex justify-content-center align-items-center">
-      <CreateTicketForm formTitle="Start a new project" user_id={id}/>
+    <section className=" h-75 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-5.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
+      <NewProjectForm user_id={id} />
     </section>
   )
 }

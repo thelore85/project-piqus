@@ -33,7 +33,7 @@ export default async function userDetails({ params }) {
           <h1 className="h5 mb-1 text-white lh-1">User Projects</h1>
           <small>{ tickets[0]?.user_email ?? 'No ticket for this user'}</small>
         </div>
-        <Link href="/tickets/create" ><div className="btn btn-light text-primary fw-bold ms-3">New Promo</div></Link>
+        <Link href="/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Promo</div></Link>
       </div>
 
       <div>

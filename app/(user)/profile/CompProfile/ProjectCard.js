@@ -52,8 +52,8 @@ export default function  TicketCard({ ticket }) {
         <ul className="w-100 pb-3 mb-0 small lh-sm border-bottom fw-light list-unstyled">
           <li>
             <p>
-              <span className="h5 fw-bold text-black text-decoration-underline">{ticket.title}</span>
-              <span className="small h6 text-black-50"> / Ticket ID: {ticket.id} </span>
+              <span className="h5 fw-bold text-black text-decoration-underline me-2">{ticket.title}</span>
+              <span className="small h6 text-black-50">{ticket.service ?? ''} / Id: {ticket.id} </span>
             </p>
           </li>
           <li > <span className="fw-bold"> {ticket.user_email} </span> </li>

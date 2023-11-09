@@ -31,6 +31,7 @@ export default async function userDetails({ params }) {
 
   return (
     <>
+    <div className=" min-vh-100 container py-5">
       <div className="row">
 
         <div className="col-12">
@@ -64,6 +65,8 @@ export default async function userDetails({ params }) {
             <ProjectList tickets={tickets} />
           </div>
         </div>
+
+      </div>
 
       </div>
     </>
