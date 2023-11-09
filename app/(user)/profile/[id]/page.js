@@ -27,6 +27,8 @@ export default async function userDetails({ params }) {
   //get user data
   const { data: { user } } = await supabase.auth.getUser()
   if(user === null){console.log('fetch error: ', error)}
+
+  console.log('prifel id page: ', user  )
     
 
   return (
@@ -39,7 +41,7 @@ export default async function userDetails({ params }) {
             <FontAwesomeIcon icon={faUser} className="h2 me-3"/>
             <div className="me-auto">
               <h1 className="h5 mb-1 text-white lh-1">My Projects</h1>
-              <small>{ 'Find your project list here' ?? 'Still  no projects! Click the button aside to start a new one!'}</small>
+              <small>{ 'Find your project list here' ?? 'Still no projects! Click the button aside to start a new one!'}</small>
             </div>
             <Link href="/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
           </div>
