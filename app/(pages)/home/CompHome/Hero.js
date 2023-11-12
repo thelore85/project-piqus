@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="mb-5">
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>Think Big. Think Web.</h1>
-        <p className=" h5 lh-lg fw-light  mb-5">Build your web presence. Gain customers and clients. Scale your business online.</p>
+        <p className=" h5 lh-lg fw-light  mb-5">Web Developing. E-commerce. Online Advertising.</p>
         <div>
           <StartNow size={"md"}/>
           <Whatsapp size={"md"}/>
