@@ -108,8 +108,8 @@ export default function  TicketCard({ ticket, user }) {
             {isEditing ? ( 
             <select name="status" id="status" onChange={handleChange} value={editedTicket.status ?? ''}>
               <option value="" disabled selected>Select status</option>
-              <option value='review' >Review</option>
-              <option value='approved'>Approved</option>
+              <option value='review' >Reviewing</option>
+              <option value='approved'>Developing</option>
               <option value='rejected'>Rejeced</option>
               <option value='live'>Live</option>
               <option value='ended'>Ended</option>
@@ -118,7 +118,7 @@ export default function  TicketCard({ ticket, user }) {
             (
             ticket.status === '' ? ( <li><span className="badge text-bg-secondary">none</span></li>) : 
             ticket.status === 'review' ? ( <li><span className="badge text-bg-secondary">Review</span></li>) : 
-            ticket.status === 'approved' ? ( <li><span className="badge text-bg-warning">Approved</span></li>) : 
+            ticket.status === 'approved' ? ( <li><span className="badge text-bg-warning">Developing</span></li>) : 
             ticket.status === 'rejected' ? ( <li><span className="badge text-bg-danger">Rejected</span></li>) : 
             ticket.status === 'live' ? ( <li><span className="badge text-bg-success">Live</span></li>) : 
             ticket.status === 'ended' ? ( <li><span className="badge text-bg-secondary">Ended</span></li>) : null
