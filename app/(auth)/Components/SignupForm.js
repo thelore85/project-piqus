@@ -18,13 +18,13 @@ export default function SignupForm({ title, handleSubmit }){
           <h1 className="h2 text-center p-3 fw-bold">{title}</h1>
 
           <div className="form-floating mb-3">
-            <input type="text" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setName(e.target.value)}} value={name}/>
-            <label htmlFor="floatingEmail">Your Brand or Personal name</label>
+            <input type="text" required className="form-control" id="userName" placeholder="Your Name here" onChange={(e)=>{ setName(e.target.value)}} value={name}/>
+            <label htmlFor="userName">Your Brand or Personal name</label>
           </div>
 
           <div className="form-floating mb-3">
-            <input type="number" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setPhone(e.target.value)}} value={phone}/>
-            <label htmlFor="floatingEmail">Phone Number</label>
+            <input type="number" required className="form-control" id="phoneNumber" placeholder="Phone number" onChange={(e)=>{ setPhone(e.target.value)}} value={phone}/>
+            <label htmlFor="phoneNumber">Phone Number</label>
           </div>
 
           <div className="form-floating mb-3">
