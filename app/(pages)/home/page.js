@@ -4,10 +4,10 @@ import Features from './CompHome/Features';
 import Tech from './CompHome/Tech';
 import About from './CompHome/About';
 import Ecommerce from './CompHome/Ecommerce';
-import Application from './CompHome/Application';
 import Marketing from './CompHome/Marketing';
 import CallToAction from './CompHome/CallToAction';
 import Partners from './CompHome/Partners';
+import Website from './CompHome/Website';
 
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function home() {
         <About />
         <Tech />
         <Ecommerce />
-        <Application />
+        <Website />
         <CallToAction />
         <Marketing />
         <Partners />

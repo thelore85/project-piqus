@@ -11,7 +11,7 @@ export default function Partners() {
   return (
     <section className=" bg-white d-flex justify-content-center align-items-center">
       <div className="container text-center py-5 ">
-        <h5 className="text-black-50 small text-decoration-underline mb-4">I have worked with</h5>
+        <h5 className="text-black-50 small text-decoration-underline mb-4">Collaborated with</h5>
         <Image alt="Banca Generali" width="80" src={bg} className="mx-4" style={{filter:"grayscale(100%)"}}/>
         <Image alt="Pubblicita Progresso" width="80" src={pp} className="mx-4 mx-md-5 " style={{filter:"grayscale(100%)"}} />
         <Image alt="Webank" width="80" src={webank} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
