@@ -21,7 +21,7 @@ export const dynamic = 'force-dynamic';
 export const metadata = {
   title: 'Think Big. Think Web',
   description: 'Build your web presence. Gain customers and clients. Scale your business online.',
-  icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
+  icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
 
 // layout

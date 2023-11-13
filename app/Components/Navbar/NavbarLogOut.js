@@ -11,6 +11,8 @@ import { useEffect} from 'react';
 import Navigation from './Navigation';
 import StartNow from '../CallToAction/StartNow';
 import Whatsapp from '@/app/Components/CallToAction/Whatsap'
+import Image from 'next/image';
+import logo from '@/public/img/logo/piqus-logo-white.png'
 
 
 
@@ -30,7 +32,8 @@ export default function NavbarLogOut() {
 
           <div>
             <Link className="navbar-brand fs-4 me-4 d-inline-block" href="/">
-              <FontAwesomeIcon icon={faLaptopCode} className="text-primary rounded me-3"/><span>PIQUS</span>
+            <Image src={logo} alt="Piqus" width="30" className="text-primary rounded me-3"/><span>PIQUS</span>
+              
             </Link>
           </div>
 
