@@ -7,6 +7,7 @@ import Ecommerce from './CompHome/Ecommerce';
 import Application from './CompHome/Application';
 import Marketing from './CompHome/Marketing';
 import CallToAction from './CompHome/CallToAction';
+import Partners from './CompHome/Partners';
 
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default function home() {
         <Application />
         <CallToAction />
         <Marketing />
+        <Partners />
       </>
   )
 }
