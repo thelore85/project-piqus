@@ -6,10 +6,10 @@ import Whatsapp from '@/app/Components/CallToAction/Whatsap'
 
 export default function Hero() {
   return (
-    <section id='hero' className="dark-bg min-vh-100 p-5 text-center d-flex justify-content-center align-items-center text-white" style={{ backgroundImage : 'url(/img/home/hero_bg.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
-    <div className="container">
+    <section id='hero' className="dark-bg min-vh-100 p-3 text-center d-flex justify-content-center align-items-center " style={{ backgroundImage : 'url(/img/home/hero_bg.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
+    <div className="container text-white">
 
-      <div className="mb-5">
+      <div className="">
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>Think Big. Think Web.</h1>
         <p className=" h5 lh-lg fw-light  mb-5">Web Developing. E-commerce. Online Advertising.</p>
         <div>

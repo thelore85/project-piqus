@@ -16,11 +16,11 @@ import Whatsapp from '@/app/Components/CallToAction/Whatsap'
 export default function Features() {
   return (
 
-  <section id="services" className="px-4 py-5 min d-flex justify-content-center align-items-center bg-black text-white" style={{minHeight : '75%'}}>
+  <section id="services" className="p-3 min d-flex justify-content-center align-items-center bg-black text-white" style={{minHeight : '75%'}}>
 
   <div className="container">
 
-    <div className="row row-cols-1 row-cols-lg-2 g-5 py-5">
+    <div className="row row-cols-1 row-cols-lg-2 g-5">
 
       <div className="col d-flex flex-column align-items-start gap-2">
         <h2 className="fw-bold h1">Grow your business, online.</h2>

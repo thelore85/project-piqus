@@ -1,5 +1,6 @@
 import Image from "next/image";
-import NextLogo from '@/public/img/home/next-logo.png'
+import nextLogo from '@/public/img/home/next-logo.png'
+import reactLogo from '@/public/img/home/react.png'
 
 export default function Website() {
   return (
@@ -7,16 +8,17 @@ export default function Website() {
       <div className="container text-white" style={{maxWidth:'1000px'}}>
 
         <h2 className=" text-decoration-underline small mb-4">Website</h2>
-        <h3 className="h1 fw-bolder mb-5 text-en"><span className="text-success">Websites</span> That Performs</h3>
+        <h3 className="h1 fw-bolder mb-5 text-en">Build a <span className="text-success">Website</span> That Performs</h3>
 
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-sm-2">
-            <Image alt="wordpress" src={NextLogo} width='100' className=" d-block m-auto"/>
+          <div className="col-sm-3">
+            <Image alt="Next.js" src={nextLogo} width='100' className=" mb-2 me-3"/>
+            <Image alt="React.js" src={reactLogo} width='100' className=" mb-2"/>
           </div>
 
-          <div className="col-sm-10">
+          <div className="col-sm-9">
             <div className=" rounded-4 border p-3">
-              <p className=" h6 fw-bold mb-0">Ensure that you stay up-to-date with the latest practices and technologies.</p>
+              <p className=" h5 fw-bold mb-2 mobile_hide">Ensure that you stay up-to-date with the latest technologies.</p>
               <p className="fw-lighter small mb-0">Next.js is the framework recommended by React team. It brings out the best in web performance, SEO, security and more</p>
             </div>
           </div>
