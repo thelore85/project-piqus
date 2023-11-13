@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
+import Image from 'next/image';
+import logo from '@/public/img/logo/piqus-logo-white.png'
 
 /////////////////////////////
 // components
@@ -42,8 +44,8 @@ export default function Footer() {
         <div className="col-md-2"></div>
 
         <div className="col-md-4 mb-3 text-center">
-          <h5 className="">Think Big. Think Web.</h5>
-          <p className="small fw-lighter">Start your web project now!</p>
+          <Image alt="Piqus" src={logo} width="60" className="mb-3"/>
+          <h5 className="mb-4">Think Big. Think Web.</h5>
           <StartNow size={"sm"}/>
           <Whatsapp size={"sm"}/>
         </div>

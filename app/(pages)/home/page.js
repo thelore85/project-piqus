@@ -12,7 +12,6 @@ import CallToAction from './CompHome/CallToAction';
 export const metadata = {
   title: 'Your Business, Online',
   description: 'Build your web presence. Gain customers and clients. Scale your business online.',
-  icons: { icon: "/img/favicon.ico", shortcut: "/img/favicon.ico", apple: "/img/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon.ico", }, },
 };
 
 export default function home() {
