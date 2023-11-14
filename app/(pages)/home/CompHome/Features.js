@@ -39,46 +39,47 @@ export default function Features() {
 
     
           <div className="col">
+            <Link href="#website" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Website</h4>
+              <p className="fw-lighter small">Transform your vision into a compelling online presence with our expert web development services. Sleek, responsive, and user-centric websites.</p>
+            </Link>
+          </div>
+
+
+          <div className="col">
+            <Link href="#marketing" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" />Advertising</h4>
+              <p className="fw-lighter small">Amplify your reach and impact through strategic online advertising. Targeted campaigns, compelling creatives, and measurable results for optimal digital visibility.</p>
+            </Link>
+          </div>
+
+          <div className="col">
             <Link href="#ecommerce" >
-              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Web Developing</h4>
-              <p className="fw-lighter">E-commerce, a simple website, or a personal blog? Develop your project and go live with a fully-featured web product.</p>
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> E-commerce</h4>
+              <p className="fw-lighter small">Launch a thriving online store with our e-commerce development. Seamless transactions, captivating design, and features tailored to boost sales and engagement.</p>
+            </Link>
+          </div>
+
+          <div className="col">
+            <Link href="#marketing" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" />SEO</h4>
+              <p className="fw-lighter small">Boost your online visibility with our SEO expertise. Tailored strategies to climb search rankings, increase organic traffic, and elevate your digital presence.</p>
+            </Link>
+          </div>
+
+          <div className="col">
+            <Link href="#webapp" >
+              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Web Application</h4>
+              <p className="fw-lighter small">Empower your business with custom web applications. From concept to implementation, we create dynamic solutions for optimal user experiences and streamlined processes.</p>
             </Link>
           </div>
 
           <div className="col">
             <Link href="#marketing">
               <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
-              <p className="fw-lighter">Keep track of your performance and use Analytics and CRM data to make business decisions.</p>
+              <p className="fw-lighter small">Leverage analytics for data-driven decisions and CRM for customer engagement. Our marketing technology solutions optimize performance, conversions, and customer relationships."</p>
             </Link>
           </div>
-    
-          <div className="col">
-            <Link href="#marketing" >
-              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Advertising</h4>
-              <p className="fw-lighter">Gain web traffic and attract customers by leveraging the online marketing tools available today!</p>
-            </Link>
-          </div>
-    
-          <div className="col">
-            <Link href="#marketing" >
-              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> Content Creation</h4>
-              <p className="fw-lighter">Enrich your blog with relevant content, improve your SEO ranking, and capture the interest of users.</p>
-            </Link>
-          </div>
-    
-          <div className="col">
-            <Link href="#ecommerce" >
-              <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCreditCard} className="me-2" /> Payment process</h4>
-              <p className="fw-lighter">Manage online payments through your e-commerce and keep track of your orders.</p>
-            </Link>
-          </div>
-
-          <div className="col">
-            <Link href="#ecommerce" >
-              <h4 className="fw-semibold mb-2"><FontAwesomeIcon icon={faFile} className="me-2"/>GDPR ready</h4>
-              <p className="fw-lighter">Make your platform legally compliant, manage cookies correctly, and adhere to the latest GDPR policies.</p>
-            </Link>
-          </div>  
 
         </div>
       </div>

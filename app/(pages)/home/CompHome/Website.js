@@ -18,7 +18,7 @@ export default function Website() {
 
           <div className="col-sm-9">
             <div className=" rounded-4 border p-3">
-              <p className=" h5 fw-bold mb-2 mobile_hide">Ensure that you stay up-to-date with the latest technologies.</p>
+              <p className=" h5 fw-bold mb-2 mobile_hide">Stay up-to-date with the latest technologies.</p>
               <p className="fw-lighter small mb-0">Next.js is the framework recommended by React team. It brings out the best in web performance, SEO, security and more</p>
             </div>
           </div>
