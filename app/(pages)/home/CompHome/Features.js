@@ -3,8 +3,6 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
-import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 import Link from 'next/link'
 
