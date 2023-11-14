@@ -4,7 +4,7 @@ import reactLogo from '@/public/img/home/react.png'
 
 export default function Website() {
   return (
-    <section id="application" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
+    <section id="website" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
       <div className="container text-white border-bottom" style={{maxWidth:'1000px'}}>
 
         <h2 className=" text-decoration-underline small mb-4">Website</h2>

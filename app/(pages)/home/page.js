@@ -22,7 +22,6 @@ export default function home() {
       <>
         <Hero />
         <Features />
-        <About />
         <Tech />
         <Ecommerce />
         <Website />
@@ -30,6 +29,7 @@ export default function home() {
         <CallToAction />
         <Marketing />
         <Partners />
+        <About />
       </>
   )
 }

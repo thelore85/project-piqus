@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-lighter">
+    <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-lighter ">
       <li className="nav-item">
         <Link className="nav-link active" aria-current="page" href="/#services">Services</Link>
       </li>

@@ -8,7 +8,7 @@ import { useEffect} from 'react';
 
 ///////////////////////////////////////
 //components
-import Navigation from './Navigation';
+import Dropdown from './Dropdown';
 import StartNow from '../CallToAction/StartNow';
 import Whatsapp from '@/app/Components/CallToAction/Whatsap'
 import Image from 'next/image';
@@ -44,7 +44,7 @@ export default function NavbarLogOut() {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
-            <Navigation />
+            <Dropdown />
             <StartNow size={"sm"}/>
             <Whatsapp size={"sm"}/>
           </div>
