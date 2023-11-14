@@ -8,6 +8,7 @@ import Marketing from './CompHome/Marketing';
 import CallToAction from './CompHome/CallToAction';
 import Partners from './CompHome/Partners';
 import Website from './CompHome/Website';
+import WebApp from './CompHome/WebApp';
 
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function home() {
         <Tech />
         <Ecommerce />
         <Website />
+        <WebApp />
         <CallToAction />
         <Marketing />
         <Partners />

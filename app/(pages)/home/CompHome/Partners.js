@@ -10,14 +10,14 @@ import medicilio from '@/public/img/partners/medicilio.png'
 export default function Partners() {
   return (
     <section className=" bg-white d-flex justify-content-center align-items-center">
-      <div className="container text-center py-5 ">
-        <h5 className="text-black-50 small text-decoration-underline mb-4">Collaborated with</h5>
-        <Image alt="Banca Generali" width="80" src={bg} className="mx-4" style={{filter:"grayscale(100%)"}}/>
-        <Image alt="Pubblicita Progresso" width="80" src={pp} className="mx-4 mx-md-5 " style={{filter:"grayscale(100%)"}} />
-        <Image alt="Webank" width="80" src={webank} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
-        <Image alt="Banco BPM" width="80" src={bpm} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
-        <Image alt="Saxo Bank" width="80" src={saxo} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
-        <Image alt="Saxo Bank" width="80" src={medicilio} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
+      <div className="container text-center py-5 opacity-50">
+        {/* <h5 className="text-black-50 small text-decoration-underline mb-4">Worked with</h5> */}
+        <Image alt="Banca Generali" width="70" src={bg} className="mx-4" style={{filter:"grayscale(100%)"}}/>
+        <Image alt="Pubblicita Progresso" width="70" src={pp} className="mx-4 mx-md-5 " style={{filter:"grayscale(100%)"}} />
+        <Image alt="Webank" width="70" src={webank} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
+        <Image alt="Banco BPM" width="70" src={bpm} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
+        <Image alt="Saxo Bank" width="70" src={saxo} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
+        <Image alt="Saxo Bank" width="70" src={medicilio} className="mx-3 mx-md-5" style={{filter:"grayscale(100%)"}} />
       </div>
     </section>
   )
