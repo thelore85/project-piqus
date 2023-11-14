@@ -75,7 +75,7 @@ export default function Features() {
           <div className="col">
             <Link href="#marketing">
               <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Marketing Technology</h4>
-              <p className="fw-lighter small">Leverage analytics for data-driven decisions and CRM for customer engagement. Our marketing technology solutions optimize performance, conversions, and customer relationships."</p>
+              <p className="fw-lighter small">Leverage analytics for data-driven decisions and CRM for customer engagement. Our marketing technology solutions optimize performance, conversions, and customer relationships.</p>
             </Link>
           </div>
 
