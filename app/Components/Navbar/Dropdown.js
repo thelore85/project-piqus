@@ -8,7 +8,7 @@ export default function Dropdown() {
         
         <li className="nav-item dropdown me-3">
           <Link className="text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Servizi
+            Services
           </Link>
 
           <ul className="dropdown-menu small fw-lighter">

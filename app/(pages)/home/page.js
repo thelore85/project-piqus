@@ -21,14 +21,14 @@ export default function home() {
   return (
       <>
         <Hero />
+        <Partners />
         <Features />
-        <Tech />
         <Ecommerce />
         <Website />
         <WebApp />
-        <CallToAction />
         <Marketing />
-        <Partners />
+        <Tech />
+        <CallToAction />
         <About />
       </>
   )

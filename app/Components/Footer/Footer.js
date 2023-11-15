@@ -38,6 +38,7 @@ export default function Footer() {
               <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
               <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>
               <li className="nav-item mb-2"><Link href="/dashboard" className="fw-lighter p-0">Dashboard</Link></li>
+              <li className="nav-item mb-2"><Link href="/blog" className="fw-lighter p-0">Blog</Link></li>
             </ul>
         </div>
 
