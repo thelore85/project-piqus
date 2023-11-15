@@ -14,8 +14,8 @@ export default function Title() {
           <h1 className="mb-4 fw-bolder">The Art of Project Organization</h1>
           
           <p className="h5 fw-light" style={{lineHeight:'2rem', letterSpacing:'1px'}}>
-          If you've pondered on the distinctions in the tech galaxy, this article is your cosmic guide!
-          Let's dive into the tech vibes and unravel the secrets that make them the backbone of innovation! 🚀✨
+          If you&apos;ve pondered on the distinctions in the tech galaxy, this article is your cosmic guide!
+          Let&apos;s dive into the tech vibes and unravel the secrets that make them the backbone of innovation! 🚀✨
           </p>
         </div>
 
