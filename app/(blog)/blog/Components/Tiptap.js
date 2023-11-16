@@ -6,8 +6,9 @@ import StarterKit from '@tiptap/starter-kit'
 import { Color } from '@tiptap/extension-color'
 import ListItem from '@tiptap/extension-list-item'
 import TextStyle from '@tiptap/extension-text-style'
-import './styles.scss'
 import { useState } from 'react'
+
+import styles from '@/app/(blog)/blog/css/tiptap.module.scss'
 
 
 // Tiptap component
@@ -43,7 +44,9 @@ export default function Tiptap({ onUpdate }) {
   ]
 
   return (
-    <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={handleUpdate}></EditorProvider>
+    <div className={styles.container}>
+      <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={handleUpdate}></EditorProvider>
+    </div>
   )
 }
 
@@ -58,7 +61,8 @@ const MenuBar = () => {
   }
 
   return (
-    <>
+    <div className={styles.tiptapMenu}>
+
       <button
         onClick={() => editor.chain().focus().toggleBold().run()}
         disabled={
@@ -219,7 +223,8 @@ const MenuBar = () => {
       >
         purple
       </button>
-    </>
+
+    </div>
   )
 }
 

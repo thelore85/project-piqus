@@ -32,8 +32,7 @@ export default function NavbarLogOut() {
 
           <div>
             <Link className="navbar-brand fs-4 me-4 d-inline-block" href="/">
-            <Image src={logo} alt="Piqus" width="30" className="text-primary rounded me-3"/><span>PIQUS</span>
-              
+              <Image src={logo} alt="Piqus" width="30" className="text-primary rounded me-3"/><span>PIQUS</span>
             </Link>
           </div>
 

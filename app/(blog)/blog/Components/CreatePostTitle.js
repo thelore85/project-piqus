@@ -1,5 +1,5 @@
 
-export default function Title() {
+export default function CreatePostTitle() {
   return (
     <section className="py-5 px-2 text-white d-flex justify-content-center align-items-center" style={{  background: '#020d1e' }}>
       <div className="container justify-content-between align-items-center d-md-flex">

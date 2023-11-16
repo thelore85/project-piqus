@@ -5,18 +5,15 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
-export default function Title() {
+export default function PostTitle({title, description}) {
   return (
     <section className="mb-5 text-white d-flex justify-content-center align-items-center" style={{  background:'#020d1e', borderBottom:'solid 1rem white', padding:'6rem 1rem' }}>
       <div className="container px-4">
 
         <div className="mb-5">
-          <h1 className="mb-4 fw-bolder">The Art of Project Organization</h1>
+          <h1 className="mb-4 fw-bolder">{title}</h1>
           
-          <p className="h5 fw-light" style={{lineHeight:'2rem', letterSpacing:'1px'}}>
-          If you&apos;ve pondered on the distinctions in the tech galaxy, this article is your cosmic guide!
-          Let&apos;s dive into the tech vibes and unravel the secrets that make them the backbone of innovation! 🚀✨
-          </p>
+          <p className="h5 fw-light" style={{lineHeight:'2rem', letterSpacing:'1px'}}>{description}</p>
         </div>
 
         <div className="h4">

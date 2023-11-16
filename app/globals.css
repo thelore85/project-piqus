@@ -13,8 +13,6 @@ body {
   overflow-x: hidden;
   color: rgb(49, 49, 49);
   background-color: whitesmoke;
-
-
 }
 
 body {
@@ -27,45 +25,10 @@ a {
 }
 
 
-/* ///////////////////
-  - personalization -
- ////////////////// */
-
-/* .dark-bg{
-  background: linear-gradient(rgb(0, 0, 0),rgb(10, 6, 35));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(/img/hero_bg.jpg);
-  background-position: center;
-  background-size: cover;
-} */
-
-
-
-/*  
-nav{
-  background-color: black;
-  color: white;
+/* Blog - Post creation/ tiptap element */
+.ProseMirror{
+  margin: 20px 0;
+  border-radius: 5px;
+  padding: 10px;
+  border: solid rgb(227, 227, 227) 1px;
 }
-
-.legal h1, h2{
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  font-weight: 800;
-}
-
-.legal h3{
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.legal h4{
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  font-weight: 600;
-}
-
-.legal p, .legal li{
-  font-size: 0.9rem;
-}
- */

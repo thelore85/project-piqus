@@ -1,6 +1,7 @@
 
-import Title from './Components/Title'
-import CreatePostForm from './Components/CreatePostForm'
+
+import CreatePostTitle from '../Components/CreatePostTitle'
+import CreatePostForm from '../Components/CreatePostForm'
 
 export default function createPostPage() {
 
@@ -18,7 +19,7 @@ export default function createPostPage() {
 
   return (
     <>
-      <Title />      
+      <CreatePostTitle />
       <CreatePostForm />
     </>
   )

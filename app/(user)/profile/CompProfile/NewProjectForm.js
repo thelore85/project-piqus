@@ -15,15 +15,6 @@ export default function NewProjectForm({ user_id }) {
   const [description, setDescription] = useState('')
 
 
-  // delivery date: date
-  // promo start: date
-  // promo end: date
-  // status: reviewing || approved || live || ended ||
-  // notes: '';
-  // 
-  
-
-
   // FORM SUBMISSION - call api/tickets
   const handleSubmit = async (e)  => {
     e.preventDefault()
