@@ -11,13 +11,15 @@ export default function Website() {
         <h3 className="h1 fw-bolder mb-5 text-en">Build a <span className="text-success">Website</span> That Performs</h3>
 
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-sm-3">
-            <Image alt="Next.js" src={nextLogo} width='100' className=" mb-2 me-3"/>
-            <Image alt="React.js" src={reactLogo} width='100' className=" mb-2"/>
+          <div className="col-md-3 ">
+            <div className="text-center mb-4 mb-md-0 ">
+              <Image alt="Next.js" src={nextLogo} width='100' className=""/>
+              <Image alt="React.js" src={reactLogo} width='100' className=""/>
+            </div>
           </div>
 
-          <div className="col-sm-9">
-            <div className=" rounded-4 border p-3">
+          <div className="col-md-9">
+            <div className=" rounded-2 border p-3">
               <p className=" h5 fw-bold mb-2 mobile_hide">Stay up-to-date with the latest technologies.</p>
               <p className="fw-lighter small mb-0">Next.js is the framework recommended by React team. It brings out the best in web performance, SEO, security and more</p>
             </div>
@@ -45,7 +47,7 @@ export default function Website() {
           <div className="col-md-4 mb-3">
             <div className="p-3 bg-white rounded-1 text-dark">
               <h5 className="h5 fw-bolder">SECURITY</h5>
-              <p className="fw-bolder small">A safe website is a good website.</p>
+              <p className="fw-bolder small">Server Secure</p>
               <p className="fw-light small m-0">Server-side rendering is less vulnerable and reduce the risk of Cross-Site Scripting (XSS) attacks.</p>
             </div>
           </div>

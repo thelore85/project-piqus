@@ -14,7 +14,7 @@ import Whatsapp from '@/app/Components/CallToAction/Whatsap'
 export default function Features() {
   return (
 
-  <section id="services" className="p-3 min d-flex justify-content-center align-items-center text-white" style={{minHeight : '75%',  backgroundColor: 'rgb(2, 13, 29)'}} >
+  <section id="services" className="px-3 py-5 min d-flex justify-content-center align-items-center text-white" style={{minHeight : '75%',  backgroundColor: 'rgb(2, 13, 29)'}} >
 
   <div className="container">
 
