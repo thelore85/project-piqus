@@ -9,12 +9,16 @@ import PostTitle from '../Components/PostTitle';
 
 export default function PostPage({params}) {
 
-  const[title, setTitle] = useState('')
-  const[contentIndex, setContentIndex] = useState('')
-  const[content, setContent] = useState('')
-  const[description, setDescription] = useState('')
-  const[author, setAuthor] = useState('')
-  const[category, setCategory] = useState([])
+  // const[title, setTitle] = useState('')
+  // const[contentIndex, setContentIndex] = useState('')
+  // const[content, setContent] = useState('')
+  // const[description, setDescription] = useState('')
+  // const[author, setAuthor] = useState('')
+  // const[category, setCategory] = useState([])
+  
+  const[post, setPost] = useState('')
+
+
   
 
   //Api all from piqus_post table supabase db
@@ -45,12 +49,14 @@ export default function PostPage({params}) {
 
   const setData = (post) => {
 
-    setTitle( post.title)
-    setContentIndex( post.content_index)
-    setContent( post.content)
-    setDescription( post.description)
-    setAuthor( post.author)
-    setCategory(post.category)
+    // setTitle( post.title)
+    // setContentIndex( post.content_index)
+    // setContent( post.content)
+    // setDescription( post.description)
+    // setAuthor( post.author)
+    // setCategory(post.category)
+
+    setCategory(post)
 
   }
 
@@ -61,9 +67,12 @@ export default function PostPage({params}) {
 
   return (
       <>
-      <PostTitle title={title} description={description} />
+      <PostTitle post={post}/>
+      <PostIndex post={post}/>
+      <PostContent post={post}/>
+      {/* <PostTitle title={title} description={description} />
       <PostIndex contentIndex={contentIndex} author={author} category={category}/>
-      <PostContent content={content}/>
+      <PostContent content={content}/> */}
       </>
   )
 }
