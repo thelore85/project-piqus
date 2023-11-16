@@ -7,7 +7,7 @@ import PostIndex from '../Components/PostIndex';
 import PostTitle from '../Components/PostTitle';
 
 
-export default function postPage({params}) {
+export default function PostPage({params}) {
 
   const[title, setTitle] = useState('')
   const[contentIndex, setContentIndex] = useState('')
