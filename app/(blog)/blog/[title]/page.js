@@ -35,18 +35,23 @@ export default function PostPage({params}) {
       const filteredArray = data.filter(( el )=>{ return el.id == id })
       const post = filteredArray[0]
 
-      setTitle( post.title)
-      setContentIndex( post.content_index)
-      setContent( post.content)
-      setDescription( post.description)
-      setAuthor( post.author)
-      setCategory(post.category)
-
+      setData(post);
       
 
     }else{
       console.log('api error: pagePost component')
     }
+  }
+
+  const setData = (post) => {
+
+    setTitle( post.title)
+    setContentIndex( post.content_index)
+    setContent( post.content)
+    setDescription( post.description)
+    setAuthor( post.author)
+    setCategory(post.category)
+
   }
 
   useEffect( ()=> {
