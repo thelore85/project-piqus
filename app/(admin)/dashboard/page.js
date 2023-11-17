@@ -38,12 +38,10 @@ export default async function dashboard( ) {
   const tickets = await getTickets()
   const users = await usersCounter()
 
-
   return (
       <>
-        
         <div className=" row g-3 text-white">
-        
+      
           <div className="col-lg-4">
 
             <Link href="/tickets" >
@@ -97,6 +95,7 @@ export default async function dashboard( ) {
             </Link>
 
           </div>
+          
         </div>
       </>
   )
