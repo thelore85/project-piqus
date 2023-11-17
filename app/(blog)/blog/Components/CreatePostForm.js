@@ -2,35 +2,43 @@
 
 import { useState } from "react";
 import Tiptap from "./Tiptap";
+import { useRouter } from "next/navigation";
 
 
 export default function CreatePostForm() { 
 
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [index, setIndex] = useState('')
   const [content, setContent] = useState('')
+  const [content_index, setIndexContent] = useState('')
   const [category, setCategory] = useState([])
+  const [author, setAuthor] = useState('Lorenzo')
+  const [loading, setLoading] = useState(false)
+
+  const router = useRouter()
+
+
 
   // FORM SUBMISSION - call api/tickets
   const handleSubmit = async (e)  => {
     e.preventDefault()
-    setIsLoading(true)
 
-    const newTicket = { title, description, index, content, category }
 
-    const res = await fetch('/api/tickets/create/', {
+    const newPost = { title, description, content, content_index, category, author }
+
+    
+    const response = await fetch('/api/blog/post', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(newTicket)
+      body: JSON.stringify(newPost)
     })
+    
+    const json = await response.json()
 
-    const json = await res.json()
-
-    if(json.error){console.log('Error - ticket form: ',json.error)}
+    if(json.error){console.log('API rerro create post form: ', json.error.message)}
     if(json.data){
       router.refresh()
-      router.push(`/profile/${user_id}`)
+      router.push(`/blog/${json.data.id}`)
     }
   }
 
@@ -40,7 +48,7 @@ export default function CreatePostForm() {
   }
 
   const handleIndexChange = (html) => {
-   setIndex(html)
+   setIndexContent(html)
   }
 
   const handleContentChange = (html) => {

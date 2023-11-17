@@ -8,17 +8,12 @@ import CreatePostTitle from '../Components/CreatePostTitle'
 import CreatePostForm from '../Components/CreatePostForm'
 
 
-
 export default async function createPostPage() {
 
   const supabase = createServerComponentClient({ cookies })
   const { data } = await supabase.auth.getSession()
 
-  
-
-
-
-  if(!data.session){ redirect(`/blog`) }  //protect the page from non logged-in users 
+  if(!data.session){ redirect(`/signup`) }  //protect the page from non logged-in users 
 
   return (
     <>
