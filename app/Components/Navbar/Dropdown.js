@@ -30,6 +30,9 @@ export default function Dropdown() {
         <li className="nav-item me-3">
           <Link className="text-light" aria-current="page" href="/#about">About</Link>
         </li>
+        <li className="nav-item me-3">
+          <Link className="text-light" aria-current="page" href="/blog">Blog</Link>
+        </li>
 
 
       </ul>

@@ -7,7 +7,6 @@ import { redirect } from 'next/navigation'
 import CreatePostTitle from '../Components/CreatePostTitle'
 import CreatePostForm from '../Components/CreatePostForm'
 
-
 export default async function createPostPage() {
 
   const supabase = createServerComponentClient({ cookies })

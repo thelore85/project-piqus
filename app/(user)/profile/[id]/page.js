@@ -28,9 +28,6 @@ export default async function userDetails({ params }) {
   const { data: { user } } = await supabase.auth.getUser()
   if(user === null){console.log('fetch error: ', error)}
 
-  console.log('prifel id page: ', user  )
-    
-
   return (
     <>
     <div className=" min-vh-100 container py-5">

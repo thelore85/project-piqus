@@ -13,19 +13,15 @@ export default function CreatePostForm() {
   const [content_index, setIndexContent] = useState('')
   const [category, setCategory] = useState([])
   const [author, setAuthor] = useState('Lorenzo')
-  const [loading, setLoading] = useState(false)
 
   const router = useRouter()
-
 
 
   // FORM SUBMISSION - call api/tickets
   const handleSubmit = async (e)  => {
     e.preventDefault()
 
-
     const newPost = { title, description, content, content_index, category, author }
-
     
     const response = await fetch('/api/blog/post', {
       method: "POST",
@@ -97,9 +93,15 @@ export default function CreatePostForm() {
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Best Practice" id="web" onChange={(e) => handleCategoryChange(e)}/>
-              <label className="form-check-label" htmlFor="web">
+              <input className="form-check-input" type="checkbox" value="Best Practice" id="practice" onChange={(e) => handleCategoryChange(e)}/>
+              <label className="form-check-label" htmlFor="practice">
                 Best Practice
+              </label>
+            </div>
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="Web Industry" id="web" onChange={(e) => handleCategoryChange(e)}/>
+              <label className="form-check-label" htmlFor="web">
+                Web Industry
               </label>
             </div>
             <div className="form-check">

@@ -10,6 +10,24 @@ import PostIndex from '../Components/PostIndex';
 import PostTitle from '../Components/PostTitle';
 
 
+
+///////////////////////////////////////
+//metadata 
+export async function generateMetadata({ params }) {
+
+  const supabase = createServerComponentClient({ cookies })
+  const { data: post } = await supabase.from('piqus_blog_post')
+    .select()
+    .eq('id', params.id)
+    .single()
+
+    return  { 
+      title: `${post.title ? (post.title) : ('Piqus Blog') }`,
+      description: `${post.description ? (post.description) : ('Spreding digital culture to the world')}`}
+}
+
+
+
 const getPost = async (id) => {
   const supabase = createServerComponentClient({ cookies })
   const { data: post } = await supabase.from('piqus_blog_post')
@@ -17,7 +35,6 @@ const getPost = async (id) => {
     .eq('id', id)
     .single()
  
-  console.log('debugging post id page: ', post)
 
   if (!post) { notFound() }
     return post
@@ -39,3 +56,7 @@ export default async function postPage({params}) {
       </>
   )
 }
+
+
+
+

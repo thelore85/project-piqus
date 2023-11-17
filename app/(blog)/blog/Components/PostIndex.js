@@ -7,7 +7,7 @@ export default function PostIndex({post}) {
 
         <div className="card p-4">
           <h2 className="h4 bolder text-primary ">Table of Contents</h2>
-            <ol dangerouslySetInnerHTML={{ __html: post.content_index }} />
+            <div className="p-3" dangerouslySetInnerHTML={{ __html: post.content_index }} />
           <p className="small text-secondary fst-italic opacity-50" style={{fontSize:'0.7rem'}}>Written by {post.author}</p>
         </div>
 

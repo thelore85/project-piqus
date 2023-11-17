@@ -5,6 +5,7 @@ import Avatar from './Avatar';
 import Navigation from './Navigation';
 import Image from 'next/image';
 import logo from '@/public/img/logo/piqus-logo-white.png'
+import Dropdown from './Dropdown';
 
 
 ///////////////////////////
@@ -29,7 +30,7 @@ export default function NavbarLogIn({session}) {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
-            <Navigation />
+            <Dropdown />
             <Avatar session={session}/>
           </div>
 
