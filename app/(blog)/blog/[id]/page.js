@@ -1,15 +1,15 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
 import { notFound } from "next/navigation"
+export const dynamic = 'force-dynamic'
+
+
+
 
 // Components
 import PostContent from "../Components/PostContent";
 import PostIndex from '../Components/PostIndex';
 import PostTitle from '../Components/PostTitle';
-
-
-
-
 
 
 
