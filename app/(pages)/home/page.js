@@ -12,9 +12,10 @@ import WebApp from './CompHome/WebApp';
 
 
 export const metadata = {
-  title: 'Your Business, Online',
+  title: 'E-Commerce. Website. Web App - PIQUS',
   description: 'Build your web presence. Gain customers and clients. Scale your business online.',
 };
+
 
 export default function home() {
 
