@@ -1,16 +1,19 @@
 
-import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs"
-import { NextResponse } from "next/server"
+  // TO DEBUG - GIVING ERROR: IMPOSSIBLE TO MAKE IT STATIC PAGE BUT IF REMOVING COOKIE IMPORT CANT DEPLOY...
 
-export async function GET(request){
+// import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs"
+// import { cookies } from "next/headers"
+// import { NextResponse } from "next/server"
 
-  console.log('API CALL: blog get')
+// export async function GET(request){
 
-  const supabase = createRouteHandlerClient({cookies})
+//   console.log('API CALL: blog get')
 
-  const { data, error } = await supabase
-    .from('piqus_blog_post')
-    .select()
+//   const supabase = createRouteHandlerClient({cookies})
 
-  return NextResponse.json(data ?? error) // send back data to the api call
-}
+//   const { data, error } = await supabase
+//     .from('piqus_blog_post')
+//     .select()
+
+//   return NextResponse.json(data ?? error) // send back data to the api call
+// }

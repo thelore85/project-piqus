@@ -10,11 +10,33 @@ export default function CreatePostForm() {
   const [description, setDescription] = useState('')
   const [index, setIndex] = useState('')
   const [content, setContent] = useState('')
-  const [tag, setTag] = useState([])
+  const [category, setCategory] = useState([])
+
+  // FORM SUBMISSION - call api/tickets
+  const handleSubmit = async (e)  => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    const newTicket = { title, description, index, content, category }
+
+    const res = await fetch('/api/tickets/create/', {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(newTicket)
+    })
+
+    const json = await res.json()
+
+    if(json.error){console.log('Error - ticket form: ',json.error)}
+    if(json.data){
+      router.refresh()
+      router.push(`/profile/${user_id}`)
+    }
+  }
 
 
-  const handleTagChange = (e) => {
-    if(e.target.checked){ setTag([...tag, e.target.value]) }
+  const handleCategoryChange = (e) => {
+    if(e.target.checked){ setCategory([...category, e.target.value]) }
   }
 
   const handleIndexChange = (html) => {
@@ -23,10 +45,6 @@ export default function CreatePostForm() {
 
   const handleContentChange = (html) => {
     setContent(html)
-  }
-
-  const handleSubmit = ()=>{
-    console.log("Submit button clicked");
   }
 
 
@@ -59,55 +77,55 @@ export default function CreatePostForm() {
             <h3 className="h5 fw-bold border-bottom w-100 d-block mb-3 pb-2">Metadata</h3>
 
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Javascript" id="js" onChange={(e) => handleTagChange(e)} />
+              <input className="form-check-input" type="checkbox" value="Javascript" id="js" onChange={(e) => handleCategoryChange(e)} />
               <label className="form-check-label" htmlFor="js">
                 Javascript
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Html-Css" id="html" onChange={(e) => handleTagChange(e)} />
+              <input className="form-check-input" type="checkbox" value="Html-Css" id="html" onChange={(e) => handleCategoryChange(e)} />
               <label className="form-check-label" htmlFor="html">
                 Html and Css
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Best Practice" id="web" onChange={(e) => handleTagChange(e)}/>
+              <input className="form-check-input" type="checkbox" value="Best Practice" id="web" onChange={(e) => handleCategoryChange(e)}/>
               <label className="form-check-label" htmlFor="web">
                 Best Practice
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="React" id="react" onChange={(e) => handleTagChange(e)}/>
+              <input className="form-check-input" type="checkbox" value="React" id="react" onChange={(e) => handleCategoryChange(e)}/>
               <label className="form-check-label" htmlFor="react">
                 React
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Python" id="python" onChange={(e) => handleTagChange(e)}/>
+              <input className="form-check-input" type="checkbox" value="Python" id="python" onChange={(e) => handleCategoryChange(e)}/>
               <label className="form-check-label" htmlFor="python">
                 Python
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="e-Commerce" id="ecommerce" onChange={(e) => handleTagChange(e)} />
+              <input className="form-check-input" type="checkbox" value="e-Commerce" id="ecommerce" onChange={(e) => handleCategoryChange(e)} />
               <label className="form-check-label" htmlFor="ecommerce">
                 E-commerce
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Web App" id="webapp" onChange={(e) => handleTagChange(e)} />
+              <input className="form-check-input" type="checkbox" value="Web App" id="webapp" onChange={(e) => handleCategoryChange(e)} />
               <label className="form-check-label" htmlFor="webapp">
                 Web App
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Website" id="website" onChange={(e) => handleTagChange(e)}/>
+              <input className="form-check-input" type="checkbox" value="Website" id="website" onChange={(e) => handleCategoryChange(e)}/>
               <label className="form-check-label" htmlFor="website">
                 Website
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" value="Marketing" id="marketing" onChange={(e) => handleTagChange(e)} />
+              <input className="form-check-input" type="checkbox" value="Marketing" id="marketing" onChange={(e) => handleCategoryChange(e)} />
               <label className="form-check-label" htmlFor="marketing">
                 Marketing and Adv
               </label>
