@@ -10,16 +10,18 @@ export default function Analytics() {
   const searchParams = useSearchParams()
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
+  console.log('debug:', gtmId)
+
 
   useEffect(() => {
-    if (pathname) {
-      pageview(pathname)
-    }
+    if (pathname) { pageview(pathname)}
   }, [pathname, searchParams])
 
   if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
-    return null
-  }
+    return console.log('dev environment') 
+   }else{
+    return console.log('prod environment')
+   }
 
   return (
     <>
