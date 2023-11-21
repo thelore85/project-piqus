@@ -20,7 +20,7 @@ export default function Analytics() {
   if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
     return console.log('dev environment') 
    }else{
-    return console.log('prod environment')
+    // return console.log('prod environment')
    }
 
   return (
