@@ -2,9 +2,10 @@
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import Link from 'next/link';
 import React, {useState} from 'react'
 
-export default function NewPassworPage() {
+export default function NewPasswordPage() {
 
   const [password, setPassword ] = useState('');
   const [viewPassword, setViewPassword] = useState(false)
@@ -17,7 +18,7 @@ export default function NewPassworPage() {
     const { data, error } = await supabase.auth.updateUser({password: password})
     
     if( data ){setResponse(true)}
-    if( error ){setResponse(false); console.log('new pass error: ', error)}
+    if( error ){setResponse(false);}
   }
 
 
@@ -43,8 +44,11 @@ export default function NewPassworPage() {
 
     { response === '' ? null : 
       ( response ?   
-        (<div className="p-3 mt-4 rounded bg-success-subtle text-success">
-          <p className="mb-0 small">Check your email and follow the link</p>
+        (<div>
+          <div className="p-3 my-4 rounded bg-success-subtle text-success">
+            <span className="mb-0 me-4 small">Your new password has been set correctly</span>
+            <Link href="/login" ><button className="btn btn-primary text-white">Go to Login</button></Link>
+          </div>
         </div>) :
 
         (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
@@ -52,12 +56,9 @@ export default function NewPassworPage() {
         </div>)
       )}
 
-
-
     </div>
   </section>
     
-
 
   )
 }
