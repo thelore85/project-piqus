@@ -1,5 +1,6 @@
 'use client'
 import React, {useState} from 'react'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 // components
 import Link from 'next/link'
@@ -11,16 +12,17 @@ export default function PageResetPassword() {
   const [email, setEmail ] = useState('');
 
 
-  // const handleSubmit = async ( e, email ) => {
-  //   e.preventDefault()
+  const handleSubmit = async ( e, email ) => {
+    e.preventDefault()
 
-  //   // sent reset email to user
-  //   const supabase = createClientComponentClient()
-  //   const { data, error } = await supabase.auth
-  //     .resetPasswordForEmail(email)
+    // send reset email to user
+    const supabase = createClientComponentClient()
+    const { data, error } = await supabase.auth
+      .resetPasswordForEmail(email)
 
-  //   console.log('reset psw: ', error, data)
-  // }
+    if(data){ console.log('reset psw data: ', data)}
+    if(error){ console.log('reset psw error: ', data)}
+  }
 
 
 
