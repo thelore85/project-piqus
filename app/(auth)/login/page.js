@@ -32,24 +32,6 @@ export default function Login() {
     }
   }
 
-  // check if user is resetting psw
-  useEffect( () => {
-
-    const supabase = createClientComponentClient()
-
-    supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event == "PASSWORD_RECOVERY") {
-        const newPassword = prompt("What would you like your new password to be?");
-        const { data, error } = await supabase.auth
-          .updateUser({ password: newPassword })
- 
-        if (data) alert("Password updated successfully!")
-        if (error) alert("There was an error updating your password.")
-      }
-    })
-  }, [])
-
-
   return (
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
@@ -61,7 +43,6 @@ export default function Login() {
         <p className="mb-0 small">Don&apos;t have an account? <Link href="/signup" className="text-primary">Sign up Here</Link></p>
         <p className="mb-0 small">Forgot your passworld? <Link href="/reset-password" className="text-primary">Reset your password</Link></p>
       </div>
-      
 
       </div>
     </section>

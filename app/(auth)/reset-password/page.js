@@ -10,6 +10,7 @@ import Link from 'next/link'
 export default function PageResetPassword() {
 
   const [email, setEmail ] = useState('');
+  const [ request, setRequest] = useState('')
 
 
   const handleSubmit = async ( e, email ) => {
@@ -20,11 +21,9 @@ export default function PageResetPassword() {
     const { data, error } = await supabase.auth
       .resetPasswordForEmail(email)
 
-    if(data){ console.log('reset psw data: ', data)}
-    if(error){ console.log('reset psw error: ', data)}
+    if(data){setRequest(true)}
+    if(error){ console.log('reset psw error: ', data); setRequest(false)}
   }
-
-
 
   return (
     
@@ -39,6 +38,21 @@ export default function PageResetPassword() {
         </div>
         <button className="btn btn-primary w-100 py-2" >Get New Password</button>
       </form>
+
+      { request === '' ? null : ( 
+
+        request ?   
+        (<div className="p-3 mt-4 rounded bg-success-subtle text-success">
+          <p className="mb-0 small">Check your email and follow the link</p>
+        </div>) :
+
+        (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
+          <p className="mb-0 small">Impossible to send the request. Check your email and retry</p>
+        </div>)
+      )
+      }
+
+
 
       <div className="p-3 mt-4 rounded bg-white text-secondary">
         <p className="mb-0 small">Go back to <Link href="/login" className="text-primary">Login</Link></p>
