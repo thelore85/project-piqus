@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 
 
-export default function pageResetPassword() {
+export default function PageResetPassword() {
 
   const [email, setEmail ] = useState('');
 
