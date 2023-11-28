@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 // components
@@ -9,12 +8,10 @@ import Link from 'next/link'
 
 
 
-export default function pageResetPassworld() {
+export default function pageResetPassword() {
 
-  const router = useRouter()
 
   const handleSubmit = async ( e, email ) => {
-
     e.preventDefault()
 
     // sent reset email to user
@@ -23,9 +20,7 @@ export default function pageResetPassworld() {
       .resetPasswordForEmail(email)
 
     console.log('reset psw: ', error, data)
-
   }
-
 
 
 
@@ -43,7 +38,6 @@ export default function pageResetPassworld() {
 
       </div>
     </section>
-
 
   )
 }

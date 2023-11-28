@@ -8,10 +8,6 @@ import { useEffect } from "react"
 export default function Analytics() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-
-  console.log('debug:', gtmId)
-
 
   useEffect(() => {
     if (pathname) { pageview(pathname)}
@@ -19,8 +15,6 @@ export default function Analytics() {
 
   if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
     return console.log('dev environment') 
-   }else{
-    // return console.log('prod environment')
    }
 
   return (
