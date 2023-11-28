@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, {useState} from 'react'
 
 // components
 import Link from 'next/link'
@@ -7,6 +7,8 @@ import Link from 'next/link'
 
 
 export default function pageResetPassword() {
+
+  const [email, setEmail ] = useState('');
 
 
   // const handleSubmit = async ( e, email ) => {

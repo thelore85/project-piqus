@@ -14,7 +14,7 @@ export default function Analytics() {
   }, [pathname, searchParams])
 
   if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
-    return console.log('dev environment') 
+    return null
    }
 
   return (
