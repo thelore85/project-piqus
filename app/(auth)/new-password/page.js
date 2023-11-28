@@ -14,10 +14,10 @@ export default function NewPassworPage() {
     e.preventDefault()
 
     const supabase = createClientComponentClient()
-    const { data, error } = await supabase.auth.updateUser({password: 'new password'})
+    const { data, error } = await supabase.auth.updateUser({password: password})
     
     if( data ){setResponse(true)}
-    if( error ){setResponse(false)}
+    if( error ){setResponse(false); console.log('new pass error: ', error)}
   }
 
 
