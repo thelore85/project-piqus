@@ -30,8 +30,8 @@ export default function PageResetPassword() {
     
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
-        {/* onSubmit={(e) => handleSubmit(e, email) } */}
-      <form className="bg-white p-3 rounded" >  
+
+      <form className="bg-white p-3 rounded" onSubmit={(e) => handleSubmit(e, email)} >  
         <h1 className="h2 text-center p-3 fw-bold">Reset Password</h1>
         <div className="form-floating mb-3">
           <input type="email" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setEmail(e.target.value)}} value={email}/>
