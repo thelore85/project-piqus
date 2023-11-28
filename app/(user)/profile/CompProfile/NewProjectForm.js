@@ -47,7 +47,7 @@ export default function NewProjectForm({ user_id }) {
         {/* PROJECT LIST */}
         <div className="form-floating mb-5">
           <select  className="form-select" aria-label="Default select example" required onChange={(e) => setService(e.target.value)} value={service ?? ''} >
-            <option value="" disabled selected>Please select a service</option>
+            <option value="" disabled >Please select a service</option>
 
             <optgroup label="WEB DEVELOPING" className="mb-2" >
               <option value="e_commerce">E-commerce</option>

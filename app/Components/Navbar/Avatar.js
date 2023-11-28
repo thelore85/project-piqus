@@ -25,7 +25,8 @@ export default function Avatar({ session }) {
       </div>
       <ul className="dropdown-menu text-small">
         <li><Link className="dropdown-item border-bottom text-primary" href={ `/profile/${session?.user.id}`} >My Profile</Link></li>
-        <li><Link className="dropdown-item" href="/profile/newproject">Nuovo Progetto</Link></li>
+        <li><Link className="dropdown-item" href="/profile/newproject">New Project</Link></li>
+        <li><Link className="dropdown-item" href="/reset-password">Reset Password</Link></li>
         <li><Link href="#" className=" pointer-event dropdown-item text-black mt-3 py-2 border-top"><LogoutButton /></Link></li>
       </ul>
     </div>

@@ -35,10 +35,7 @@ export default function SignUp() {
     return url
   }
 
-
-  const handleSubmit = async ( e, name, phone, email, password) => {
-    e.preventDefault()
-
+  const newUserRegistration = async(name, phone, email, password) => {
     const supabase = createClientComponentClient() //call the database API
     const {error, data } = await supabase.auth
     .signUp({
@@ -53,8 +50,38 @@ export default function SignUp() {
       }
     })
 
-    if(error){ setFormError(error.message); console.log(error.message)}
-    if(!error){ router.push('/verify') }
+    if(error){ 
+      setFormError(error.message); 
+      console.log(error.message)
+    }
+    if(!error){ 
+      sendNewUserEmailAlert(name,phone,email); 
+      router.push('/verify') 
+    }
+
+  }
+
+  const sendNewUserEmailAlert = async (name, email, phone) => {
+    const info = { name, email, phone}
+    const url = '/api/auth/email-alert'
+    const options = {
+      method: "POST",
+      body: JSON.stringify(info),
+      headers: { "Content-Type": "application/json" }
+    }
+
+    const response = await fetch(url, options)
+    if(response.ok){
+      const data = await response.json()
+      console.log('notification email sent: ', data)
+    }else{
+      console.log('error: notification email', response.status, response.statusText )
+    }
+  }
+
+  const handleSubmit = ( e, name, phone, email, password) => {
+    e.preventDefault()
+    newUserRegistration(name, phone, email, password);
   }
 
   //////////////////////////////////////
@@ -72,6 +99,9 @@ export default function SignUp() {
 
       <div className="">
         <p className="mb-3 text-white fw-lighter" style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
+      </div>
+      <div>
+        <button className="btn btn-primary" onClick={sendNewUserEmailAlert}> run api</button>
       </div>
 
       </div>

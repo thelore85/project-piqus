@@ -15,8 +15,11 @@ export default function Login() {
   const [errorLogin, setErrorLogin] = useState('')
   const router = useRouter()
 
-  const handleSubmit = async ( e, email, password ) => {
-    e.preventDefault()
+  const sendEmailToPiqus = () => {
+    console.log('new user registered: email sent')
+  }
+
+  const userLogin = async( email, password) => {
     setErrorLogin('')
 
     const supabase = createClientComponentClient()
@@ -27,9 +30,15 @@ export default function Login() {
 
     if(error){ setErrorLogin(error.message) }
     if(!error){ 
+      sendEmailToPiqus();
       router.refresh();
       router.push(`/profile/${data.user.id}`) 
     }
+  }
+
+  const handleSubmit = ( e, email, password ) => {
+    e.preventDefault()
+    userLogin( email, password)
   }
 
   return (
