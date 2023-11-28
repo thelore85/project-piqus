@@ -5,9 +5,9 @@ export const pageview = (url) => {
       page: url,
     });
   } else {
-    console.log({
-      event: "pageview",
-      page: url,
-    });
+    // console.log({
+    //   event: "pageview",
+    //   page: url,
+    // });
   }
 };

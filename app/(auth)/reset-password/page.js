@@ -11,16 +11,16 @@ import Link from 'next/link'
 export default function pageResetPassword() {
 
 
-  const handleSubmit = async ( e, email ) => {
-    e.preventDefault()
+  // const handleSubmit = async ( e, email ) => {
+  //   e.preventDefault()
 
-    // sent reset email to user
-    const supabase = createClientComponentClient()
-    const { data, error } = await supabase.auth
-      .resetPasswordForEmail(email)
+  //   // sent reset email to user
+  //   const supabase = createClientComponentClient()
+  //   const { data, error } = await supabase.auth
+  //     .resetPasswordForEmail(email)
 
-    console.log('reset psw: ', error, data)
-  }
+  //   console.log('reset psw: ', error, data)
+  // }
 
 
 
@@ -29,7 +29,7 @@ export default function pageResetPassword() {
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
 
-      <ResetPassworldForm title= {'Reset Password'} handleSubmit= {handleSubmit} />
+      <ResetPassworldForm title= {'Reset Password'}  />
       {/* { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>} */}
 
       <div className="p-3 mt-4 rounded bg-white text-secondary">
