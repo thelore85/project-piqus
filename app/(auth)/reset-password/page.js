@@ -18,8 +18,11 @@ export default function PageResetPassword() {
 
     // send reset email to user
     const supabase = createClientComponentClient()
-    const { data, error } = await supabase.auth
-      .resetPasswordForEmail(email)
+
+    const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: 'https://piqus.it/new-password',
+    })
+
 
     if(data){setRequest(true)}
     if(error){ console.log('reset psw error: ', data); setRequest(false)}
@@ -39,9 +42,8 @@ export default function PageResetPassword() {
         <button className="btn btn-primary w-100 py-2" >Get New Password</button>
       </form>
 
-      { request === '' ? null : ( 
-
-        request ?   
+      { request === '' ? null : 
+      ( request ?   
         (<div className="p-3 mt-4 rounded bg-success-subtle text-success">
           <p className="mb-0 small">Check your email and follow the link</p>
         </div>) :
@@ -49,8 +51,7 @@ export default function PageResetPassword() {
         (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
           <p className="mb-0 small">Impossible to send the request. Check your email and retry</p>
         </div>)
-      )
-      }
+      )}
 
 
 

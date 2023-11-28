@@ -1,17 +1,23 @@
 'use client'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import React, {useState} from 'react'
 
 export default function NewPassworPage() {
 
   const [password, setPassword ] = useState('');
   const [viewPassword, setViewPassword] = useState(false)
+  const [response, setResponse] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+
+    const supabase = createClientComponentClient()
+    const { data, error } = await supabase.auth.updateUser({password: 'new password'})
     
-    console.log('send new psw: ', password)
+    if( data ){setResponse(true)}
+    if( error ){setResponse(false)}
   }
 
 
@@ -34,6 +40,18 @@ export default function NewPassworPage() {
       </div>
       <button className="btn btn-primary w-100 py-2" >Confirm New Password</button>
     </form>
+
+    { response === '' ? null : 
+      ( response ?   
+        (<div className="p-3 mt-4 rounded bg-success-subtle text-success">
+          <p className="mb-0 small">Check your email and follow the link</p>
+        </div>) :
+
+        (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
+          <p className="mb-0 small">Impossible to change. Try another password</p>
+        </div>)
+      )}
+
 
 
     </div>
