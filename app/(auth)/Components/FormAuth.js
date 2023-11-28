@@ -4,7 +4,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
-export default function Register({ title, handleSubmit }){
+export default function FormAuth({ title, handleSubmit }){
     
   const [email, setEmail ] = useState('');
   const [password, setPassword ] = useState('');
