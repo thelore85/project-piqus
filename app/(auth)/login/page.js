@@ -33,7 +33,7 @@ export default function Login() {
   }
 
   // check if user is resetting psw
-  useEffect( async() => {
+  useEffect( () => {
 
     const supabase = createClientComponentClient()
 
