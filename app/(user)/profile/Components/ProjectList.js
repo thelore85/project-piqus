@@ -1,4 +1,4 @@
-import ProjectCard from '@/app/(user)/profile/CompProfile/ProjectCard';
+import ProjectCard from '@/app/(user)/profile/Components/ProjectCard';
 
 // component function
 export default function TktList({ tickets, onUpdate }) {

@@ -1,5 +1,5 @@
-import EditButton from "@/app/(admin)/tickets/CompTicket/EditButton";
-import DeleteButton from "@/app/(admin)/tickets/CompTicket/DeleteButton";
+import EditButton from "@/app/(admin)/tickets/Components/EditButton";
+import DeleteButton from "@/app/(admin)/tickets/Components/DeleteButton";
 
 export default function TicketButtons({ isEditing, handleCancel, handleEdit, handleSave, ticket}) {
 

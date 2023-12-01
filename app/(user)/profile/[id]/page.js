@@ -8,7 +8,7 @@ import Link from "next/link"
 
 /////////////////////////////////////////////
 //components
-import ProjectList from "@/app/(user)/profile/CompProfile/ProjectList"
+import ProjectList from "@/app/(user)/profile/Components/ProjectList"
 
 
 

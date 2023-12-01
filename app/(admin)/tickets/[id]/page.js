@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import { cookies } from 'next/headers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTicket } from '@fortawesome/free-solid-svg-icons'
-import TicketCard from "@/app/(admin)/tickets/CompTicket/TicketCard"
+import TicketCard from "@/app/(admin)/tickets/Components/TicketCard"
 
 
 ///////////////////////////////////////

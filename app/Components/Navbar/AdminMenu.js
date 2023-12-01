@@ -9,7 +9,7 @@ export default function DashboardMenu() {
             <Link className="nav-Link p-2 small fw-lighter" href="/dashboard/">Dashboard</Link>
             <Link className="nav-Link p-2 small fw-lighter" href="/users">Users</Link>
             <Link className="nav-Link p-2 small fw-lighter" href="/tickets">Projects</Link>
-            <Link className="nav-Link p-2 small fw-lighter" href="/tickets/create">New Project</Link>
+            <Link className="nav-Link p-2 small fw-lighter" href="/profile/newproject">New Project</Link>
           </nav>
 
         </div>

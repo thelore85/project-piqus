@@ -6,7 +6,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 
 //////////////////////////////////
 // componetns
-import NewProjectForm from '../CompProfile/NewProjectForm';
+import NewProjectForm from '../Components/NewProjectForm';
 
 
 

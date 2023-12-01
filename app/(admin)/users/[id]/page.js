@@ -6,7 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
 
 //components
-import TicketList from "@/app/(admin)/tickets/CompTicket/TicketList"
+import TicketList from "@/app/(admin)/tickets/Components/TicketList"
 
 
 // PAGE FUNCTION

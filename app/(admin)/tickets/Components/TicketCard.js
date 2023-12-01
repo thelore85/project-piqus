@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 export const dynamic = 'force-dynamic' // force db refrech
 
 // componets
-import TicketButtons from '@/app/(admin)/tickets/CompTicket/TicketButtons.js'
+import TicketButtons from '@/app/(admin)/tickets/Components/TicketButtons.js'
 
 
 // function component

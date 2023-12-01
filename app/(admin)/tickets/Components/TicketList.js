@@ -1,4 +1,4 @@
-import TicketCard from '@/app/(admin)/tickets/CompTicket/TicketCard.js';
+import TicketCard from '@/app/(admin)/tickets/Components/TicketCard.js';
 
 // component function
 export default function TktList({ tickets, onUpdate }) {

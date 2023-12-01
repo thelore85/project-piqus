@@ -6,7 +6,7 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 
 /////////////////////////////
 // components
-import TicketList from '@/app/(admin)/tickets/CompTicket/TicketList'
+import TicketList from '@/app/(admin)/tickets/Components/TicketList'
 
 
 //////////////////////////////////
