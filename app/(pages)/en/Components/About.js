@@ -74,9 +74,11 @@ export default function About() {
                           <li className="small"><strong>Performance and Optimization</strong> for online advertising - Linkedin 2021</li>
                         </ul>
 
-                        <h6 className="ms-3">Certifications</h6>
+                        <h6 className="ms-3">Languages</h6>
                         <ul className="certification small">
                           <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
+                          <li className="small"><strong>Spanish</strong> fluent in writing and speaking</li>
+                          <li className="small"><strong>Italian</strong> native speaker</li>
                         </ul>
 
                         <div className="border-top p-3 mt-4">
