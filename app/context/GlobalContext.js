@@ -8,24 +8,29 @@ export const GlobalContext = (props) => {
 
   // Store
   const [ store, setStore ] = useState({
-    session : {}
+    session : {},
+    sessionData: {
+      name: 'lorenzo',
+      surname: 'garofalo'
+    }
   })
 
   // Actions 
   const [actions, setActions] = useState({
 
     getSession: async () => {
-
-      console.log('getSession function called')
       const supabase = createClientComponentClient()    
       const { data } = await supabase.auth.getSession()
-
       if(data){
         setStore( prevStore => ({ ...prevStore, session: data.session }))
-        console.log(data)
       }
-      
     },
+
+    addDataSession: (data) => {
+      setStore( prevStore => ({...prevStore, sessionData: data }))
+      localStorage.setItem('sessionData', JSON.stringify(data))
+    }
+
   });
 
   // UseEffect

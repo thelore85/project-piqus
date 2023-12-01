@@ -11,8 +11,7 @@ import Website from './Components/Website';
 import WebApp from './Components/WebApp';
 
 
-export default function HomePage() {
-
+export default function HomePage(){
   return (
       <>
         <Hero />
