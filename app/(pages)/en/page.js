@@ -18,10 +18,10 @@ export default function HomePage() {
         <Hero />
         <Partners />
         <Features />
+        <Marketing />
         <Ecommerce />
         <Website />
         <WebApp />
-        <Marketing />
         <Tech />
         <CallToAction />
         <About />
