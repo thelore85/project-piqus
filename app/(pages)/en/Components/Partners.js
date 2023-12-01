@@ -6,7 +6,7 @@ import webank from '@/public/img/partners/webank.png';
 import bpm from '@/public/img/partners/bpm.png';
 import saxo from '@/public/img/partners/saxo.png';
 import medicilio from '@/public/img/partners/medicilio.png';
-import styles from '@/app/(pages)/home/css/partner.module.scss';
+import styles from '@/app/(pages)/en/css/partner.module.scss';
 
 
 

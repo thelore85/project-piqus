@@ -3,6 +3,7 @@ import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
+export const dynamic = 'force-dynamic'; // force realtime update
 
 /////////////////////////////
 // components

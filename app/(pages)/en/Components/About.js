@@ -47,14 +47,12 @@ export default function About() {
                     <div id="courses" className="accordion-collapse collapse" >
                       <div className="accordion-body">
                         
-
-
                         <h6 className="ms-3">Academy</h6>
-                          <ul className="small">
-                            <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
-                            <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
-                            <li className="small">Bachelor in <strong>Design</strong> - Politecnico di Milano - 2009</li>
-                          </ul>
+                        <ul className="small">
+                          <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
+                          <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
+                          <li className="small">Bachelor in <strong>Design</strong> - Politecnico di Milano - 2009</li>
+                        </ul>
 
                         <h6 className="ms-3">Web developing upgrade</h6>
                         <ul className="small">
@@ -73,7 +71,7 @@ export default function About() {
                           <li className="small"><strong>Hubspot</strong> marketing module - Hubspot Academy - 2021</li>
                           <li className="small"><strong>Google ADS</strong> advance - Linkedin Learn - 2021</li>
                           <li className="small"><strong>META - facebook Business Manager</strong> advance - Linkedin Learn - 2023</li>
-                          <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
+                          <li className="small"><strong>Performance and Optimization</strong> for online advertising - Linkedin 2021</li>
                         </ul>
 
                         <h6 className="ms-3">Certifications</h6>

@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+export const dynamic = 'force-dynamic'; // force realtime update
 
 // components
 import UsersList from '@/app/(admin)/users/CompUsers/UserList'

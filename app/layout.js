@@ -1,3 +1,7 @@
+
+// Context
+import { GlobalContext } from './context/GlobalContext'
+
 // GTM
 import Analytics from './Components/analytics/gtmComponent'
 import { Suspense } from 'react'
@@ -33,10 +37,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* GTM configuration */}
         <Suspense>
           <Analytics />
         </Suspense>
-        {children}
+
+        {/* Global Context injectinx */}
+        <GlobalContext >
+          {children}
+        </GlobalContext>
+
       </body>
     </html>
   )

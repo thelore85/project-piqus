@@ -9,7 +9,7 @@ export default function CallToAction() {
 
         <div className="row text-center text-md-start align-items-center py-4">
           <div className="col-md-8 ">
-            <h3>Looking for a Developer?</h3>
+            <h3>Looking for a Web Specialist?</h3>
             <p className="fw-lighter small ">Send a message or open an account to start a project</p>
           </div>
 
