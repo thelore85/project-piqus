@@ -100,9 +100,6 @@ export default function SignUp() {
       <div className="">
         <p className="mb-3 text-white fw-lighter" style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
       </div>
-      <div>
-        <button className="btn btn-primary" onClick={sendNewUserEmailAlert}> run api</button>
-      </div>
 
       </div>
     </section>
