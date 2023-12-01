@@ -50,24 +50,34 @@ export default function About() {
 
 
                         <h6 className="ms-3">Academy</h6>
-                          <ul>
+                          <ul className="small">
                             <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy -  2024</li>
                             <li className="small">Master in <strong>Marketign and Communication</strong> Management - Sole 24 Business School -  2018</li>
                             <li className="small">Bachelor in <strong>Design</strong> - Politecnico di Milano - 2009</li>
                           </ul>
 
-                        <h6 className="ms-3">Courses</h6>
+                        <h6 className="ms-3">Web developing upgrade</h6>
                         <ul className="small">
-                          <li className="small"><strong>Web Developer</strong> Complete course - ZTM academy -  2023</li>
+                          <li className="small"><strong>React</strong> advance practice - ZTM academy - 2023</li>
                           <li className="small"><strong>Next.js</strong> advanced course - ZTM academy - 2023</li>
-                          <li className="small"><strong>HTML</strong> foundamentals - LinkedIn Learn - 2014</li>
-                          <li className="small"><strong>CSS</strong> foundamentals - LinkedIn Learn - 2014</li>
+                          <li className="small"><strong>Javascript</strong> advance practice - Linkedin Learn - 2018</li>
+                          <li className="small"><strong>Bootstrap</strong> foundamentals - Linkedin Learn - 2018</li>
+                          <li className="small"><strong>Python</strong> full program - ZTM academy - 2023</li>
                         </ul>
 
-                        <h6 className="ms-3">Certification</h6>
+                        <h6 className="ms-3">Marketing upgrade </h6>
                         <ul className="certification small">
-                          <li className="small"><strong>Google Analytics</strong> advance - Coursera - 2022</li>
-                          <li className="small"><strong>Google ADS</strong> advance - LinkedIn Learn - 2021</li>
+                          <li className="small"><strong>Google Analytics 4</strong> - Coursera - 2023</li>
+                          <li className="small"><strong>Google Tag Manager</strong> - Coursera - 2022</li>
+                          <li className="small"><strong>Google Looker Studio</strong> data visualization - Linkedin Learn - 2022</li>
+                          <li className="small"><strong>Hubspot</strong> marketing module - Hubspot Academy - 2021</li>
+                          <li className="small"><strong>Google ADS</strong> advance - Linkedin Learn - 2021</li>
+                          <li className="small"><strong>META - facebook Business Manager</strong> advance - Linkedin Learn - 2023</li>
+                          <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
+                        </ul>
+
+                        <h6 className="ms-3">Certifications</h6>
+                        <ul className="certification small">
                           <li className="small"><strong>English</strong> certifcation - B2- IELTS - 2009</li>
                         </ul>
 
@@ -95,7 +105,7 @@ export default function About() {
                       <Link href="https://github.com/thelore85" target='_blank'>
                         <FontAwesomeIcon icon={faGithub} className="me-3" />
                       </Link>
-                      <Link href="https://www.linkedin.com/in/lorenzo-garofalo-digital/" target="_blank" >
+                      <Link href="https://www.Linkedin.com/in/lorenzo-garofalo-digital/" target="_blank" >
                         <FontAwesomeIcon icon={faLinkedin} className="" />
                       </Link>
                     
