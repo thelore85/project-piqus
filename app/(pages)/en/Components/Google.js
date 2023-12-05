@@ -16,7 +16,7 @@ export default function Google() {
             Drive results with Google Advertising solutions. Tailored online campaigns to lead web presence and gain customers.
             </p>
             <p className=" d-none d-sm-block">
-              Enhance your website's performance, reaching potential clients efficiently. <br />
+              Enhance your website&apos;s performance, reaching potential clients efficiently. <br />
               Elevate your online visibility through strategic Google Advertising designed for optimal impact.</p>
           </div>
 
