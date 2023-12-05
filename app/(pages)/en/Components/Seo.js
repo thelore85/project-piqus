@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 import seo from '@/public/img/marketingonline/seo-strategy.png'
 
 export default function Seo() {
