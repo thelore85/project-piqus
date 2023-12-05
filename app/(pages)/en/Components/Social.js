@@ -7,7 +7,7 @@ export default function Social() {
     <section id="ecommerce" className="bg-light d-flex justify-content-center align-items-center pt-5 px-4">
       <div className="container text-dark p-0" style={{maxWidth:'1000px'}}>
 
-        <div className="row d-flex align-items-center border-bottom g-5">
+        <div className="row d-flex align-items-center border-bottom g-2 g-md-5">
 
           <div className="col-md-3 text-center d-none d-sm-block">
             <Image alt="meta" src={ig} width={200} className=" d-block m-auto mb-3 "/>

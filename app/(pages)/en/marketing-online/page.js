@@ -12,12 +12,12 @@ export default function MarketingOnlinePage() {
   return (
     <>
       <Title title={'Online Marketing'} subtitle={'Gain your presence On Google and Social Media with Online Advertising'}/>
-      <Partners />
       <Google />
       <Social />
       <Seo />
       <CallToAction />
       <About />
+      <Partners />
     </>
   )
 }

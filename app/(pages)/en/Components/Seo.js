@@ -9,8 +9,8 @@ export default function Seo() {
         <div className="row border-bottom g-4">
 
           <div className="col-md-12 mb-3">
-            <h2 className="h1 fw-bolder mb-4" style={{fontSize:"2.3rem"}}><span className="" style={{color:"green"}}>SEO</span> and Content Creation</h2>
-            <h4 className="fw-bold mb-4">Search Engine Optimization - Copywriting - Content Strategy</h4>
+            <h2 className="h1 fw-bolder mb-4" style={{fontSize:"2.3rem"}}><span className="" style={{color:"green"}}>SEO</span> and Content</h2>
+            <h5 className="fw-bold mb-4">Search Engine Optimization - Copywriting - Content Strategy</h5>
             <p className="">Elevate your digital presence From SEO-content strategies to Google Business optimization</p>
             <p className=" d-none d-sm-block">
               From SEO-content strategies to Google Business optimization, ensure a holistic approach to maximize your online impact. 

@@ -4,8 +4,8 @@ import React from 'react'
 
 export default function CallToAction() {
   return (
-    <section className="d-flex justify-content-center align-items-center h-25 " style={{ backgroundColor: 'rgb(2, 13, 29)'}}>
-      <div className="container text-white border-white border-bottom border-opacity-25 " >
+    <section className="d-flex justify-content-center align-items-center h-25 p-3 " style={{ backgroundColor: 'rgb(2, 13, 29)'}}>
+      <div className="container text-white border-white border-bottom border-opacity-25 p-0" >
 
         <div className="row text-center text-md-start align-items-center py-4">
           <div className="col-md-8 ">

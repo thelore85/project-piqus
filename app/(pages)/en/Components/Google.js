@@ -7,9 +7,9 @@ export default function Google() {
     <section id="ecommerce" className="bg-light d-flex justify-content-center align-items-center pt-5 px-4">
       <div className="container text-dark p-0" style={{maxWidth:'1000px'}}>
 
-        <div className="row border-bottom g-2 g-md-5">
+        <div className="row d-flex align-items-center border-bottom g-2 g-md-5">
 
-          <div className="col-md-9">
+          <div className="col-md-9 m-0" >
             <h2 className="h1 fw-bolder mb-4" style={{fontSize:"2.3rem"}}><span className="text-primary">Google</span> Ads</h2>
             <p className="fw-bolder h5 mb-4">
             Tailored online campaigns to lead web presence and gain customers.
