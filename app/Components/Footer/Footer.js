@@ -19,12 +19,14 @@ export default function Footer() {
       <div className="row">
 
         <div className="col-4 col-md-2 mb-5">
-          <h5 className="small">Piqus</h5>
-          <Navigation />
+          <h5 className="small text-decoration-underline">Piqus</h5>
+          <ul className="navbar-nav mb-2 me-auto mb-lg-0 fw-lighter small">
+            <Navigation />
+          </ul>
         </div>
 
         <div className="col-4 col-md-2 mb-4">
-            <h5 className="small">Contacts</h5>
+            <h5 className="small text-decoration-underline" >Contacts</h5>
             <ul className="nav flex-column small">
               <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://api.whatsapp.com/send/?phone=393933222446&text&type=phone_number&app_absent=0" target='_blank'>Whatsapp</Link></li>
               <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://github.com/thelore85" target='_blank'>GitHub</Link></li>
@@ -33,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="col-4 col-md-2 mb-4">
-            <h5 className="small">Admin</h5>
+            <h5 className="small text-decoration-underline">Admin</h5>
             <ul className="nav flex-column small">
               <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
               <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>

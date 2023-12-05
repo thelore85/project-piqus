@@ -2,22 +2,19 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-lighter ">
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" href="/#services">Services</Link>
+    <>
+      <li className="dropdown-item mb-2 ">
+        <Link className="small" aria-current="page" href="/en/marketing-online">Marketing</Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" href="/#ecommerce">Developing</Link>
+      <li className="dropdown-item mb-2">
+        <Link className="small" aria-current="page" href="/#website">Website</Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" href="/#ecommerce">Ecommerce</Link>
+      <li className="dropdown-item mb-2">
+        <Link className="small" aria-current="page" href="/#ecommerce">Ecommerce</Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" href="/#marketing">Marketing</Link>
+      <li className="dropdown-item mb-2">
+        <Link className="small" aria-current="page" href="/#webapp">Web App</Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" href="/#about">About</Link>
-      </li>
-    </ul>
+    </>
   )
 }

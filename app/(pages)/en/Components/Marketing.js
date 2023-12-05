@@ -3,6 +3,7 @@ import { faChartSimple, faMagnifyingGlassChart, faNewspaper, faPaperPlane, faRec
 import Image from 'next/image'
 import customer from '@/public/img/home/customer.jpeg';
 import scale from '@/public/img/home/scale.png';
+import Link from 'next/link';
 
 export default function Marketing() {
   return (
@@ -16,7 +17,7 @@ export default function Marketing() {
         <div className="row g-3 border-top py-3">
 
           <div className="col-12 col-md-9">
-            <h3 className="h5 fw-bolder">Get noticed by your audience</h3>
+            <h3 className="h5 fw-bolder">Get noticed by your audience <Link href="/en/marketing-online" className="text-primary">&gt; Learn More</Link></h3>
             <p className="text-secondary small">A good website is necessary, but it is not enough! To reach your business goals, you need to <strong>draw your audience in, and convert</strong> their behavior into sales.</p>
           </div>
         

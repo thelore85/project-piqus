@@ -45,7 +45,7 @@ export default function Features() {
 
 
           <div className="col">
-            <Link href="#marketing" >
+            <Link href="/en/marketing-online" >
               <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" />Advertising</h4>
               <p className="fw-lighter small">Amplify your reach and impact through strategic online advertising. Targeted campaigns, compelling creatives, and measurable results for optimal digital visibility.</p>
             </Link>
@@ -59,7 +59,7 @@ export default function Features() {
           </div>
 
           <div className="col">
-            <Link href="#marketing" >
+            <Link href="/en/marketing-online" >
               <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" />SEO</h4>
               <p className="fw-lighter small">Boost your online visibility with our SEO expertise. Tailored strategies to climb search rankings, increase organic traffic, and elevate your digital presence.</p>
             </Link>

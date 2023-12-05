@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Navigation from "./Navigation";
 
 export default function Dropdown() {
   return (
@@ -12,19 +13,9 @@ export default function Dropdown() {
           </Link>
 
           <ul className="dropdown-menu small fw-lighter">
-            <li className="dropdown-item">
-              <Link className="active" aria-current="page" href="/#website">Website</Link>
-            </li>
-            <li className="dropdown-item">
-              <Link className="active" aria-current="page" href="/#ecommerce">Ecommerce</Link>
-            </li>
-            <li className="dropdown-item">
-              <Link className="active" aria-current="page" href="/#webapp">Web App</Link>
-            </li>
-            <li className="dropdown-item">
-              <Link className="active" aria-current="page" href="/#marketing">Marketing</Link>
-            </li>
+            <Navigation />
           </ul>
+
         </li>
 
         <li className="nav-item me-3">
