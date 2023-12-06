@@ -1,4 +1,4 @@
-import Whatsap from '@/app/Components/CallToAction/Whatsap'
+import Whatsapp from '@/app/(website)/en/Components/Buttons/Whatsapp'
 import React from 'react'
 
 export default function projectSubmitted() {
@@ -9,7 +9,7 @@ export default function projectSubmitted() {
          <p>Your brief will be reviewed and soon I&apos;ll be in touch with you. </p>
          <div className="p-4">
             <p className="h5">Need more support?</p>
-            <Whatsap size={'sm'} />
+            <Whatsapp size={'sm'} />
          </div>
       </div>
     </div>

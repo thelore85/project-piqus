@@ -6,9 +6,10 @@ export const dynamic = 'force-dynamic'; // force realtime update
 
 //////////////////////////////
 // components
-import AdminMenu from '@/app/Components/Navbar/AdminMenu';
+
 import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
 import Footer from '../(website)/en/Components/Sections/Footer';
+import AdminMenu from '../Components/AdminMenu/AdminMenu';
 
 
 //////////////////////////////////////

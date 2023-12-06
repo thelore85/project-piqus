@@ -4,8 +4,8 @@ import { redirect } from 'next/navigation'
 export const dynamic = 'force-dynamic'; // force realtime update
 
 //components
-import MainNavbar from './en/Components/Navigation/MainNavbar';
 import Footer from '../(website)/en/Components/Sections/Footer';
+import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
 
 
 export default async function authLayout({children}) {
