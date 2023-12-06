@@ -6,9 +6,8 @@ export const dynamic = 'force-dynamic'; // force realtime update
 
 //////////////////////////////
 // components
-import Footer from '../Components/Footer/Footer'
-import Navbar from '@/app/Components/Navbar/Navbar';
-
+import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
+import Footer from '../(website)/en/Components/Sections/Footer';
 
 //////////////////////////////////////
 // layout template
@@ -23,9 +22,9 @@ export default async function layout({children}) {
 
   return (
     <>
-      <Navbar />
-        {children}
-      <Footer/>
+      <MainNavbar />
+      {children}
+      <Footer />
     </>
   )
 }

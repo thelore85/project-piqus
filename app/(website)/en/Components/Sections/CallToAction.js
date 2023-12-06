@@ -1,6 +1,7 @@
-import StartNow from '@/app/Components/CallToAction/StartNow'
-import Whatsap from '@/app/Components/CallToAction/Whatsap'
+
 import React from 'react'
+import StartNow from '../Buttons/StartNow'
+import Whatsapp from '../Buttons/Whatsapp'
 
 export default function CallToAction() {
   return (
@@ -15,7 +16,7 @@ export default function CallToAction() {
 
           <div className="col-md-4 text-md-end">
             <StartNow />
-            <Whatsap />
+            <Whatsapp />
           </div>
 
         </div>

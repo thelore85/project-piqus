@@ -4,11 +4,11 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
 
-import Link from 'next/link'
 
 //components
-import StartNow from '@/app/Components/CallToAction/StartNow'
-import Whatsapp from '@/app/Components/CallToAction/Whatsap'
+import Link from 'next/link'
+import StartNow from '../Buttons/StartNow'
+import Whatsapp from '../Buttons/Whatsapp'
 
 
 export default function Features() {
@@ -17,7 +17,6 @@ export default function Features() {
   <section id="services" className="px-3 py-5 min d-flex justify-content-center align-items-center text-white" style={{minHeight : '75%',  backgroundColor: 'rgb(2, 13, 29)'}} >
 
   <div className="container">
-
     <div className="row row-cols-1 row-cols-lg-2 g-5">
 
       <div className="col d-flex flex-column align-items-start gap-2">

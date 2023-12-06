@@ -1,19 +1,13 @@
-'use client'
 
 import Link from "next/link"
-import LogoutButton from "./LogoutButton"
-import { useEffect } from "react"
+import LogoutButton from "../Buttons/LogoutButton"
 import Image from "next/image";
+
 
 export const dynamic = 'force-dynamic' // force db refrech
 
 
 export default function Avatar({ session }) {
-
-    // import bootstrap 5 javascript
-    useEffect(() => {
-      require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
 
   return (
     <div className="dropdown dropdown-menu-sm-end dropdown-menu-md-start">

@@ -4,8 +4,8 @@ import { redirect } from 'next/navigation'
 export const dynamic = 'force-dynamic'; // force realtime update
 
 //components
-import Footer from '@/app/Components/Footer/Footer' //globalFooter
-import Navbar from '../Components/Navbar/Navbar'
+import MainNavbar from './en/Components/Navigation/MainNavbar';
+import Footer from '../(website)/en/Components/Sections/Footer';
 
 
 export default async function authLayout({children}) {
@@ -17,7 +17,7 @@ if(data.session){ redirect(`/profile/${data.session.user.id}`) } //protect the p
 
   return (
       <>
-        <Navbar />
+        <MainNavbar />
         {children}
         <Footer />
       </>

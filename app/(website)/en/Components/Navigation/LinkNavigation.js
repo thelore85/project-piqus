@@ -1,21 +1,32 @@
+'use client'
 
 import Link from "next/link";
-import Navigation from "./Navigation";
+import 'bootstrap/dist/js/bootstrap.bundle.js' //import bootstrap 5 js
 
-export default function Dropdown() {
+
+// Components
+
+export default function LinkNavigation() {
+
+
   return (
-    <>
       <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-lighter">
-        
         <li className="nav-item dropdown me-3">
           <Link className="text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </Link>
 
           <ul className="dropdown-menu small fw-lighter">
-            <Navigation />
+            <li className="me-3">
+              <Link className="" aria-current="page" href="/en/marketing-online">Marketing</Link>
+            </li>
+            <li className="me-3">
+              <Link className="" aria-current="page" href="#website">Web Developing</Link>
+            </li>
+            <li className="me-3">
+              <Link className="" aria-current="page" href="/#ecommerce">Ecommerce</Link>
+            </li>
           </ul>
-
         </li>
 
         <li className="nav-item me-3">
@@ -24,10 +35,6 @@ export default function Dropdown() {
         <li className="nav-item me-3">
           <Link className="text-light" aria-current="page" href="/blog">Blog</Link>
         </li>
-
-
       </ul>
-
-    </>
   )
 }

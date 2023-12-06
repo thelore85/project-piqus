@@ -1,7 +1,7 @@
 
 //components
-import StartNow from '@/app/Components/CallToAction/StartNow'
-import Whatsapp from '@/app/Components/CallToAction/Whatsap'
+import StartNow from '../Buttons/StartNow'
+import Whatsapp from '../Buttons/Whatsapp'
 
 export default function Title({ title, subtitle }) {
   return (

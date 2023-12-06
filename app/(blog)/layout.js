@@ -1,12 +1,13 @@
-import Footer from '@/app/Components/Footer/Footer'
-import Navbar from '@/app/Components/Navbar/Navbar';
-import CallToAction from '../(pages)/en/Components/CallToAction';
-import About from '../(pages)/en/Components/About';
+import Footer from '../(website)/en/Components/Sections/Footer'
+import CallToAction from '../(website)/en/Components/Sections/CallToAction';
+import About from '../(website)/en/Components/Sections/About';
+import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
 
 export default function pageLayout({ children }) {
   return (
       <>
-        <Navbar />
+
+        <MainNavbar />
         {children}
         <CallToAction />
         <About />

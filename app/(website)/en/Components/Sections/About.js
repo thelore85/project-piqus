@@ -33,8 +33,6 @@ export default function About() {
                   <p className="fw-light small">I&#39;ve mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
                 </div>
 
-
-
                 <div className="accordion mb-5" >
                   <div className="accordion-item">
 

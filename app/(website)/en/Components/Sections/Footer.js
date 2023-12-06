@@ -7,9 +7,11 @@ import logo from '@/public/img/logo/piqus-logo-white.png'
 
 /////////////////////////////
 // components
-import Navigation from '../Navbar/Navigation';
-import Whatsapp from '../CallToAction/Whatsap';
-import StartNow from '../CallToAction/StartNow';
+// import Navigation from '../Navbar/Navigation';
+import StartNow from '../Buttons/StartNow';
+import Whatsapp from '../Buttons/Whatsapp';
+import LogoVertical from '../Logos/LogoVertical';
+
 
 export default function Footer() {
   return (
@@ -21,7 +23,7 @@ export default function Footer() {
         <div className="col-4 col-md-2 mb-5">
           <h5 className="small text-decoration-underline">Piqus</h5>
           <ul className="navbar-nav mb-2 me-auto mb-lg-0 fw-lighter small">
-            <Navigation />
+            {/* <Navigation /> */}
           </ul>
         </div>
 
@@ -47,8 +49,7 @@ export default function Footer() {
         <div className="col-md-2"></div>
 
         <div className="col-md-4 mb-3 text-center">
-          <Image alt="Piqus" src={logo} width="60" className="mb-3"/>
-          <h5 className="mb-4">Think Big. Think Web.</h5>
+          <LogoVertical />
           <StartNow size={"sm"}/>
           <Whatsapp size={"sm"}/>
         </div>

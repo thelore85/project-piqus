@@ -6,9 +6,9 @@ export const dynamic = 'force-dynamic'; // force realtime update
 
 //////////////////////////////
 // components
-import Footer from '@/app//Components/Footer/Footer'
-import Navbar from '@/app/Components/Navbar/Navbar';
 import AdminMenu from '@/app/Components/Navbar/AdminMenu';
+import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
+import Footer from '../(website)/en/Components/Sections/Footer';
 
 
 //////////////////////////////////////
@@ -24,12 +24,12 @@ export default async function layout({children}) {
 
   return (
     <>
-      <Navbar />
+      <MainNavbar />
       <AdminMenu />
       <div className=" min-vh-100 container py-5">
         {children}
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }
