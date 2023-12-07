@@ -4,17 +4,16 @@ import { useRouter } from 'next/navigation'
 
 const LanguageRedirect = () => {
   const router = useRouter();
+  const apiToken = process.env.NEXT_PUBLIC_IPINFO;
 
   useEffect(() => {
-    // Fai una richiesta a un servizio esterno che restituisce l'indirizzo IP
-    fetch('https://api64.ipify.org?format=json')
+    fetch(`https://ipinfo.io?token=${apiToken}`)  // Assicurati di sostituire 'TUO_TOKEN_API' con il tuo token ipinfo.io
       .then((response) => response.json())
       .then((data) => {
-        const userIP = data.ip;
-        console.log('debuggin default route /page - IP: ', userIP)
+        console.log('Informazioni sulla geolocalizzazione IP:', data);
 
-        // Sostituisci questa logica con la tua verifica dell'indirizzo IP
-        const isItalian = userIP.startsWith('it');
+        // Esempio: verifica se il paese è Italia
+        const isItalian = data.country === 'IT';
 
         // Esegui il redirect in base alla lingua
         if (isItalian) {
@@ -24,12 +23,10 @@ const LanguageRedirect = () => {
         }
       })
       .catch((error) => {
-        console.error('Errore durante la richiesta IP:', error);
-        // Tratta l'errore in base alle tue esigenze
+        console.error('Errore durante la richiesta di geolocalizzazione IP:', error);
       });
   }, [router]);
 
-  // Ritorna null perché questa pagina/componente si occupa solo del redirect
   return null;
 };
 
