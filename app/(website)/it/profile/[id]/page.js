@@ -12,10 +12,7 @@ import ProjectList from '../../Components/UserProfile/ProjectList';
 
 
 
-//////////////////////////////////////////
-// page
 export default async function userDetails({ params }) {
-  
   // get tickets
   const supabase = createServerComponentClient({ cookies })
   const { data: tickets } = await supabase.from('pj_promo_service')
