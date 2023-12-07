@@ -15,10 +15,6 @@ export default function Login() {
   const [errorLogin, setErrorLogin] = useState('')
   const router = useRouter()
 
-  const sendEmailToPiqus = () => {
-    console.log('new user registered: email sent')
-  }
-
   const userLogin = async( email, password) => {
     setErrorLogin('')
 
@@ -30,7 +26,6 @@ export default function Login() {
 
     if(error){ setErrorLogin(error.message) }
     if(!error){ 
-      sendEmailToPiqus();
       router.refresh();
       router.push(`/it/profile/${data.user.id}`)
     }
