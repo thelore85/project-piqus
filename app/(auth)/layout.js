@@ -10,16 +10,15 @@ import MainNavbar from '../(website)/en/Components/Navigation/MainNavbar';
 
 export default async function authLayout({children}) {
 
-const supabase = createServerComponentClient({ cookies })    
-const { data } = await supabase.auth.getSession()
+  const supabase = createServerComponentClient({ cookies })    
+  const { data } = await supabase.auth.getSession()
 
-if(data.session){ redirect(`/profile/${data.session.user.id}`) } //protect the page from logged-in users 
+  if(data.session){ redirect(`/en/profile/${data.session.user.id}`) } //protect the page from logged-in users 
 
   return (
       <>
         <MainNavbar />
         {children}
-        <Footer />
       </>
   )
 }
