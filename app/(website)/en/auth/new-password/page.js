@@ -2,8 +2,11 @@
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import Link from 'next/link';
 import React, {useState} from 'react'
+
+// Components
+import Link from 'next/link';
+
 
 export default function NewPasswordPage() {
 
@@ -47,7 +50,7 @@ export default function NewPasswordPage() {
         (<div>
           <div className="p-3 my-4 rounded bg-success-subtle text-success">
             <span className="mb-0 me-4 small">Your new password has been set correctly</span>
-            <Link href="/login" ><button className="btn btn-primary text-white">Go to Login</button></Link>
+            <Link href="/en/auth/login" ><button className="btn btn-primary text-white">Go to Login</button></Link>
           </div>
         </div>) :
 

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 //componentes
 import Link from 'next/link';
-import SignupForm from '../Components/SignupForm';
+import SignupForm from '../../Components/Authentication/SignupForm';
 
 //page function
 export default function SignUp() {
@@ -19,21 +19,6 @@ export default function SignUp() {
   ////////////////////////////////////////
   // submit new user to DB
 
-  // generate url
-  const getURL = () => {
-    let url =
-      process?.env?.NEXT_PUBLIC_SITE_URL ?? // Set this to your site URL in production env.
-      process?.env?.NEXT_PUBLIC_VERCEL_URL ?? // Automatically set by Vercel.
-      'http://localhost:3000/'
-    // Make sure to include `https://` when not localhost.
-    url = url.includes('http') ? url : `https://${url}`
-    // Make sure to include a trailing `/`.
-    url = url.charAt(url.length - 1) === '/' ? url : `${url}/`
-    url = `${url}api/auth/callback/`
-
-    return url
-  }
-
   const newUserRegistration = async(name, phone, email, password) => {
     const supabase = createClientComponentClient() //call the database API
     const {error, data } = await supabase.auth
@@ -45,7 +30,7 @@ export default function SignUp() {
           first_name: name,
           phone: phone,
         },
-        emailRedirectTo: getURL(),
+        emailRedirectTo: 'https://piqus.it/api/auth/callback/',
       }
     })
 
@@ -54,8 +39,8 @@ export default function SignUp() {
       console.log(error.message)
     }
     if(!error){ 
-      sendNewUserEmailAlert(name,phone,email); 
-      router.push('/verify') 
+      sendNewUserEmailAlert(name, email, phone); 
+      router.push('/en/auth/verify') 
     }
 
   }
@@ -93,7 +78,7 @@ export default function SignUp() {
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       <div className="p-3 mt-4 mb-4 rounded bg-white text-secondary">
-        <p className="mb-0"> Already have an account? <Link href="/login" className="text-primary ">Login Here</Link></p>
+        <p className="mb-0"> Already have an account? <Link href="/en/auth/login" className="text-primary ">Login Here</Link></p>
       </div>
 
       <div className="">

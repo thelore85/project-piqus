@@ -50,13 +50,11 @@ export default function PageResetPassword() {
       )}
 
 
-
       <div className="p-3 mt-4 rounded bg-white text-secondary">
-        <p className="mb-0 small">Go back to <Link href="/login" className="text-primary">Login</Link></p>
+        <p className="mb-0 small">Go back to <Link href="/en/auth/login" className="text-primary">Login</Link></p>
       </div>
 
       </div>
     </section>
-
   )
 }

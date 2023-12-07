@@ -3,10 +3,8 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
-
   
   const user = await request.json()
-
   const { name, phone, email} = user
 
   // Configura il trasportatore SMTP per l'invio dell'email

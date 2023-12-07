@@ -39,7 +39,7 @@ export default function SignUp() {
       console.log(error.message)
     }
     if(!error){ 
-      sendNewUserEmailAlert(name,phone,email); 
+      sendNewUserEmailAlert(name, email, phone); 
       router.push('/it/auth/verify') 
     }
 

@@ -20,7 +20,7 @@ export default function Avatar({ session }) {
       <ul className="dropdown-menu p-0">
         <li><Link className="dropdown-item border-bottom text-primary py-2 fw-bold small" href={ `/en/profile/${session?.user.id}`} >My Profile</Link></li>
         <li><Link className="dropdown-item py-2 small" href="/en/profile/newproject">New Project</Link></li>
-        <li><Link className="dropdown-item py-2 small" href="/reset-password">Reset Password</Link></li>
+        <li><Link className="dropdown-item py-2 small" href="/en/auth/reset-password">Reset Password</Link></li>
         <li><Link href="#" className="dropdown-item text-black-50 py-2 border-top small"><LogoutButton /></Link></li>
       </ul>
     </div>
