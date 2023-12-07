@@ -42,7 +42,6 @@ export default function SignUp() {
       sendNewUserEmailAlert(name, email, phone); 
       router.push('/it/auth/verify') 
     }
-
   }
 
   const sendNewUserEmailAlert = async (name, email, phone) => {
