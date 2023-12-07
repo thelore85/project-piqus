@@ -42,12 +42,12 @@ export default function NewProjectForm({ user_id }) {
 <>
       <div className="bg-white p-3 rounded text-center" style={{ width: '100%', maxWidth : '600px'}} >
 
-        <h2 className="h2 p-4">Select the project you need!</h2>
+        <h2 className="h2 p-4">Di che progetto hai bisogno?</h2>
 
         {/* PROJECT LIST */}
         <div className="form-floating mb-5">
           <select  className="form-select" aria-label="Default select example" required onChange={(e) => setService(e.target.value)} value={service ?? ''} >
-            <option value="" disabled >Please select a service</option>
+            <option value="" disabled >Seleziona uno tra i servizi.</option>
 
             <optgroup label="WEB DEVELOPING" className="mb-2" >
               <option value="e_commerce">E-commerce</option>
@@ -70,7 +70,7 @@ export default function NewProjectForm({ user_id }) {
             </optgroup>
           </select>
           <label className="form-check-label" htmlFor="flexCheckDefault">
-            Project type
+            Servizio richiesto
           </label>
         </div>
 
@@ -80,17 +80,17 @@ export default function NewProjectForm({ user_id }) {
 
             <div className="form-floating mb-3">
               <input  className="form-control" required type="text" onChange={(e) => setTitle(e.target.value)} value={title} />
-              <label htmlFor="floatingInput">Project Name</label>
+              <label htmlFor="floatingInput">Nome Progetto</label>
             </div>
             
             <div className="form-floating mb-3">
               <textarea  className="form-control" required onChange={(e) => setDescription(e.target.value)} value={description} />
-              <label htmlFor="floatingPassword">Describe your project</label>
+              <label htmlFor="floatingPassword">Dacci qualche dettaglio.. </label>
             </div>
 
             <button  className="btn btn-primary"  disabled={isLoading} >
-              {isLoading && <span>Adding...</span>}
-              {!isLoading && <span>Add Project</span>}
+              {isLoading && <span>Caricamento...</span>}
+              {!isLoading && <span>Aggiungi Progetto</span>}
             </button>
             
           </form>

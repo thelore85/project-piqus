@@ -14,11 +14,11 @@ export default function Avatar({ session }) {
         </span>
         <Image src="/img/user_img.jpg" alt="mdo" width="32" height="32" className="rounded-circle" />
       </div>
-      <ul className="dropdown-menu text-small">
-        <li><Link className="dropdown-item border-bottom text-primary" href={ `/it/profile/${session?.user.id}`} >My Profile</Link></li>
-        <li><Link className="dropdown-item" href="/it/profile/newproject">New Project</Link></li>
+      <ul className="dropdown-menu p-0">
+        <li><Link className="dropdown-item border-bottom text-primary py-2 fw-bold small" href={ `/it/profile/${session?.user.id}`} >Mio Profilo</Link></li>
+        <li><Link className="dropdown-item py-2 small" href="/it/profile/newproject">Nuovo Progetto</Link></li>
         {/* <li><Link className="dropdown-item" href="/reset-password">Reset Password</Link></li> */}
-        <li><Link href="#" className=" pointer-event dropdown-item text-black mt-3 py-2 border-top"><LogoutButton /></Link></li>
+        <li><Link href="#" className=" pointer-event dropdown-item text-black-50 py-2 border-top small"><LogoutButton /></Link></li>
       </ul>
     </div>
   )

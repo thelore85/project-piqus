@@ -24,13 +24,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const dynamic = 'force-dynamic';
 
 
-// HEAD - metadata setting
-export const metadata = {
-  title: 'E-Commerce. Website. Web App',
-  description: 'Build your web presence. Gain customers and clients. Scale your business online.',
-  icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
-};
-
 // layout
 export default function RootLayout({ children }) {
 

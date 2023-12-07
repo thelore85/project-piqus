@@ -37,10 +37,10 @@ export default async function userDetails({ params }) {
           <div className="lh-1 bg-primary rounded p-4 text-white mb-4 d-flex align-items-center">
             <FontAwesomeIcon icon={faUser} className="h2 me-3"/>
             <div className="me-auto">
-              <h1 className="h5 mb-1 text-white lh-1">My Projects</h1>
+              <h1 className="h5 mb-1 text-white lh-1">I miei progetti</h1>
               <small>{ 'Find your project list here' ?? 'Still no projects! Click the button aside to start a new one!'}</small>
             </div>
-            <Link href="/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
+            <Link href="/it/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">Nuovo progetto</div></Link>
           </div>
         </div>
         

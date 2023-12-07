@@ -4,10 +4,6 @@ import { redirect } from 'next/navigation'
 export const dynamic = 'force-dynamic'; // force realtime update
 
 
-//////////////////////////////
-// components
-import MainNavbar from '../Components/Navigation/MainNavbar';
-import Footer from '../Components/Sections/Footer';
 
 //////////////////////////////////////
 // layout template
@@ -22,9 +18,7 @@ export default async function layout({children}) {
 
   return (
     <>
-      
       {children}
-      
     </>
   )
 }

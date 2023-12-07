@@ -10,7 +10,7 @@ export default function TktList({ tickets, onUpdate }) {
       ))}
 
       {tickets.length === 0 && (
-        <p className="text-center">There are no open tickets for this user!</p>
+        <p className="text-center">Non hai nessun porgetto aperto. Iniziane uno!</p>
       )}
     </>
   );
