@@ -13,7 +13,7 @@ export default function WebApp() {
         <div className="row py-4 g-4 align-items-center">
 
           <div className="col-md-9 mb-3">
-            <p className="h4">Potenzia la tua presenza digitale con un'applicazione web.</p>
+            <p className="h4">Potenzia la tua presenza digitale con un&#39;applicazione web.</p>
             <p className="fw-lighter d-none d-sm-block small">Sblocca funzionalità avanzate, dalle Single Page e Progressive Web Apps ai Componenti Funzionali. Integra API RESTful o costruisci la tua app da zero, garantendo soluzioni personalizzate per le tue esigenze.</p>
           </div>
 

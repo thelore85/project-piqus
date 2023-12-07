@@ -6,8 +6,6 @@ import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
 
 // Componenti
 import Link from 'next/link'
-import StartNow from '../Buttons/StartNow'
-import Whatsapp from '../Buttons/Whatsapp'
 import CallToActionButtons from '../Buttons/CallToActionButtons'
 
 export default function Features() {
@@ -35,7 +33,7 @@ export default function Features() {
               <div className="col">
                 <Link href="#website" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Sito Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Trasforma la tua visione in una presenza online accattivante con i nostri servizi di sviluppo web esperti. Siti web eleganti, reattivi e orientati all'utente.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Trasforma la tua visione in una presenza online accattivante con i nostri servizi di sviluppo web esperti. Siti web eleganti, reattivi e orientati all&#39;utente.</p>
                 </Link>
               </div>
 
@@ -43,7 +41,7 @@ export default function Features() {
               <div className="col">
                 <Link href="#marketing" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Pubblicità</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua portata e l'impatto attraverso una strategia di pubblicità online. Campagne mirate, creatività coinvolgenti e risultati misurabili per una visibilità digitale ottimale.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua portata e l&#39;impatto attraverso una strategia di pubblicità online. Campagne mirate, creatività coinvolgenti e risultati misurabili per una visibilità digitale ottimale.</p>
                 </Link>
               </div>
 
@@ -64,14 +62,14 @@ export default function Features() {
               <div className="col">
                 <Link href="#webapp" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Applicazioni Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Potenzia la tua attività con applicazioni web personalizzate. Dalla concezione all'implementazione, creiamo soluzioni dinamiche per un'esperienza utente ottimale e processi razionalizzati.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Potenzia la tua attività con applicazioni web personalizzate. Dalla concezione all&#39;implementazione, creiamo soluzioni dinamiche per un&#39;esperienza utente ottimale e processi razionalizzati.</p>
                 </Link>
               </div>
 
               <div className="col">
                 <Link href="#marketing">
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" /> Tecnologia di Marketing</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Sfrutta l'analisi per decisioni basate sui dati e il CRM per l'interazione con i clienti. Le nostre soluzioni di tecnologia marketing ottimizzano le prestazioni, le conversioni e le relazioni con i clienti.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Sfrutta l&#39;analisi per decisioni basate sui dati e il CRM per l&#39;interazione con i clienti. Le nostre soluzioni di tecnologia marketing ottimizzano le prestazioni, le conversioni e le relazioni con i clienti.</p>
                 </Link>
               </div>
 

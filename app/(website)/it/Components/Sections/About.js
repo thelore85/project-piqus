@@ -26,7 +26,7 @@ export default function About() {
           <div className="col-md-8 text-white text-start py-4">
             <h2 className="h1 text-white fw-bolder h1 mb-5">Oltre 10 Anni di Web</h2>
             <div className="mb-5">
-              <p className="fw-light small">Con un decennio di esperienza nella comunicazione online, porto una prospettiva internazionale come freelance esperto e collaboratore con aziende multinazionali nei settori finanziario, sanitario, dell'intrattenimento e della moda.</p>
+              <p className="fw-light small">Con un decennio di esperienza nella comunicazione online, porto una prospettiva internazionale come freelance esperto e collaboratore con aziende multinazionali nei settori finanziario, sanitario, dell&#39;intrattenimento e della moda.</p>
               <p className="fw-light small">Ho padroneggiato moderne strategie di marketing online, implementato tecnologie di marketing complesse e mantenuto siti web e piattaforme aggiornati.</p>
             </div>
 

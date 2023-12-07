@@ -21,7 +21,7 @@ export default function Website() {
           <div className="col-md-9">
             <div className="rounded-2 border p-3">
               <p className="h5 fw-bold mb-2 mobile_hide">Resta aggiornato sulle ultime tecnologie.</p>
-              <p className="fw-lighter small mb-0">Next.js è il framework raccomandato dal team di React. Porta il meglio delle prestazioni web, dell'ottimizzazione per i motori di ricerca (SEO), della sicurezza e altro ancora.</p>
+              <p className="fw-lighter small mb-0">Next.js è il framework raccomandato dal team di React. Porta il meglio delle prestazioni web, dell&#39;ottimizzazione per i motori di ricerca (SEO), della sicurezza e altro ancora.</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Website() {
             <div className="p-3 bg-white rounded-1 text-dark">
               <h5 className="h5 fw-bolder">SEO</h5>
               <p className="fw-bolder small">Ottimizzazione per i Motori di Ricerca.</p>
-              <p className="fw-light small m-0">Le pagine vengono renderizzate lato server, garantendo che i motori di ricerca ricevano HTML per l'indicizzazione.</p>
+              <p className="fw-light small m-0">Le pagine vengono renderizzate lato server, garantendo che i motori di ricerca ricevano HTML per l&#39;indicizzazione.</p>
             </div>
           </div>
 

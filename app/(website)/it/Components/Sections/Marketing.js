@@ -41,7 +41,7 @@ export default function Marketing() {
             <div className="accordion-body small">
               <p>Nel mondo del marketing digitale, il contenuto è il re. Per prosperare online, non hai bisogno solo di un qualsiasi contenuto, ma di contenuto che coinvolga, educi e converta. Il nostro servizio di Creazione di Contenuti e Strategia SEO è la tua chiave per dominare il panorama digitale.</p>
               <p><strong>Contenuto di Alta Qualità</strong></p>
-              <p>Il nostro team di creatori di contenuti esperti eccelle nella creazione di contenuti che risuonano con il tuo pubblico. Che si tratti di post sul blog, articoli, infografiche o script video, sviluppiamo contenuti che lasciano un'impressione duratura e mantengono il tuo pubblico che torna per altro.</p>
+              <p>Il nostro team di creatori di contenuti esperti eccelle nella creazione di contenuti che risuonano con il tuo pubblico. Che si tratti di post sul blog, articoli, infografiche o script video, sviluppiamo contenuti che lasciano un&#39;impressione duratura e mantengono il tuo pubblico che torna per altro.</p>
               <p><strong>Ottimizzato per i Motori di Ricerca</strong></p>
               <p>Creare contenuti eccezionali è solo un pezzo del puzzle. Per garantire che il tuo contenuto raggiunga il suo pieno potenziale, incorporiamo una robusta strategia SEO. Identifichiamo le parole chiave giuste, ottimizziamo i tag meta e strutturiamo il tuo contenuto per posizionarsi in alto nelle pagine dei risultati dei motori di ricerca. Il nostro obiettivo è aumentare la tua visibilità e generare traffico organico al tuo sito web.</p>
               <p><strong>Approccio Focalizzato sulla Conversione</strong></p>
@@ -63,9 +63,9 @@ export default function Marketing() {
               <p><strong>Campagne Pubblicitarie Strategiche</strong></p>
               <p>Il nostro team è specializzato nella creazione ed esecuzione di campagne pubblicitarie strategiche che raggiungono il tuo pubblico target. Sfruttiamo piattaforme come Google Ads, Bing Ads e la pubblicità sui social media per massimizzare la tua visibilità online.</p>
               <p><strong>Ottimizzazione delle Parole Chiave e Copywriting degli Annunci</strong></p>
-              <p>Conduciamo approfondite ricerche di parole chiave per identificare le parole chiave più pertinenti e ad alto tasso di conversione per la tua attività. I nostri copywriter esperti creano annunci persuasivi che invitano gli utenti a fare clic e intraprendere un'azione.</p>
+              <p>Conduciamo approfondite ricerche di parole chiave per identificare le parole chiave più pertinenti e ad alto tasso di conversione per la tua attività. I nostri copywriter esperti creano annunci persuasivi che invitano gli utenti a fare clic e intraprendere un&#39;azione.</p>
               <p><strong>Tracciamento e Ottimizzazione delle Conversioni</strong></p>
-              <p>Non si tratta solo di clic; si tratta di conversioni. Implementiamo il tracciamento delle conversioni per misurare l'efficacia delle tue campagne. Un'ottimizzazione continua garantisce che il tuo budget venga speso saggiamente per ottenere il miglior rendimento dell'investimento.</p>
+              <p>Non si tratta solo di clic; si tratta di conversioni. Implementiamo il tracciamento delle conversioni per misurare l&#39;efficacia delle tue campagne. Un&#39;ottimizzazione continua garantisce che il tuo budget venga speso saggiamente per ottenere il miglior rendimento dell&#39;investimento.</p>
               <p>Con il nostro servizio di Pubblicità Online e Marketing sui Motori di Ricerca (ADV e SEM), vedrai un significativo aumento del traffico sul sito web, dei lead e delle vendite. Porta la tua pubblicità digitale al livello successivo e ottieni risultati tangibili. Contattaci oggi per avviare il tuo percorso verso il successo online!</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Marketing() {
               <p><strong>Collaborazione Coinvolgente nella Campagna</strong></p>
               <p>Collaboriamo con gli influencer per creare contenuti autentici e coinvolgenti che risuonano con i loro follower. Questo approccio assicura che il messaggio del tuo brand sia ricevuto con fiducia e autenticità, aumentando la probabilità di conversione.</p>
               <p><strong>Risultati Misurabili</strong></p>
-              <p>Le nostre campagne di Marketing degli Influencer sono progettate per il successo, con chiari KPI per misurare le performance. Forniremo insights su copertura, coinvolgimento e conversioni, consentendoti di valutare l'impatto diretto sul tuo business.</p>
+              <p>Le nostre campagne di Marketing degli Influencer sono progettate per il successo, con chiari KPI per misurare le performance. Forniremo insights su copertura, coinvolgimento e conversioni, consentendoti di valutare l&#39;impatto diretto sul tuo business.</p>
               <p>Con il nostro servizio di Marketing degli Influencer, avrai i mezzi per sfruttare il potere influente delle personalità online e indirizzarlo verso gli obiettivi aziendali. Raggiungi un pubblico altamente coinvolto e mirato e convertilo in clienti fedeli. Contattaci oggi per sbloccare il potenziale del marketing degli influencer per il tuo brand!</p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Marketing() {
               <p>Ti metteremo in contatto con giornalisti influenti nel tuo settore, garantendo che il messaggio della tua marca raggiunga il pubblico giusto. Interviste e pubblicazioni su riviste rispettate aumenteranno la tua credibilità e autorità nel tuo campo.</p>
               <p><strong>Partecipazione a Eventi del Settore</strong></p>
               <p>La partecipazione a eventi e conferenze del settore può fare la differenza per la tua marca. Ti aiuteremo a identificare e garantire opportunità per far brillare la tua marca su un palcoscenico più ampio, stabilendo la tua presenza come leader del settore.</p>
-              <p>Con il nostro servizio di Coinvolgimento Stampa e PR, otterrai un vantaggio competitivo posizionando la tua marca sotto i riflettori. Eleva la visibilità, la credibilità e l'influenza della tua marca nel tuo settore. Contattaci oggi per intraprendere il tuo percorso verso il successo del brand!</p>
+              <p>Con il nostro servizio di Coinvolgimento Stampa e PR, otterrai un vantaggio competitivo posizionando la tua marca sotto i riflettori. Eleva la visibilità, la credibilità e l&#39;influenza della tua marca nel tuo settore. Contattaci oggi per intraprendere il tuo percorso verso il successo del brand!</p>
             </div>
           </div>
         </div>
@@ -135,13 +135,13 @@ export default function Marketing() {
         </h4>
         <div id="analytics" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
           <div className="accordion-body small">
-            <p>Nell'era digitale basata sui dati, comprendere le prestazioni del tuo sito web è fondamentale. Il nostro servizio di Configurazione Analitica ti permette di sfruttare il potere dei dati per monitorare, analizzare e monetizzare efficacemente il traffico del tuo sito web.</p>
+            <p>Nell&#39;era digitale basata sui dati, comprendere le prestazioni del tuo sito web è fondamentale. Il nostro servizio di Configurazione Analitica ti permette di sfruttare il potere dei dati per monitorare, analizzare e monetizzare efficacemente il traffico del tuo sito web.</p>
             <p><strong>Configurazione di Tracciamento Completa</strong></p>
             <p>Implementiamo strumenti di analisi avanzati, come Google Analytics e soluzioni personalizzate, per fornirti una visione completa del traffico del tuo sito web. Dal comportamento degli utenti alle fonti di traffico, tracciamo tutto per aiutarti a prendere decisioni informate.</p>
             <p><strong>Insight Basati sui Dati</strong></p>
             <p>I dati hanno valore solo se forniscono insight. Il nostro team di esperti ti aiuterà a estrarre insight operativi dai tuoi dati analitici. Identificheremo punti di forza, debolezze e opportunità per ottimizzare la tua presenza online.</p>
             <p><strong>Strategie di Monetizzazione</strong></p>
-            <p>Trasformare gli insight in entrate è dove il nostro servizio brilla davvero. Collaboriamo con te per sviluppare strategie di monetizzazione basate sui tuoi dati analitici. Che sia attraverso la pubblicità, le raccomandazioni di prodotti o l'ottimizzazione dei contenuti, ti aiuteremo a sfruttare al massimo il tuo traffico.</p>
+            <p>Trasformare gli insight in entrate è dove il nostro servizio brilla davvero. Collaboriamo con te per sviluppare strategie di monetizzazione basate sui tuoi dati analitici. Che sia attraverso la pubblicità, le raccomandazioni di prodotti o l&#39;ottimizzazione dei contenuti, ti aiuteremo a sfruttare al massimo il tuo traffico.</p>
             <p>Con il nostro servizio di Configurazione Analitica, avrai gli strumenti e gli insight necessari per migliorare la tua presenza online e potenziare i tuoi profitti. Non limitarti a raccogliere dati; fai in modo che i dati lavorino per te. Contattaci oggi per intraprendere il tuo percorso verso il successo basato sui dati!</p>
           </div>
         </div>
