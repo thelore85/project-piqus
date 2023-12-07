@@ -48,7 +48,7 @@ export default function Features() {
               <div className="col">
                 <Link href="#ecommerce" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> E-commerce</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Lancia un prospero negozio online con il nostro sviluppo di e-commerce. Transazioni senza soluzione di continuità, design accattivante e funzionalità studiate per aumentare le vendite e l'interazione.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Lancia un prospero negozio online con il nostro sviluppo di e-commerce. Transazioni senza soluzione di continuità, design accattivante e funzionalità studiate per aumentare le vendite e l&#39;interazione.</p>
                 </Link>
               </div>
 
