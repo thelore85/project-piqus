@@ -1,7 +1,7 @@
 import Whatsapp from '@/app/(website)/en/Components/Buttons/Whatsapp'
 import React from 'react'
 
-export default function projectSubmitted() {
+export default function ProjectSubmitted() {
   return (
     <div className="h-75 d-flex justify-content-center align-items-center">
       <div className="p-5 bg-white rouded text-secondary text-center">

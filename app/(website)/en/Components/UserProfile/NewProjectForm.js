@@ -33,7 +33,7 @@ export default function NewProjectForm({ user_id }) {
     if(json.error){console.log('Error - ticket form: ',json.error)}
     if(json.data){
       router.refresh()
-      router.push(`/profile/${user_id}`)
+      router.push(`/en/profile/${user_id}`)
     }
 
   }

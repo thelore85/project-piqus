@@ -6,13 +6,12 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 
 //////////////////////////////////
 // componetns
-import NewProjectForm from '../Components/NewProjectForm';
-
+import NewProjectForm from '../../Components/UserProfile/NewProjectForm';
 
 
 ///////////////////////////////////
 // page
-export default async function create() {
+export default async function Create() {
 
   const supabase = createServerComponentClient({ cookies })
   const { data : session } = await supabase.auth.getSession()

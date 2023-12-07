@@ -14,7 +14,7 @@ export default function LogoutButton({}) {
 
     if(!error){
       router.refresh() 
-      router.push('/') 
+      router.push('/en/home') 
     }
     if(error){ console.log('logOut error: ', error)}
   }

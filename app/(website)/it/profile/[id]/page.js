@@ -11,7 +11,6 @@ import Link from "next/link"
 import ProjectList from '../../Components/UserProfile/ProjectList';
 
 
-
 export default async function userDetails({ params }) {
   // get tickets
   const supabase = createServerComponentClient({ cookies })

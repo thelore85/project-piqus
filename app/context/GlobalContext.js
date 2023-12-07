@@ -36,7 +36,7 @@ export const GlobalContext = (props) => {
   // UseEffect
   useEffect(() => {
      actions.getSession()
-  },[] )
+  },[actions] )
 
   return(
     <Context.Provider value={{ store, setStore, actions }}>

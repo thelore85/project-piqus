@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import { useRouter } from 'next/navigation'
 export const dynamic = 'force-dynamic' // force db refrech
 
@@ -22,28 +21,22 @@ export default function  TicketCard({ ticket }) {
     });
   };
 
- 
 
+  // EDIT SUBMISSION - call api/tickets/edit
+  const onUpdate = async (updatedTicket)  => {
+    
+    const res = await fetch('/api/tickets/edit', {
+      method: "PUT",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(updatedTicket)
+    })
 
+    const json = await res.json()  
 
- // EDIT SUBMISSION - call api/tickets/edit
- const onUpdate = async (updatedTicket)  => {
-  
-  const res = await fetch('/api/tickets/edit', {
-    method: "PUT",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify(updatedTicket)
-  })
+    if(json.error){console.log('Error - ticket update: ',json.error)}
+    if(!json.error){ router.refresh() }
+  }
 
-  const json = await res.json()  
-
-  if(json.error){console.log('Error - ticket update: ',json.error)}
-  if(!json.error){ router.refresh() }
-}
-
-
-
-  // html
   return (
     <div key={ticket.id} className="p-3 mb-2">
       <div className="d-flex text-body-secondary">

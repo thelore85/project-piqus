@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 
@@ -32,7 +32,7 @@ export default function Login() {
     if(!error){ 
       sendEmailToPiqus();
       router.refresh();
-      router.push(`/profile/${data.user.id}`) 
+      router.push(`/en/profile/${data.user.id}`) 
     }
   }
 

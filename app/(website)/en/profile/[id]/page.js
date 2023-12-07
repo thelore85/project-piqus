@@ -3,13 +3,12 @@ import { notFound } from "next/navigation"
 import { cookies } from 'next/headers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-import Link from "next/link"
 
 
 /////////////////////////////////////////////
 //components
-import ProjectList from "@/app/(user)/profile/Components/ProjectList"
-
+import Link from "next/link"
+import ProjectList from "../../Components/UserProfile/ProjectList"
 
 
 //////////////////////////////////////////
@@ -40,7 +39,7 @@ export default async function userDetails({ params }) {
               <h1 className="h5 mb-1 text-white lh-1">My Projects</h1>
               <small>{ 'Find your project list here' ?? 'Still no projects! Click the button aside to start a new one!'}</small>
             </div>
-            <Link href="/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
+            <Link href="/en/profile/newproject" ><div className="btn btn-light text-primary fw-bold ms-3">New Project</div></Link>
           </div>
         </div>
         
