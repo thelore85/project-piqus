@@ -16,7 +16,7 @@ export default function PageResetPassword() {
     const supabase = createClientComponentClient()
 
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: 'https://piqus.it/it/new-password',
+      redirectTo: 'https://piqus.it/it/auth/new-password',
     })
 
 
