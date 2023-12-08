@@ -24,7 +24,7 @@ export default function SignupForm({ title, handleSubmit }){
 
           <div className="form-floating mb-3">
             <input type="number" required className="form-control" id="phoneNumber" placeholder="Contatto telefonico" onChange={(e)=>{ setPhone(e.target.value)}} value={phone}/>
-            <label htmlFor="phoneNumber">Numeo di Telefono</label>
+            <label htmlFor="phoneNumber">Numero di Telefono</label>
           </div>
 
           <div className="form-floating mb-3">
