@@ -1,0 +1,67 @@
+'use client'
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import React, {useState} from 'react'
+
+// Components
+import Link from 'next/link';
+
+
+export default function NewPasswordPage() {
+
+  const [password, setPassword ] = useState('');
+  const [viewPassword, setViewPassword] = useState(false)
+  const [response, setResponse] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const supabase = createClientComponentClient()
+    const { data, error } = await supabase.auth.updateUser({password: password})
+    
+    if( data ){setResponse(true)}
+    if( error ){setResponse(false);}
+  }
+
+
+  return (
+    
+    <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
+    <div className="container" style={{'maxWidth':'500px'}}>
+
+    <form className="bg-white p-3 rounded" onSubmit={(e) => handleSubmit(e)} >  
+      <h1 className="h2 text-center p-3 fw-bold">Inserisci nuova Password</h1>
+      <div className="input-group mb-3">
+        <div className="form-floating ">
+          <input type={viewPassword ? "text" : "password"} value={password} onChange={e => setPassword(e.target.value)} 
+          className="form-control" id="floatingInputGroup1" placeholder="Password" />
+          <label htmlFor="floatingInputGroup1">Password</label>
+        </div>
+        <span className="input-group-text" onClick={() => {setViewPassword(!viewPassword)}}>
+          {viewPassword ? <FontAwesomeIcon icon={faEyeSlash} /> : <FontAwesomeIcon icon={faEye} />}
+        </span>
+      </div>
+      <button className="btn btn-primary w-100 py-2" >Conferma nuova password</button>
+    </form>
+
+    { response === '' ? null : 
+      ( response ?   
+        (<div>
+          <div className="p-3 my-4 rounded bg-success-subtle text-success">
+            <span className="mb-0 me-4 small">La tua nuova password e&apos; stata modificata correttamente</span>
+            <Link href="/es/auth/login" ><button className="btn btn-primary text-white">Go to Login</button></Link>
+          </div>
+        </div>) :
+
+        (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
+          <p className="mb-0 small">Errore. Prova un&apos;altra password</p>
+        </div>)
+      )}
+
+    </div>
+  </section>
+    
+
+  )
+}

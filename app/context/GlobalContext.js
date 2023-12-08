@@ -9,7 +9,6 @@ export const GlobalContext = (props) => {
   // Store
   const [ store, setStore ] = useState({
     session : {},
-    languageSelected: ''
   })
 
   // Actions 
@@ -25,17 +24,11 @@ export const GlobalContext = (props) => {
       }
     },
 
-    updateLanguage: (language) => {
-      console.log('actions: updating language: ', language)
-      setStore( prevStore => ({...prevStore, languageSelected: language }))
-      localStorage.setItem('languageSelected', JSON.stringify(language))
-    }
-
   });
 
   // UseEffect
   useEffect(() => {
-
+    actions.getSession()
   },[] )
 
   return(
