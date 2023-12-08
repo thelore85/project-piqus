@@ -31,7 +31,7 @@ export default function NewPasswordPage() {
     <div className="container" style={{'maxWidth':'500px'}}>
 
     <form className="bg-white p-3 rounded" onSubmit={(e) => handleSubmit(e)} >  
-      <h1 className="h2 text-center p-3 fw-bold">Insert a New Password</h1>
+      <h1 className="h2 text-center p-3 fw-bold">Inserisci nuova Password</h1>
       <div className="input-group mb-3">
         <div className="form-floating ">
           <input type={viewPassword ? "text" : "password"} value={password} onChange={e => setPassword(e.target.value)} 
@@ -42,20 +42,20 @@ export default function NewPasswordPage() {
           {viewPassword ? <FontAwesomeIcon icon={faEyeSlash} /> : <FontAwesomeIcon icon={faEye} />}
         </span>
       </div>
-      <button className="btn btn-primary w-100 py-2" >Confirm New Password</button>
+      <button className="btn btn-primary w-100 py-2" >Conferma nuova password</button>
     </form>
 
     { response === '' ? null : 
       ( response ?   
         (<div>
           <div className="p-3 my-4 rounded bg-success-subtle text-success">
-            <span className="mb-0 me-4 small">Your new password has been set correctly</span>
+            <span className="mb-0 me-4 small">La tua nuova password e&apos; stata modificata correttamente</span>
             <Link href="/it/auth/login" ><button className="btn btn-primary text-white">Go to Login</button></Link>
           </div>
         </div>) :
 
         (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
-          <p className="mb-0 small">Impossible to change. Try another password</p>
+          <p className="mb-0 small">Errore. Prova un&apos;altra password</p>
         </div>)
       )}
 

@@ -18,7 +18,7 @@ export default async function create() {
   const id =  session.session.user.id;
 
   return (
-    <section className=" h-75 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-5.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
+    <section className=" h-75 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <NewProjectForm user_id={id} />
     </section>
   )

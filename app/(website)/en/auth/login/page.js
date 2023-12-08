@@ -44,8 +44,8 @@ export default function Login() {
       { errorLogin && <div className="p-2 bg-danger-subtle text-danger">{ errorLogin }</div>}    
 
       <div className="p-3 mt-4 rounded bg-white text-secondary">
-        <p className="mb-0 small">Don&apos;t have an account? <Link href="/en/auth/signup" className="text-primary">Sign up Here</Link></p>
-        <p className="mb-0 small">Forgot your passworld? <Link href="/en/auth/reset-password" className="text-primary">Reset your password</Link></p>
+        <p className="mb-0 small py-1">Don&apos;t have an account? <Link href="/en/auth/signup" className="text-primary fw-bold">Sign up Here</Link></p>
+        <p className="mb-0 small py-1">Forgot your passworld? <Link href="/en/auth/reset-password" className="text-primary fw-bold">Reset your password</Link></p>
       </div>
 
       </div>

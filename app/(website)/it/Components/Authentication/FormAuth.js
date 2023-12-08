@@ -17,7 +17,7 @@ export default function FormAuth({ title, handleSubmit }){
 
           <div className="form-floating mb-3">
             <input type="email" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setEmail(e.target.value)}} value={email}/>
-            <label htmlFor="floatingEmail">Email address</label>
+            <label htmlFor="floatingEmail">Email</label>
           </div>
 
           <div className="input-group mb-3">
@@ -31,7 +31,7 @@ export default function FormAuth({ title, handleSubmit }){
             </span>
           </div>
 
-          <button className="btn btn-primary w-100 py-2" >Submit</button>
+          <button className="btn btn-primary w-100 py-2" >Continua</button>
 
         </form>
   )

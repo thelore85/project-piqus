@@ -16,7 +16,7 @@ export default function PageResetPassword() {
     const supabase = createClientComponentClient()
 
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: 'https://piqus.it/new-password',
+      redirectTo: 'https://piqus.it/it/new-password',
     })
 
 
@@ -33,25 +33,25 @@ export default function PageResetPassword() {
         <h1 className="h2 text-center p-3 fw-bold">Reset Password</h1>
         <div className="form-floating mb-3">
           <input type="email" required className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={(e)=>{ setEmail(e.target.value)}} value={email}/>
-          <label htmlFor="floatingEmail">Email address</label>
+          <label htmlFor="floatingEmail">Email</label>
         </div>
-        <button className="btn btn-primary w-100 py-2" >Get New Password</button>
+        <button className="btn btn-primary w-100 py-2" >Ottieni una nuova password</button>
       </form>
 
       { request === '' ? null : 
       ( request ?   
         (<div className="p-3 mt-4 rounded bg-success-subtle text-success">
-          <p className="mb-0 small">Check your email and follow the link</p>
+          <p className="mb-0 small">Controlla la tua mail e clicca il link che ti abbiamo inviato</p>
         </div>) :
 
         (<div className="p-3 mt-4 rounded bg-danger-subtle text-danger">
-          <p className="mb-0 small">Impossible to send the request. Check your email and retry</p>
+          <p className="mb-0 small">Errore. Controlla la email e riprova</p>
         </div>)
       )}
 
 
       <div className="p-3 mt-4 rounded bg-white text-secondary">
-        <p className="mb-0 small">Go back to <Link href="/it/auth/login" className="text-primary">Login</Link></p>
+        <p className="mb-0 small">Go back to <Link href="/it/auth/login" className="text-primary fw-bold">Login</Link></p>
       </div>
 
       </div>

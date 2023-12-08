@@ -9,7 +9,6 @@ export default function LanguageSelector() {
 
   const [lang, setLang] = useState('')
   const [path, setPath] = useState('')
-  const current = window.location.pathname
   
   const router = useRouter()
   const pathName = usePathname()
@@ -38,7 +37,7 @@ export default function LanguageSelector() {
     <div>
       <select name="cars" id="cars" form="carform" value={lang}  onChange={handleSelection}>
         <option value="it" >Italiano</option>
-        <option value="en" >Inglese</option>
+        <option value="en" >English</option>
       </select>
     </div>
   )

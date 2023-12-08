@@ -78,7 +78,7 @@ export default function SignUp() {
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       <div className="p-3 mt-4 mb-4 rounded bg-white text-secondary">
-        <p className="mb-0"> Already have an account? <Link href="/en/auth/login" className="text-primary ">Login Here</Link></p>
+        <p className="mb-0 small"> Already have an account? <Link href="/en/auth/login" className="text-primary fw-bold ">Login Here</Link></p>
       </div>
 
       <div className="">

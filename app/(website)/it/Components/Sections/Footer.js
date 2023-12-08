@@ -48,7 +48,7 @@ export default function Footer() {
 
         <div className="col-md-4 mb-3 text-center">
           <LogoVertical />
-          <CallToActionButtons />
+          <CallToActionButtons size={'sm'}/>
         </div>
       </div>
 

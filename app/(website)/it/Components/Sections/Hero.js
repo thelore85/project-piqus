@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="">
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>Think Big. Think Web.</h1>
         <p className=" h5 lh-lg fw-light  mb-5">Sviluppo Web. E-commerce. Marketing Online.</p>
-        <CallToActionButtons />
+        <CallToActionButtons size={'sm'}/>
       </div>
 
     </div>

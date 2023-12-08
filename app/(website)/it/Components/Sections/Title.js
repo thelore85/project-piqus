@@ -1,7 +1,6 @@
 
 //components
-import StartNow from '../Buttons/StartNow'
-import Whatsapp from '../Buttons/Whatsapp'
+import CallToActionButtons from '../Buttons/CallToActionButtons'
 
 export default function Title({ title, subtitle }) {
   return (
@@ -12,8 +11,7 @@ export default function Title({ title, subtitle }) {
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>{title}</h1>
         <p className=" h5 lh-lg fw-light  mb-5">{subtitle}</p>
         <div>
-          <StartNow size={"md"}/>
-          <Whatsapp size={"md"}/>
+          <CallToActionButtons size={'sm'}/>
         </div>
       </div>
 

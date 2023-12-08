@@ -73,15 +73,15 @@ export default function SignUp() {
     <section className="dark-bg w-100 h-75 py-3 d-flex justify-content-center align-items-center" style={{ backgroundImage : 'url(/img/home/net-bg-2.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
       <div className="container" style={{'maxWidth':'500px'}}>
       
-      <SignupForm title = 'Create your account'  handleSubmit= {handleSubmit}/>
+      <SignupForm title = 'Crea il tuo Account'  handleSubmit= {handleSubmit}/>
       { formError && <div className="fs-6 p-3 mt-2 rounded bg-danger-subtle text-danger" >{formError}</div> }
 
       <div className="p-3 mt-4 mb-4 rounded bg-white text-secondary">
-        <p className="mb-0"> Already have an account? <Link href="/it/auth/login" className="text-primary ">Login Here</Link></p>
+        <p className="mb-0 small">Hai già un Account? <Link href="/it/auth/login" className="text-primary fw-bold">Accedi Ora</Link></p>
       </div>
 
       <div className="">
-        <p className="mb-3 text-white fw-lighter" style={{ 'fontSize' : '11px'}} >Clicking Submit, you agree to the terms and conditions and the privacy policy present at the bottom of the site. For more information, visit the legal section of piqus.it.</p>
+        <p className="mb-3 text-white fw-lighter" style={{ 'fontSize' : '11px'}} >Continuando accetti i termini e le condizioni e l&apos;informativa sulla privacy presenti nella parte inferiore del sito. Per ulteriori informazioni, visita la sezione legale su piqus.it.</p>
       </div>
 
       </div>

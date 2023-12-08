@@ -21,7 +21,7 @@ export default function Features() {
             <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" /> Scegli le ultime tecnologie di marketing e scala la tua attività.</p>
 
             <div className="d-none d-sm-block">
-              <CallToActionButtons />
+              <CallToActionButtons size={'sm'}/>
             </div>
 
           </div>
