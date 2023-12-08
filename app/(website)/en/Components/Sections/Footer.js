@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
-import Image from 'next/image';
-import logo from '@/public/img/logo/piqus-logo-white.png'
 
 /////////////////////////////
 // components
@@ -11,6 +9,7 @@ import logo from '@/public/img/logo/piqus-logo-white.png'
 import StartNow from '../Buttons/StartNow';
 import Whatsapp from '../Buttons/Whatsapp';
 import LogoVertical from '../Logos/LogoVertical';
+import LanguageSelector from '@/app/Components/Widget/LanguageSelector';
 
 
 export default function Footer() {
@@ -24,6 +23,8 @@ export default function Footer() {
           <h5 className="small text-decoration-underline">Piqus</h5>
           <ul className="navbar-nav mb-2 me-auto mb-lg-0 fw-lighter small">
             {/* <Navigation /> */}
+            <LanguageSelector />
+
           </ul>
         </div>
 

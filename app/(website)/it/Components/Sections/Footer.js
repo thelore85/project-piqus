@@ -8,6 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 import LogoVertical from '../Logos/LogoVertical';
 import CallToActionButtons from '../Buttons/CallToActionButtons';
+import LanguageSelector from '@/app/Components/Widget/LanguageSelector';
 
 export default function Footer() {
   return (
@@ -20,6 +21,7 @@ export default function Footer() {
           <h5 className="small text-decoration-underline">Piqus</h5>
           <ul className="navbar-nav mb-2 me-auto mb-lg-0 fw-lighter small">
             {/* <Navigation /> */}
+            <LanguageSelector />
           </ul>
         </div>
 

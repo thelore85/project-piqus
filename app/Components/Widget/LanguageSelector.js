@@ -1,0 +1,45 @@
+'use client'
+
+import React, { useContext, useEffect, useState } from 'react'
+import { Context } from '@/app/context/GlobalContext'
+import { usePathname, useRouter } from 'next/navigation'
+
+
+export default function LanguageSelector() {
+
+  const [lang, setLang] = useState('')
+  const [path, setPath] = useState('')
+  const current = window.location.pathname
+  
+  const router = useRouter()
+  const pathName = usePathname()
+
+  const handleSelection = (e)=>{
+    const language = e.target.value
+    setLang(language)
+    redirect(language)
+  }
+
+  const redirect = (string) => {
+      const pathToReplace = path.slice(1, 3);
+      const newPath = path.replace(pathToReplace, `${string}`);
+      setPath(newPath)
+      router.push(newPath)
+  }
+
+  
+  useEffect(()=>{
+    const url = pathName
+    setPath(url)
+    setLang(url.slice(1, 3))
+  },[pathName])
+
+  return (
+    <div>
+      <select name="cars" id="cars" form="carform" value={lang}  onChange={handleSelection}>
+        <option value="it" >Italiano</option>
+        <option value="en" >Inglese</option>
+      </select>
+    </div>
+  )
+}

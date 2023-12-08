@@ -10,6 +10,7 @@ import Whatsapp from '../Buttons/Whatsapp';
 import Avatar from './Avatar';
 import LogoOrizontal from '../Logos/LogoOrizontal';
 import LinkNavigation from './LinkNavigation';
+import Link from 'next/link';
 
 export default async function MainNavbar() {
 
@@ -19,9 +20,11 @@ export default async function MainNavbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black shadow-sm " aria-label="Eleventh navbar example">
       <div className="container">
-
+          
           <div>
-            <LogoOrizontal />
+            <Link className="navbar-brand fs-4 me-4 d-inline-block" href="/en/home">
+              <LogoOrizontal />
+            </Link>
           </div>
 
           <div>

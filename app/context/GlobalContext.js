@@ -9,10 +9,7 @@ export const GlobalContext = (props) => {
   // Store
   const [ store, setStore ] = useState({
     session : {},
-    sessionData: {
-      name: 'lorenzo',
-      surname: 'garofalo'
-    }
+    languageSelected: ''
   })
 
   // Actions 
@@ -21,22 +18,25 @@ export const GlobalContext = (props) => {
     getSession: async () => {
       const supabase = createClientComponentClient()    
       const { data } = await supabase.auth.getSession()
-      if(data){
+      if(data.session){
         setStore( prevStore => ({ ...prevStore, session: data.session }))
+      }else{
+        console.log('Context message: anonimous session running')
       }
     },
 
-    addDataSession: (data) => {
-      setStore( prevStore => ({...prevStore, sessionData: data }))
-      localStorage.setItem('sessionData', JSON.stringify(data))
+    updateLanguage: (language) => {
+      console.log('actions: updating language: ', language)
+      setStore( prevStore => ({...prevStore, languageSelected: language }))
+      localStorage.setItem('languageSelected', JSON.stringify(language))
     }
 
   });
 
   // UseEffect
   useEffect(() => {
-     actions.getSession()
-  },[actions] )
+
+  },[] )
 
   return(
     <Context.Provider value={{ store, setStore, actions }}>
