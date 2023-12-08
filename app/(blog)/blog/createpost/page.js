@@ -12,7 +12,7 @@ export default async function createPostPage() {
   const supabase = createServerComponentClient({ cookies })
   const { data } = await supabase.auth.getSession()
 
-  if(!data.session){ redirect(`/login`) }  //protect the page from non logged-in users 
+  if(!data.session){ redirect(`/en/login`) }  //protect the page from non logged-in users 
 
   return (
     <>

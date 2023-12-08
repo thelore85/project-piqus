@@ -10,7 +10,6 @@ import PostIndex from '../Components/PostIndex';
 import PostTitle from '../Components/PostTitle';
 
 
-
 ///////////////////////////////////////
 //metadata 
 export async function generateMetadata({ params }) {
@@ -27,7 +26,6 @@ export async function generateMetadata({ params }) {
 }
 
 
-
 const getPost = async (id) => {
   const supabase = createServerComponentClient({ cookies })
   const { data: post } = await supabase.from('piqus_blog_post')
@@ -35,7 +33,6 @@ const getPost = async (id) => {
     .eq('id', id)
     .single()
  
-
   if (!post) { notFound() }
     return post
 }
