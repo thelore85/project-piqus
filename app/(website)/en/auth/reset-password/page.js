@@ -19,7 +19,6 @@ export default function PageResetPassword() {
       redirectTo: 'https://piqus.it/en/auth/new-password',
     })
 
-
     if(data){setRequest(true)}
     if(error){ console.log('reset psw error: ', data); setRequest(false)}
   }
