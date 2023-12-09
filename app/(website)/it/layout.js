@@ -4,8 +4,8 @@ import MainNavbar from './Components/Navigation/MainNavbar';
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Online Marketing. Sviluppo Siti Web | PIQUS.it',
-  description: 'Acquisici Clienti. Porta il Tuo Negozio Online',
+  title: 'Esperti nel Web | PIQUS.it',
+  description: 'Online Marketing. Sviluppo Web. Online Store',
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
 
