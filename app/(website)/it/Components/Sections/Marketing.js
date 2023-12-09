@@ -11,13 +11,13 @@ export default function Marketing() {
       <div className="container text-dark pt-4" style={{maxWidth:'1000px'}}>
 
       <h2 className="text-center text-decoration-underline small mb-4">Marketing Online</h2>
-      <h2 className="text-center h1 fw-bolder mb-5">Web con il <span className="text-secondary">Marketing</span> in mente</h2>
+      <h2 className="text-center h1 fw-bolder mb-5" style={{ textWrap:"balance" }}>Web con il <span className="text-secondary">Marketing</span> in mente</h2>
 
       <div className="">
         <div className="row g-3 border-top py-3">
 
           <div className="col-12 col-md-9">
-            <h3 className="h5 fw-bolder">Fatti notare dal tuo pubblico <Link href="/it/marketing-online" className="text-primary">&gt; Scopri di più</Link></h3>
+            <h3 className="h5 fw-bolder" style={{ textWrap:"balance" }}>Fatti notare dal tuo pubblico <Link href="/it/marketing-online" className="text-primary">&gt; Scopri di più</Link></h3>
             <p className="text-secondary small">Un buon sito web è necessario, ma non è sufficiente! Per raggiungere gli obiettivi aziendali, devi <strong>attirare il tuo pubblico e convertire</strong> il loro comportamento in vendite.</p>
           </div>
 

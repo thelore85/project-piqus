@@ -8,7 +8,7 @@ export default function Website() {
       <div className="container text-white border-bottom" style={{ maxWidth: '1000px' }}>
 
         <h2 className="text-decoration-underline small mb-4">Sito Web</h2>
-        <h3 className="h1 fw-bolder mb-5 text-en">Costruisci un <span className="text-success">Sito Web</span> Performante</h3>
+        <h3 className="h1 fw-bolder mb-5 text-en" style={{ textWrap:"pretty" }}>Costruisci un <span className="text-success">Sito Web</span> Performante</h3>
 
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-md-3">

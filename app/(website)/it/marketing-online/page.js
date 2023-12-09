@@ -18,7 +18,7 @@ export const metadata = {
 export default function MarketingOnlinePage() {
   return (
     <>
-      <Title title={'Online Marketing'} subtitle={'Gain your presence On Google and Social Media with Online Advertising'}/>
+      <Title title={'Online Marketing'} subtitle={'La tua pubblicità su Goolge, Instagram e Facebook'}/>
       <Google />
       <Social />
       <Seo />

@@ -8,7 +8,7 @@ export default function Ecommerce() {
       <div className="container text-white pt-4" style={{ maxWidth: '1000px' }}>
 
         <h2 className="text-decoration-underline small mb-4">E-commerce</h2>
-        <h3 className="h1 fw-bolder mb-3">Porta il tuo <span className="text-primary">Negozio Online</span></h3>
+        <h3 className="h1 fw-bolder mb-3" style={{ textWrap:"pretty" }}>Porta il tuo <span className="text-primary">Negozio Online</span></h3>
 
         <div className="row border-bottom py-4 g-4">
 

@@ -25,7 +25,7 @@ export default function Footer() {
           </ul>
         </div> */}
 
-        <div className="col-4 col-md-2 mb-4">
+        <div className="col-6 col-md-3 mb-4">
             <h5 className="small text-decoration-underline" >Contacts</h5>
             <ul className="nav flex-column small">
               <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://api.whatsapp.com/send/?phone=393933222446&text&type=phone_number&app_absent=0" target='_blank'>Whatsapp</Link></li>
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
         </div>
 
-        <div className="col-4 col-md-2 mb-4">
+        <div className="col-6 col-md-3 mb-4">
             <h5 className="small text-decoration-underline">Admin</h5>
             <ul className="nav flex-column small">
               <li className="nav-item mb-2"><Link href="/en/auth/login" className="fw-lighter p-0 small">Login</Link></li>
@@ -46,9 +46,9 @@ export default function Footer() {
             </ul>
         </div>
 
-        <div className="col-md-2"></div>
+        <div className="col-md-3"></div>
 
-        <div className="col-md-4 mb-3 text-center">
+        <div className="col-md-3 mb-3 text-center">
           <LogoVertical />
           <CallToActionButtons size={'sm'}/>
         </div>

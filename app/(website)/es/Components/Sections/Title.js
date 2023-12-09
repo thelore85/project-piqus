@@ -9,7 +9,7 @@ export default function Title({ title, subtitle }) {
 
       <div className="">
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>{title}</h1>
-        <p className=" h5 lh-lg fw-light  mb-5">{subtitle}</p>
+        <p className=" h5 lh-md fw-light mb-5" style={{ textWrap:"balance", textShadow:"2px 2px 2px black" }}>{subtitle}</p>
         <div>
           <CallToActionButtons size={'sm'}/>
         </div>
