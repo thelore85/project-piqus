@@ -9,8 +9,8 @@ import Title from "../Components/Sections/Title";
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Online Marketing: Your presence, online - Piqus.it',
-  description: 'Gain new customers with tailored campaigns. Gain visigility online. Scale your business online.',
+  title: 'Online Marketing | PIQUS.it',
+  description: 'Acquire new customers on Instagram, Google, or Facebook',
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
 

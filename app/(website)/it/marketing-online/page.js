@@ -9,8 +9,8 @@ import Title from "../Components/Sections/Title";
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Online Marketing - La tua presenza, online.',
-  description: 'Acquisici Nuovo Clienti. Scala il Tuo Business con campagne mirate. Aumenta la tua notorietà online',
+  title: 'Online Marketing | PIQUS.it',
+  description: 'Acquisisci nuovi clienti su Instagram, Google o Facebook.',
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
 

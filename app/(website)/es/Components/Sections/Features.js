@@ -16,7 +16,7 @@ export default function Features() {
         <div className="row row-cols-1 row-cols-lg-2 g-5">
 
           <div className="col d-flex flex-column align-items-start gap-2">
-            <h2 className="fw-bold h1">Haz crecer tu negocio, en línea.</h2>
+            <h2 className="fw-bold h1">Haz crecer tu negocio, online.</h2>
             <p className="fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Desarrolla la mejor estrategia de publicidad online.</p>
             <p className="fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Elige las últimas tecnologías de marketing para tu negocio.</p>
 
