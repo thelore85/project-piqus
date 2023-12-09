@@ -9,12 +9,12 @@ export default function Seo() {
         <div className="row border-bottom g-4">
 
           <div className="col-md-12 mb-3">
-            <h2 className="h1 fw-bolder mb-4" style={{ fontSize: "2.3rem" }}><span className="" style={{ color: "green" }}>SEO</span> e Contenuti</h2>
-            <h5 className="fw-bold mb-4">Ottimizzazione per i Motori di Ricerca - Copywriting - Strategie di Contenuto</h5>
-            <p>Eleva la tua presenza digitale dalle strategie SEO ai contenuti, fino all&#39;ottimizzazione di Google Business.</p>
+            <h2 className="h1 fw-bolder mb-4" style={{ fontSize: "2.3rem" }}><span className="" style={{ color: "green" }}>SEO</span> y Contenido</h2>
+            <h5 className="fw-bold mb-4">Optimización para Motores de Búsqueda - Copywriting - Estrategias de Contenido</h5>
+            <p>Eleva tu presencia digital desde estrategias de SEO hasta contenido, incluso hasta la optimización de Google Business.</p>
             <p className="d-none d-sm-block">
-              Dalle strategie SEO ai contenuti, fino all&#39;ottimizzazione di Google Business, assicurati un approccio olistico per massimizzare il tuo impatto online.
-              Dominare i risultati di ricerca con parole chiave rilevanti e stabilire un&#39;identità online robusta attraverso le nostre strategie integrate di indicizzazione.
+              Desde estrategias de SEO hasta contenido, incluso hasta la optimización de Google Business, asegúrate de tener un enfoque holístico para maximizar tu impacto en línea.
+              Domina los resultados de búsqueda con palabras clave relevantes y establece una identidad en línea sólida a través de nuestras estrategias integradas de indexación.
             </p>
           </div>
 

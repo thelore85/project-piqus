@@ -11,6 +11,7 @@ import Avatar from './Avatar';
 import LogoOrizontal from '../Logos/LogoOrizontal';
 import LinkNavigation from './LinkNavigation';
 import Link from 'next/link';
+import CallToActionButtons from '../Buttons/CallToActionButtons';
 
 export default async function MainNavbar() {
 
@@ -38,7 +39,7 @@ export default async function MainNavbar() {
 
             {data.session ? 
             (<Avatar session={data.session}/>):
-            (<><StartNow size={'sm'}/> <Whatsapp size={'sm'}/></>)}
+            (<CallToActionButtons size={'sm'} />)}
           </div>
 
       </div>

@@ -24,10 +24,10 @@ export default function About() {
           </div>
 
           <div className="col-md-8 text-white text-start py-4">
-            <h2 className="h1 text-white fw-bolder h1 mb-5">Oltre 10 Anni di Web</h2>
+            <h2 className="h1 text-white fw-bolder h1 mb-5">Más de 10 años en la Web</h2>
             <div className="mb-5">
-              <p className="fw-light small">Con un decennio di esperienza nella comunicazione online, porto una prospettiva internazionale come freelance esperto e collaboratore con aziende multinazionali nei settori finanziario, sanitario, dell&#39;intrattenimento e della moda.</p>
-              <p className="fw-light small">Ho padroneggiato moderne strategie di marketing online, implementato tecnologie di marketing complesse e mantenuto siti web e piattaforme aggiornati.</p>
+              <p className="fw-light small">Con una década de experiencia en comunicación en línea, aporto una perspectiva internacional como freelance experto y colaborador con empresas multinacionales en los sectores financiero, de la salud, del entretenimiento y de la moda.</p>
+              <p className="fw-light small">He dominado modernas estrategias de marketing en línea, implementado tecnologías de marketing complejas y mantenido sitios web y plataformas actualizados.</p>
             </div>
 
             <div className="accordion mb-5">
@@ -35,49 +35,49 @@ export default function About() {
 
                 <h2 className="accordion-header">
                   <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#courses" aria-expanded="false" aria-controls="courses">
-                    Corsi e Certificazioni
+                    Cursos y Certificaciones
                   </button>
                 </h2>
 
                 <div id="courses" className="accordion-collapse collapse">
                   <div className="accordion-body">
 
-                    <h6 className="ms-3">Accademie</h6>
+                    <h6 className="ms-3">Academias</h6>
                     <ul className="small">
-                      <li className="small"><strong>Web Developer</strong> Full Stack Bootcamp - 4 Geeks Academy - 2024</li>
-                      <li className="small">Master in <strong>Marketing e Comunicazione</strong> - Sole 24 Business School - 2018</li>
-                      <li className="small">Laurea in <strong>Design</strong> - Politecnico di Milano - 2009</li>
+                      <li className="small"><strong>Desarrollador Web</strong> Bootcamp Full Stack - 4 Geeks Academy - 2024</li>
+                      <li className="small">Máster en <strong>Marketing y Comunicación</strong> - Sole 24 Business School - 2018</li>
+                      <li className="small">Licenciatura en <strong>Diseño</strong> - Politécnico de Milán - 2009</li>
                     </ul>
 
-                    <h6 className="ms-3">Aggiornamenti nello sviluppo web</h6>
+                    <h6 className="ms-3">Actualizaciones en desarrollo web</h6>
                     <ul className="small">
-                      <li className="small"><strong>React</strong> pratica avanzata - ZTM academy - 2023</li>
-                      <li className="small"><strong>Next.js</strong> developing - ZTM academy - 2023</li>
-                      <li className="small"><strong>Javascript</strong> pratica avanzata - Linkedin Learn - 2018 </li>
-                      <li className="small"><strong>Bootstrap</strong> design - Linkedin Learn - 2018</li>
+                      <li className="small"><strong>React</strong> práctica avanzada - ZTM academy - 2023</li>
+                      <li className="small"><strong>Next.js</strong> desarrollo - ZTM academy - 2023</li>
+                      <li className="small"><strong>Javascript</strong> práctica avanzada - Linkedin Learn - 2018 </li>
+                      <li className="small"><strong>Bootstrap</strong> diseño - Linkedin Learn - 2018</li>
                       <li className="small"><strong>Python</strong> - Linkedin Learn - 2018</li>              
                     </ul>
 
-                    <h6 className="ms-3">Aggiornamenti nel marketing</h6>
+                    <h6 className="ms-3">Actualizaciones en marketing</h6>
                     <ul className="certification small">
                       <li className="small"><strong>Google Analytics 4</strong> - Coursera - 2023</li>
                       <li className="small"><strong>Google Tag Manager</strong> - Coursera - 2022</li>
-                      <li className="small">Visualizzazione dati con <strong>Google Looker Studio</strong> - Linkedin Learn - 2022</li>
-                      <li className="small">Modulo di marketing <strong>Hubspot</strong> - Hubspot Academy - 2021</li>
-                      <li className="small">Avanzato <strong>Google ADS</strong> - Linkedin Learn - 2021</li>
-                      <li className="small">Avanzato gestionale <strong>META - facebook Business Manager</strong> - Linkedin Learn - 2023</li>
-                      <li className="small">Prestazioni e ottimizzazione per la pubblicità online - Linkedin 2021</li>
+                      <li className="small">Visualización de datos con <strong>Google Looker Studio</strong> - Linkedin Learn - 2022</li>
+                      <li className="small">Módulo de marketing <strong>Hubspot</strong> - Hubspot Academy - 2021</li>
+                      <li className="small">Avanzado <strong>Google ADS</strong> - Linkedin Learn - 2021</li>
+                      <li className="small">Avanzado gestional <strong>META - Facebook Business Manager</strong> - Linkedin Learn - 2023</li>
+                      <li className="small">Rendimiento y optimización para la publicidad en línea - Linkedin 2021</li>
                     </ul>
 
-                    <h6 className="ms-3">Lingue</h6>
+                    <h6 className="ms-3">Idiomas</h6>
                     <ul className="certification small">
-                      <li className="small">Certificazione in <strong>Inglese</strong> - B2- IELTS - 2009</li>
-                      <li className="small">Fluente in scrittura e parlato in <strong>Spagnolo</strong></li>
-                      <li className="small">Madrelingua <strong>Italiano</strong></li>
+                      <li className="small">Certificación en <strong>Inglés</strong> - B2- IELTS - 2009</li>
+                      <li className="small">Fluido en escritura y habla en <strong>Español</strong></li>
+                      <li className="small">Lengua materna <strong>Italiano</strong></li>
                     </ul>
 
                     <div className="border-top p-3 mt-4">
-                      <Image className="me-2" style={{ width: '14%', height: 'auto' }} alt="Università Politecnico di Milano" src={poli} />
+                      <Image className="me-2" style={{ width: '14%', height: 'auto' }} alt="Universidad Politécnico de Milán" src={poli} />
                       <Image className="me-2" style={{ width: '17%', height: 'auto' }} alt="ZTM academy" src={ztm} />
                       <Image className="me-2" style={{ width: '17%', height: 'auto' }} alt="Sole 24 Business School" src={sole24} />
                       <Image className="me-2" style={{ width: '17%', height: 'auto' }} alt="4 Geeks Academy" src={geeks} />

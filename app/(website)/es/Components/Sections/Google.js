@@ -12,13 +12,13 @@ export default function Google() {
           <div className="col-md-9 m-0">
             <h2 className="h1 fw-bolder mb-4" style={{ fontSize: "2.3rem" }}><span className="text-primary">Google</span> Ads</h2>
             <p className="fw-bolder h5 mb-4">
-              Campagne online personalizzate per guidare la presenza sul web e ottenere clienti.
+              Campañas online personalizadas para impulsar la presencia en la web y obtener clientes.
             </p>
             <p className="d-none d-sm-block">
-              Migliora le performance del tuo sito web, raggiungendo potenziali clienti in modo efficiente. <br />
-              Aumenta la tua visibilità online attraverso strategie pubblicitarie su Google progettate per un impatto ottimale.
+              Mejora el rendimiento de tu sitio web, llegando de manera eficiente a posibles clientes. <br />
+              Aumenta tu visibilidad online a través de estrategias publicitarias en Google diseñadas para un impacto óptimo.
             </p>
-            <p className="fw-light small fst-italic">Ricerca - Display - Youtube - Maps - Pmax</p>
+            <p className="fw-light small fst-italic">Búsqueda - Display - Youtube - Maps - Pmax</p>
           </div>
 
           <div className="col-md-3 mb-5 d-none d-sm-block">

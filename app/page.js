@@ -16,7 +16,22 @@ const LanguageRedirect = () => {
 
         // Esempio: verifica se il paese è Italia
         const isItalian = data.country === 'IT';
-        const isSpanish = data.country === 'ES';
+        const isSpanish = 
+                  data.country === 'ES' || 
+                  data.country === 'AR' || 
+                  data.country === 'VE' || 
+                  data.country === 'BR' ||
+                  data.country === 'CL' ||
+                  data.country === 'CO' ||
+                  data.country === 'EC' ||
+                  data.country === 'GY' ||
+                  data.country === 'PY' ||
+                  data.country === 'PE' ||
+                  data.country === 'SR' ||
+                  data.country === 'UY' ||
+                  data.country === 'MX' ||
+                  data.country === 'BO';
+
 
         // Esegui il redirect in base alla lingua
         if (isItalian) {

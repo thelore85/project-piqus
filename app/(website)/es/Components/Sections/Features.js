@@ -4,7 +4,7 @@ import { faRectangleAd } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
 
-// Componenti
+// Componentes
 import Link from 'next/link'
 import CallToActionButtons from '../Buttons/CallToActionButtons'
 
@@ -16,9 +16,9 @@ export default function Features() {
         <div className="row row-cols-1 row-cols-lg-2 g-5">
 
           <div className="col d-flex flex-column align-items-start gap-2">
-            <h2 className="fw-bold h1">Fai crescere la tua attività, online.</h2>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" /> Scegli le migliori soluzioni web per la tua attività e vai online.</p>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" /> Scegli le ultime tecnologie di marketing e scala la tua attività.</p>
+            <h2 className="fw-bold h1">Haz crecer tu negocio, en línea.</h2>
+            <p className="fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Desarrolla la mejor estrategia de publicidad online.</p>
+            <p className="fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Elige las últimas tecnologías de marketing para tu negocio.</p>
 
             <div className="d-none d-sm-block">
               <CallToActionButtons size={'sm'}/>
@@ -32,44 +32,44 @@ export default function Features() {
 
               <div className="col">
                 <Link href="#website" >
-                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Sito Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Trasforma la tua visione in una presenza online accattivante con i nostri servizi di sviluppo web esperti. Siti web eleganti, reattivi e orientati all&#39;utente.</p>
+                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Sitio Web</h4>
+                  <p className="fw-lighter small d-none d-sm-block">Transforma tu visión en una presencia online atractiva con nuestros servicios de desarrollo web expertos. Sitios web elegantes, receptivos y centrados en el usuario.</p>
                 </Link>
               </div>
 
 
               <div className="col">
                 <Link href="#marketing" >
-                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Pubblicità</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua portata e l&#39;impatto attraverso una strategia di pubblicità online. Campagne mirate, creatività coinvolgenti e risultati misurabili per una visibilità digitale ottimale.</p>
+                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Publicidad</h4>
+                  <p className="fw-lighter small d-none d-sm-block">Aumenta tu alcance e impacto a través de una estrategia de publicidad online. Campañas dirigidas, creatividad atractiva y resultados medibles para una visibilidad digital óptima.</p>
                 </Link>
               </div>
 
               <div className="col">
                 <Link href="#ecommerce" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> E-commerce</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Lancia un prospero negozio online con il nostro sviluppo di e-commerce. Transazioni senza soluzione di continuità, design accattivante e funzionalità studiate per aumentare le vendite e l&#39;interazione.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Lanza una próspera tienda online con nuestro desarrollo de comercio electrónico. Transacciones sin problemas, diseño atractivo y funciones diseñadas para aumentar las ventas y la interacción.</p>
                 </Link>
               </div>
 
               <div className="col">
                 <Link href="#marketing" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> SEO</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua visibilità online con la nostra esperienza in SEO. Strategie personalizzate per scalare le classifiche di ricerca, aumentare il traffico organico e valorizzare la tua presenza digitale.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Aumenta tu visibilidad online con nuestra experiencia en SEO. Estrategias personalizadas para escalar en los rankings de búsqueda, aumentar el tráfico orgánico y valorar tu presencia digital.</p>
                 </Link>
               </div>
 
               <div className="col">
                 <Link href="#webapp" >
-                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Applicazioni Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Potenzia la tua attività con applicazioni web personalizzate. Dalla concezione all&#39;implementazione, creiamo soluzioni dinamiche per un&#39;esperienza utente ottimale e processi razionalizzati.</p>
+                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Aplicaciones Web</h4>
+                  <p className="fw-lighter small d-none d-sm-block">Potencia tu negocio con aplicaciones web personalizadas. Desde la concepción hasta la implementación, creamos soluciones dinámicas para una experiencia de usuario óptima y procesos racionalizados.</p>
                 </Link>
               </div>
 
               <div className="col">
                 <Link href="#marketing">
-                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" /> Tecnologia di Marketing</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Sfrutta l&#39;analisi per decisioni basate sui dati e il CRM per l&#39;interazione con i clienti. Le nostre soluzioni di tecnologia marketing ottimizzano le prestazioni, le conversioni e le relazioni con i clienti.</p>
+                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" /> Tecnología de Marketing</h4>
+                  <p className="fw-lighter small d-none d-sm-block">Aprovecha el análisis para decisiones basadas en datos y el CRM para la interacción con los clientes. Nuestras soluciones de tecnología de marketing optimizan el rendimiento, las conversiones y las relaciones con los clientes.</p>
                 </Link>
               </div>
 

@@ -17,8 +17,8 @@ export default function Features() {
 
           <div className="col d-flex flex-column align-items-start gap-2">
             <h2 className="fw-bold h1">Fai crescere la tua attività, online.</h2>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" /> Scegli le migliori soluzioni web per la tua attività e vai online.</p>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" /> Scegli le ultime tecnologie di marketing e scala la tua attività.</p>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Sviluppa la migliore strategia pubblicitaria online</p>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Scegli le ultime tecnologie di marketing e scala la tua attività.</p>
 
             <div className="d-none d-sm-block">
               <CallToActionButtons size={'sm'}/>

@@ -11,112 +11,108 @@ export default function Marketing() {
       <div className="container text-dark pt-4" style={{maxWidth:'1000px'}}>
 
       <h2 className="text-center text-decoration-underline small mb-4">Marketing Online</h2>
-      <h2 className="text-center h1 fw-bolder mb-5">Web con il <span className="text-secondary">Marketing</span> in mente</h2>
+      <h2 className="text-center h1 fw-bolder mb-5">Web con el <span className="text-secondary">Marketing</span> en mente</h2>
 
       <div className="">
         <div className="row g-3 border-top py-3">
 
           <div className="col-12 col-md-9">
-            <h3 className="h5 fw-bolder">Fatti notare dal tuo pubblico <Link href="/es/marketing-online" className="text-primary">&gt; Scopri di più</Link></h3>
-            <p className="text-secondary small">Un buon sito web è necessario, ma non è sufficiente! Per raggiungere gli obiettivi aziendali, devi <strong>attirare il tuo pubblico e convertire</strong> il loro comportamento in vendite.</p>
+            <h3 className="h5 fw-bolder">Destácate ante tu audiencia <Link href="/es/marketing-online" className="text-primary">&gt; Descubre más</Link></h3>
+            <p className="text-secondary small">Un buen sitio web es necesario, ¡pero no es suficiente! Para alcanzar los objetivos comerciales, debes <strong>atraer a tu audiencia y convertir</strong> su comportamiento en ventas.</p>
           </div>
 
           <div className="col-12 col-md-3 text-center d-none d-md-block">
-            <Image src={customer} alt="Acquisizione clienti" width="100"/>
+            <Image src={customer} alt="Adquisición de clientes" width="100"/>
           </div>
 
         </div>
       </div>
 
-
-
       <div className="accordion mb-5" id="marketingServices">
         <div className="accordion-item">
           <h4 className="accordion-header">
             <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#seo" aria-expanded="false" aria-controls="collapseOne">
-            <FontAwesomeIcon icon={faMagnifyingGlassChart}  className="h4 my-0 me-3"/>SEO and Content
+            <FontAwesomeIcon icon={faMagnifyingGlassChart}  className="h4 my-0 me-3"/>SEO y Contenido
             </button>
           </h4>
           <div id="seo" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
             <div className="accordion-body small">
-              <p>Nel mondo del marketing digitale, il contenuto è il re. Per prosperare online, non hai bisogno solo di un qualsiasi contenuto, ma di contenuto che coinvolga, educi e converta. Il nostro servizio di Creazione di Contenuti e Strategia SEO è la tua chiave per dominare il panorama digitale.</p>
-              <p><strong>Contenuto di Alta Qualità</strong></p>
-              <p>Il nostro team di creatori di contenuti esperti eccelle nella creazione di contenuti che risuonano con il tuo pubblico. Che si tratti di post sul blog, articoli, infografiche o script video, sviluppiamo contenuti che lasciano un&#39;impressione duratura e mantengono il tuo pubblico che torna per altro.</p>
-              <p><strong>Ottimizzato per i Motori di Ricerca</strong></p>
-              <p>Creare contenuti eccezionali è solo un pezzo del puzzle. Per garantire che il tuo contenuto raggiunga il suo pieno potenziale, incorporiamo una robusta strategia SEO. Identifichiamo le parole chiave giuste, ottimizziamo i tag meta e strutturiamo il tuo contenuto per posizionarsi in alto nelle pagine dei risultati dei motori di ricerca. Il nostro obiettivo è aumentare la tua visibilità e generare traffico organico al tuo sito web.</p>
-              <p><strong>Approccio Focalizzato sulla Conversione</strong></p>
-              <p>Non si tratta solo di generare traffico; si tratta di trasformare quel traffico in clienti paganti. Adattiamo i nostri contenuti per guidare il tuo pubblico in modo fluido attraverso il funnel di conversione, aumentando così le tue vendite e i lead.</p>
-              <p>Con il nostro servizio di Creazione di Contenuti e Strategia SEO, vedrai un impatto tangibile sulla tua presenza online. Eleva il tuo brand, genera traffico organico e raggiungi i tuoi obiettivi aziendali con contenuti persuasivi e ottimizzati per i motori di ricerca. Contattaci oggi per intraprendere un viaggio guidato dal contenuto verso il successo online!</p>
+              <p>En el mundo del marketing digital, el contenido es el rey. Para prosperar en línea, no necesitas solo cualquier contenido, sino contenido que involucre, eduque y convierta. Nuestro servicio de Creación de Contenidos y Estrategia SEO es tu clave para dominar el panorama digital.</p>
+              <p><strong>Contenido de Alta Calidad</strong></p>
+              <p>Nuestro equipo de creadores de contenido expertos se destaca en la creación de contenido que resuena con tu audiencia. Ya sea publicaciones en el blog, artículos, infografías o guiones de video, desarrollamos contenido que deja una impresión duradera y mantiene a tu audiencia regresando por más.</p>
+              <p><strong>Optimizado para Motores de Búsqueda</strong></p>
+              <p>Crear contenido excepcional es solo una parte del rompecabezas. Para asegurar que tu contenido alcance su máximo potencial, incorporamos una robusta estrategia SEO. Identificamos las palabras clave correctas, optimizamos las etiquetas meta y estructuramos tu contenido para posicionarse en la parte superior de las páginas de resultados de los motores de búsqueda. Nuestro objetivo es aumentar tu visibilidad y generar tráfico orgánico a tu sitio web.</p>
+              <p><strong>Enfoque Centrado en la Conversión</strong></p>
+              <p>No se trata solo de generar tráfico; se trata de convertir ese tráfico en clientes que pagan. Adaptamos nuestro contenido para guiar a tu audiencia de manera fluida a través del embudo de conversión, aumentando así tus ventas y leads.</p>
+              <p>Con nuestro servicio de Creación de Contenidos y Estrategia SEO, verás un impacto tangible en tu presencia en línea. Eleva tu marca, genera tráfico orgánico y alcanza tus objetivos comerciales con contenido persuasivo y optimizado para motores de búsqueda. ¡Contáctanos hoy para emprender un viaje guiado por el contenido hacia el éxito en línea!</p>
             </div>
           </div>
-
         </div>
         <div className="accordion-item">
           <h4 className="accordion-header">
             <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#adv" aria-expanded="false" aria-controls="adv">
-            <FontAwesomeIcon icon={faRectangleAd}  className="h4 my-0 me-3" />Online Advertising
+            <FontAwesomeIcon icon={faRectangleAd}  className="h4 my-0 me-3" />Publicidad en Línea
             </button>
           </h4>
           <div id="adv" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
             <div className="accordion-body small">
-              <p>Nel dinamico panorama digitale, la Pubblicità Online e il Marketing sui Motori di Ricerca (ADV e SEM) svolgono un ruolo fondamentale nel guidare traffico mirato al tuo sito web e nel raggiungere gli obiettivi aziendali.</p>
-              <p><strong>Campagne Pubblicitarie Strategiche</strong></p>
-              <p>Il nostro team è specializzato nella creazione ed esecuzione di campagne pubblicitarie strategiche che raggiungono il tuo pubblico target. Sfruttiamo piattaforme come Google Ads, Bing Ads e la pubblicità sui social media per massimizzare la tua visibilità online.</p>
-              <p><strong>Ottimizzazione delle Parole Chiave e Copywriting degli Annunci</strong></p>
-              <p>Conduciamo approfondite ricerche di parole chiave per identificare le parole chiave più pertinenti e ad alto tasso di conversione per la tua attività. I nostri copywriter esperti creano annunci persuasivi che invitano gli utenti a fare clic e intraprendere un&#39;azione.</p>
-              <p><strong>Tracciamento e Ottimizzazione delle Conversioni</strong></p>
-              <p>Non si tratta solo di clic; si tratta di conversioni. Implementiamo il tracciamento delle conversioni per misurare l&#39;efficacia delle tue campagne. Un&#39;ottimizzazione continua garantisce che il tuo budget venga speso saggiamente per ottenere il miglior rendimento dell&#39;investimento.</p>
-              <p>Con il nostro servizio di Pubblicità Online e Marketing sui Motori di Ricerca (ADV e SEM), vedrai un significativo aumento del traffico sul sito web, dei lead e delle vendite. Porta la tua pubblicità digitale al livello successivo e ottieni risultati tangibili. Contattaci oggi per avviare il tuo percorso verso il successo online!</p>
+              <p>En el dinámico panorama digital, la Publicidad en Línea y el Marketing en Motores de Búsqueda (ADV y SEM) desempeñan un papel fundamental en dirigir tráfico objetivo a tu sitio web y alcanzar los objetivos comerciales.</p>
+              <p><strong>Campañas Publicitarias Estratégicas</strong></p>
+              <p>Nuestro equipo se especializa en la creación y ejecución de campañas publicitarias estratégicas que llegan a tu público objetivo. Aprovechamos plataformas como Google Ads, Bing Ads y la publicidad en redes sociales para maximizar tu visibilidad en línea.</p>
+              <p><strong>Optimización de Palabras Clave y Redacción de Anuncios</strong></p>
+              <p>Realizamos investigaciones exhaustivas de palabras clave para identificar las palabras clave más relevantes y con mayor tasa de conversión para tu negocio. Nuestros redactores expertos crean anuncios persuasivos que invitan a los usuarios a hacer clic y tomar medidas.</p>
+              <p><strong>Seguimiento y Optimización de Conversiones</strong></p>
+              <p>No se trata solo de clics; se trata de conversiones. Implementamos el seguimiento de conversiones para medir la efectividad de tus campañas. Una optimización continua garantiza que tu presupuesto se gaste sabiamente para obtener el mejor retorno de inversión.</p>
+              <p>Con nuestro servicio de Publicidad en Línea y Marketing en Motores de Búsqueda (ADV y SEM), verás un aumento significativo en el tráfico del sitio web, leads y ventas. Lleva tu publicidad digital al siguiente nivel y obtén resultados tangibles. ¡Contáctanos hoy para iniciar tu camino hacia el éxito en línea!</p>
             </div>
           </div>
         </div>
         <div className="accordion-item">
           <h4 className="accordion-header">
             <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#influencer" aria-expanded="false" aria-controls="influencer">
-            <FontAwesomeIcon icon={faUser}  className="h4 my-0 me-3" />Influencer Marketing
+            <FontAwesomeIcon icon={faUser}  className="h4 my-0 me-3" />Marketing de Influencers
             </button>
           </h4>
           <div id="influencer" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
             <div className="accordion-body small">
-              <p>Il Marketing degli Influencer è una strategia potente per connettersi con pubblici mirati e generare ritorni diretti in termini di traffico e conversioni. Il nostro servizio è progettato per coinvolgere influencer attentamente selezionati per attivare specifici pubblici allineati ai tuoi obiettivi.</p>
-              <p><strong>Selezione Strategica degli Influencer</strong></p>
-              <p>Curiamo attentamente una rete di influencer i cui follower sono in linea con il demografico target del tuo brand. Collaborando con gli influencer giusti, garantiamo che il tuo messaggio raggiunga il pubblico più ricettivo.</p>
-              <p><strong>Collaborazione Coinvolgente nella Campagna</strong></p>
-              <p>Collaboriamo con gli influencer per creare contenuti autentici e coinvolgenti che risuonano con i loro follower. Questo approccio assicura che il messaggio del tuo brand sia ricevuto con fiducia e autenticità, aumentando la probabilità di conversione.</p>
-              <p><strong>Risultati Misurabili</strong></p>
-              <p>Le nostre campagne di Marketing degli Influencer sono progettate per il successo, con chiari KPI per misurare le performance. Forniremo insights su copertura, coinvolgimento e conversioni, consentendoti di valutare l&#39;impatto diretto sul tuo business.</p>
-              <p>Con il nostro servizio di Marketing degli Influencer, avrai i mezzi per sfruttare il potere influente delle personalità online e indirizzarlo verso gli obiettivi aziendali. Raggiungi un pubblico altamente coinvolto e mirato e convertilo in clienti fedeli. Contattaci oggi per sbloccare il potenziale del marketing degli influencer per il tuo brand!</p>
+              <p>El Marketing de Influencers es una estrategia poderosa para conectarse con audiencias específicas y generar retornos directos en términos de tráfico y conversiones. Nuestro servicio está diseñado para involucrar a influencers cuidadosamente seleccionados para activar audiencias específicas alineadas con tus objetivos.</p>
+              <p><strong>Selección Estratégica de Influencers</strong></p>
+              <p>Cuidamos cuidadosamente una red de influencers cuyos seguidores están alineados con el demográfico objetivo de tu marca. Colaborando con los influencers adecuados, garantizamos que tu mensaje llegue a la audiencia más receptiva.</p>
+              <p><strong>Colaboración Involucrante en la Campaña</strong></p>
+              <p>Colaboramos con los influencers para crear contenido auténtico e involucrante que resuene con sus seguidores. Este enfoque asegura que el mensaje de tu marca sea recibido con confianza y autenticidad, aumentando la probabilidad de conversión.</p>
+              <p><strong>Resultados Medibles</strong></p>
+              <p>Nuestras campañas de Marketing de Influencers están diseñadas para el éxito, con claros KPI para medir el rendimiento. Proporcionaremos información sobre cobertura, participación y conversiones, permitiéndote evaluar el impacto directo en tu negocio.</p>
+              <p>Con nuestro servicio de Marketing de Influencers, tendrás los medios para aprovechar el poder influyente de las personalidades en línea y dirigirlo hacia los objetivos comerciales. Alcanza a una audiencia altamente comprometida y específica y conviértela en clientes leales. ¡Contáctanos hoy para desbloquear el potencial del marketing de influencers para tu marca!</p>
             </div>
           </div>
         </div>
         <div className="accordion-item">
           <h4 className="accordion-header">
             <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
-            <FontAwesomeIcon icon={faNewspaper}  className="h4 my-0 me-3" />Press and PR
+            <FontAwesomeIcon icon={faNewspaper}  className="h4 my-0 me-3" />Prensa y Relaciones Públicas
             </button>
           </h4>
           <div id="pr" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
             <div className="accordion-body small">
-              <p>Nel mercato competitivo di oggi, è fondamentale costruire una presenza di marca forte. Il nostro servizio di Coinvolgimento Stampa e PR è progettato per elevare la tua marca ottenendo spazi in pubblicazioni rilevanti, organizzando interviste con giornalisti del settore e facilitando la partecipazione a eventi del settore.</p>
-              <p><strong>Strategica Comunicazione con i Media</strong></p>
-              <p>Il nostro team esperto si specializza nella comunicazione strategica con i media, identificando le giuste pubblicazioni, giornalisti ed eventi che si allineano con la tua marca e i tuoi obiettivi. Ti aiuteremo a creare storie accattivanti che risuonano con il tuo pubblico target.</p>
-              <p><strong>Interviste con Esperti del Settore</strong></p>
-              <p>Ti metteremo in contatto con giornalisti influenti nel tuo settore, garantendo che il messaggio della tua marca raggiunga il pubblico giusto. Interviste e pubblicazioni su riviste rispettate aumenteranno la tua credibilità e autorità nel tuo campo.</p>
-              <p><strong>Partecipazione a Eventi del Settore</strong></p>
-              <p>La partecipazione a eventi e conferenze del settore può fare la differenza per la tua marca. Ti aiuteremo a identificare e garantire opportunità per far brillare la tua marca su un palcoscenico più ampio, stabilendo la tua presenza come leader del settore.</p>
-              <p>Con il nostro servizio di Coinvolgimento Stampa e PR, otterrai un vantaggio competitivo posizionando la tua marca sotto i riflettori. Eleva la visibilità, la credibilità e l&#39;influenza della tua marca nel tuo settore. Contattaci oggi per intraprendere il tuo percorso verso il successo del brand!</p>
+              <p>En el mercado competitivo actual, es fundamental construir una presencia de marca sólida. Nuestro servicio de Participación en Prensa y Relaciones Públicas está diseñado para elevar tu marca obteniendo espacios en publicaciones relevantes, organizando entrevistas con periodistas de la industria y facilitando la participación en eventos del sector.</p>
+              <p><strong>Comunicación Estratégica con los Medios</strong></p>
+              <p>Nuestro equipo experto se especializa en la comunicación estratégica con los medios, identificando las publicaciones correctas, periodistas y eventos que se alinean con tu marca y tus objetivos. Te ayudaremos a crear historias cautivadoras que resuenen con tu audiencia objetivo.</p>
+              <p><strong>Entrevistas con Expertos de la Industria</strong></p>
+              <p>Te pondremos en contacto con periodistas influyentes en tu sector, asegurando que el mensaje de tu marca llegue a la audiencia adecuada. Entrevistas y publicaciones en revistas respetadas aumentarán tu credibilidad y autoridad en tu campo.</p>
+              <p><strong>Participación en Eventos de la Industria</strong></p>
+              <p>La participación en eventos y conferencias de la industria puede marcar la diferencia para tu marca. Te ayudaremos a identificar y asegurar oportunidades para que tu marca brille en un escenario más amplio, estableciendo tu presencia como líder en la industria.</p>
+              <p>Con nuestro servicio de Participación en Prensa y Relaciones Públicas, obtendrás una ventaja competitiva posicionando tu marca bajo los reflectores. Eleva la visibilidad, la credibilidad y la influencia de tu marca en tu industria. ¡Contáctanos hoy para emprender tu camino hacia el éxito de la marca!</p>
             </div>
           </div>
         </div>
       </div>
 
-
       <div className="">
         <div className="row g-3 border-top py-3">
 
           <div className="col-12 col-md-9">
-            <h3 className="h5 fw-bolder">Potenzia il Tuo Potenziale di Marketing</h3>
-            <p className="text-secondary small">Aumenta i volumi di vendita con <strong>implementazione di analytics e CRM</strong>. Attiva i contatti in ogni fase del ciclo di vita e ottieni conversioni.</p>
+            <h3 className="h5 fw-bolder">Aprovecha tu Potencial de Marketing</h3>
+            <p className="text-secondary small">Aumenta los volúmenes de venta con <strong>implementación de análisis y CRM</strong>. Activa los contactos en cada fase del ciclo de vida y obtén conversiones.</p>
           </div>
 
           <div className="col-12 col-md-3 text-center d-none d-md-block">
@@ -130,45 +126,42 @@ export default function Marketing() {
         <div className="accordion-item">
         <h4 className="accordion-header">
           <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#analytics" aria-expanded="false" aria-controls="analytics">
-            <FontAwesomeIcon icon={faChartSimple} className="h4 my-0 me-3" />Strumenti di Analisi
+            <FontAwesomeIcon icon={faChartSimple} className="h4 my-0 me-3" />Herramientas de Análisis
           </button>
         </h4>
         <div id="analytics" className="accordion-collapse collapse" data-bs-parent="#marketingServices">
           <div className="accordion-body small">
-            <p>Nell&#39;era digitale basata sui dati, comprendere le prestazioni del tuo sito web è fondamentale. Il nostro servizio di Configurazione Analitica ti permette di sfruttare il potere dei dati per monitorare, analizzare e monetizzare efficacemente il traffico del tuo sito web.</p>
-            <p><strong>Configurazione di Tracciamento Completa</strong></p>
-            <p>Implementiamo strumenti di analisi avanzati, come Google Analytics e soluzioni personalizzate, per fornirti una visione completa del traffico del tuo sito web. Dal comportamento degli utenti alle fonti di traffico, tracciamo tutto per aiutarti a prendere decisioni informate.</p>
-            <p><strong>Insight Basati sui Dati</strong></p>
-            <p>I dati hanno valore solo se forniscono insight. Il nostro team di esperti ti aiuterà a estrarre insight operativi dai tuoi dati analitici. Identificheremo punti di forza, debolezze e opportunità per ottimizzare la tua presenza online.</p>
-            <p><strong>Strategie di Monetizzazione</strong></p>
-            <p>Trasformare gli insight in entrate è dove il nostro servizio brilla davvero. Collaboriamo con te per sviluppare strategie di monetizzazione basate sui tuoi dati analitici. Che sia attraverso la pubblicità, le raccomandazioni di prodotti o l&#39;ottimizzazione dei contenuti, ti aiuteremo a sfruttare al massimo il tuo traffico.</p>
-            <p>Con il nostro servizio di Configurazione Analitica, avrai gli strumenti e gli insight necessari per migliorare la tua presenza online e potenziare i tuoi profitti. Non limitarti a raccogliere dati; fai in modo che i dati lavorino per te. Contattaci oggi per intraprendere il tuo percorso verso il successo basato sui dati!</p>
+            <p>En la era digital basada en datos, entender el rendimiento de tu sitio web es fundamental. Nuestro servicio de Configuración Analítica te permite aprovechar el poder de los datos para monitorear, analizar y rentabilizar eficazmente el tráfico de tu sitio web.</p>
+            <p><strong>Configuración de Seguimiento Completa</strong></p>
+            <p>Implementamos herramientas de análisis avanzadas, como Google Analytics y soluciones personalizadas, para brindarte una visión completa del tráfico de tu sitio web. Desde el comportamiento de los usuarios hasta las fuentes de tráfico, rastreamos todo para ayudarte a tomar decisiones informadas.</p>
+            <p><strong>Información basada en Datos</strong></p>
+            <p>Los datos solo tienen valor si proporcionan información. Nuestro equipo de expertos te ayudará a extraer información operativa de tus datos analíticos. Identificaremos puntos fuertes, debilidades y oportunidades para optimizar tu presencia en línea.</p>
+            <p><strong>Estrategias de Rentabilización</strong></p>
+            <p>Transformar la información en ingresos es donde realmente destaca nuestro servicio. Colaboramos contigo para desarrollar estrategias de rentabilización basadas en tus datos analíticos. Ya sea a través de publicidad, recomendaciones de productos o la optimización de contenidos, te ayudaremos a aprovechar al máximo tu tráfico.</p>
+            <p>Con nuestro servicio de Configuración Analítica, contarás con las herramientas e información necesarias para mejorar tu presencia en línea y potenciar tus beneficios. No te limites a recopilar datos; haz que los datos trabajen para ti. ¡Contáctanos hoy para emprender tu camino hacia el éxito basado en datos!</p>
           </div>
         </div>
         </div>
         <div className="accordion-item">
           <h4 className="accordion-header">
             <button className="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#crm" aria-expanded="false" aria-controls="crm">
-            <FontAwesomeIcon icon={faPaperPlane}  className="h4 my-0 me-3" />CRM and Email marketing
+            <FontAwesomeIcon icon={faPaperPlane}  className="h4 my-0 me-3" />CRM y Email Marketing
             </button>
           </h4>
           <div id="crm" className="accordion-collapse collapse" data-bs-parent="#marketingServices" >
             <div className="accordion-body small">
-              <p>In the world of modern business, managing and engaging your customer base is essential for success. Our CRM Tool Configuration service equips you with the tools to effectively manage contacts and activate your customer base through targeted email marketing campaigns.</p>
-              <p><strong>Streamlined Contact Management</strong></p>
-              <p>We set up and configure powerful CRM tools that enable you to centralize and manage your customer and lead data. Keep track of interactions, gather valuable insights, and ensure a seamless customer experience.</p>
-              <p><strong>Email Marketing Expertise</strong></p>
-              <p>Email marketing remains a highly effective way to reach and engage your audience. Our team of email marketing experts will help you create and execute targeted email campaigns that drive conversions, build brand loyalty, and increase revenue.</p>
-              <p><strong>Automation and Personalization</strong></p>
-              <p>We&apos;ll implement automation and personalization strategies to ensure your messages are relevant and timely. From welcome emails to re-engagement campaigns, we&apos;ll help you nurture your customer relationships.</p>
-              <p>With our CRM Tool Configuration service, you&apos;ll have the tools and expertise to take your customer relationships to the next level. Maximize your customer base&apos;s potential with efficient contact management and impactful email marketing. Contact us today to start enhancing your customer engagement and boosting your business growth!</p>
+              <p>En el mundo de los negocios modernos, gestionar y conectar con tu base de clientes es esencial para el éxito. Nuestro servicio de Configuración de Herramientas CRM te proporciona las herramientas para gestionar eficazmente los contactos y activar tu base de clientes mediante campañas de email marketing dirigidas.</p>
+              <p><strong>Gestión de Contactos Simplificada</strong></p>
+              <p>Configuramos y ajustamos potentes herramientas CRM que te permiten centralizar y gestionar tus datos de clientes y clientes potenciales. Realiza un seguimiento de las interacciones, recopila información valiosa y garantiza una experiencia del cliente sin problemas.</p>
+              <p><strong>Experiencia en Email Marketing</strong></p>
+              <p>El email marketing sigue siendo una forma altamente efectiva de llegar y conectar con tu audiencia. Nuestro equipo de expertos en email marketing te ayudará a crear y ejecutar campañas de email dirigidas que impulsen conversiones, construyan lealtad a la marca e incrementen los ingresos.</p>
+              <p><strong>Automatización y Personalización</strong></p>
+              <p>Implementaremos estrategias de automatización y personalización para asegurar que tus mensajes sean relevantes y oportunos. Desde emails de bienvenida hasta campañas de reenganche, te ayudaremos a nutrir tus relaciones con los clientes.</p>
+              <p>Con nuestro servicio de Configuración de Herramientas CRM, contarás con las herramientas y la experiencia para llevar tus relaciones con los clientes al siguiente nivel. Maximiza el potencial de tu base de clientes con una gestión eficiente de contactos y un impactante email marketing. ¡Contáctanos hoy para empezar a mejorar tu participación con los clientes y potenciar el crecimiento de tu negocio!</p>
             </div>
           </div>
         </div>
       </div>
-
-
-
 
       </div>
     </section>

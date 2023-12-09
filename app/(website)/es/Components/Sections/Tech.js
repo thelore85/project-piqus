@@ -24,7 +24,8 @@ export default function Tech() {
   return (
     <section id="tech" className="bg-body-tertiary d-flex justify-content-center align-items-center p-5" style={{minHeight: '40%'}}>
       <div className=" text-center">
-        <h1 className="mb-4 fw-bold" style={{ fontSize:"2.5rem", lineHeight:"2.7rem" }}>Scegli la Migliore Tecnologia Web</h1>
+        <h1 className="mb-4 fw-bold" style={{ fontSize: "2.5rem", lineHeight: "2.7rem" }}>Elige la Mejor Tecnología Web</h1>
+
 
         <div>
 

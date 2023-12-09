@@ -1,16 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Link from "next/link";
+
 
 /////////////////////////////
 // components
-// import Navigation from '../Navbar/Navigation';
-import StartNow from '../Buttons/StartNow';
-import Whatsapp from '../Buttons/Whatsapp';
+import Link from "next/link";
 import LogoVertical from '../Logos/LogoVertical';
+import CallToActionButtons from '../Buttons/CallToActionButtons';
 import LanguageSelector from '@/app/Components/Widget/LanguageSelector';
-
 
 export default function Footer() {
   return (
@@ -19,14 +17,13 @@ export default function Footer() {
 
       <div className="row">
 
-        <div className="col-4 col-md-2 mb-5">
+        {/* <div className="col-4 col-md-2 mb-5">
           <h5 className="small text-decoration-underline">Piqus</h5>
           <ul className="navbar-nav mb-2 me-auto mb-lg-0 fw-lighter small">
-            {/* <Navigation /> */}
+            <Navigation />
             <LanguageSelector />
-
           </ul>
-        </div>
+        </div> */}
 
         <div className="col-4 col-md-2 mb-4">
             <h5 className="small text-decoration-underline" >Contacts</h5>
@@ -35,15 +32,17 @@ export default function Footer() {
               <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://github.com/thelore85" target='_blank'>GitHub</Link></li>
               <li className="nav-item mb-2 fw-lighter p-0 small"><Link href="https://www.linkedin.com/in/lorenzo-garofalo-digital/" target='_blank'>Linkedin</Link></li>
             </ul>
+            <div className="mt-4">
+              <LanguageSelector />
+            </div>
         </div>
 
         <div className="col-4 col-md-2 mb-4">
             <h5 className="small text-decoration-underline">Admin</h5>
             <ul className="nav flex-column small">
-              <li className="nav-item mb-2"><Link href="/login" className="fw-lighter p-0 small">Login</Link></li>
-              <li className="nav-item mb-2"><Link href="/signup" className="fw-lighter p-0">Signup</Link></li>
+              <li className="nav-item mb-2"><Link href="/en/auth/login" className="fw-lighter p-0 small">Login</Link></li>
+              <li className="nav-item mb-2"><Link href="/en/auth//signup" className="fw-lighter p-0">Signup</Link></li>
               <li className="nav-item mb-2"><Link href="/dashboard" className="fw-lighter p-0">Dashboard</Link></li>
-              <li className="nav-item mb-2"><Link href="/blog" className="fw-lighter p-0">Blog</Link></li>
             </ul>
         </div>
 
@@ -51,8 +50,7 @@ export default function Footer() {
 
         <div className="col-md-4 mb-3 text-center">
           <LogoVertical />
-          <StartNow size={"sm"}/>
-          <Whatsapp size={"sm"}/>
+          <CallToActionButtons size={'sm'}/>
         </div>
       </div>
 

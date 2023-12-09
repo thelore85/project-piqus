@@ -1,4 +1,3 @@
-
 import React from 'react'
 import CallToActionButtons from '../Buttons/CallToActionButtons'
 
@@ -9,8 +8,8 @@ export default function CallToAction() {
 
         <div className="row text-center text-md-start align-items-center py-4">
           <div className="col-md-8 ">
-            <h3>Cerchi uno sepcialista per il tuo Sito Web?</h3>
-            <p className="fw-lighter small ">Scrivi un messaggio o apri un account e inizia un progetto!</p>
+            <h3>¿Buscas un especialista para tu Sitio Web?</h3>
+            <p className="fw-lighter small ">¡Escribe un mensaje o abre una cuenta y comienza un proyecto!</p>
           </div>
 
           <div className="col-md-4 text-md-end">

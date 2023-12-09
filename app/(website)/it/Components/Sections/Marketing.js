@@ -115,7 +115,7 @@ export default function Marketing() {
         <div className="row g-3 border-top py-3">
 
           <div className="col-12 col-md-9">
-            <h3 className="h5 fw-bolder">Potenzia il Tuo Potenziale di Marketing</h3>
+            <h3 className="h5 fw-bolder">Sfrutta il Tuo Potenziale di Marketing</h3>
             <p className="text-secondary small">Aumenta i volumi di vendita con <strong>implementazione di analytics e CRM</strong>. Attiva i contatti in ogni fase del ciclo di vita e ottieni conversioni.</p>
           </div>
 

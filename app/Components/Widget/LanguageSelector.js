@@ -35,9 +35,9 @@ export default function LanguageSelector() {
   return (
     <div>
       <select name="cars" id="cars" form="carform" value={lang}  onChange={handleSelection}>
-        <option value="it" >Italiano</option>
-        <option value="es" >Español</option>
         <option value="en" >English</option>
+        <option value="es" >Español</option>
+        <option value="it" >Italiano</option>
       </select>
     </div>
   )
