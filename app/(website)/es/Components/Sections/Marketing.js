@@ -11,7 +11,7 @@ export default function Marketing() {
       <div className="container text-dark pt-4" style={{maxWidth:'1000px'}}>
 
       <h2 className="text-center text-decoration-underline small mb-4">Marketing Online</h2>
-      <h2 className="text-center h1 fw-bolder mb-5">Web con el <span className="text-secondary">Marketing</span> en mente</h2>
+      <h2 className="text-center h1 fw-bolder mb-5">Desarrollo y <span className="text-secondary">Marketing</span> juntos</h2>
 
       <div className="">
         <div className="row g-3 border-top py-3">
