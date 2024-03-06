@@ -1,7 +1,7 @@
 
 //components
-import StartNow from '../Buttons/StartNow'
-import Whatsapp from '../Buttons/Whatsapp'
+import CallToActionButtons from '../Buttons/CallToActionButtons'
+
 
 export default function Hero() {
   return (
@@ -12,8 +12,7 @@ export default function Hero() {
         <h1 className="h1 fw-bolder mb-2" style={{fontSize : '4rem'}}>Think Big. Think Web.</h1>
         <p className=" h5 lh-lg fw-light  mb-5">Web Developing. E-commerce. Online Advertising.</p>
         <div>
-          <StartNow size={"md"}/>
-          <Whatsapp size={"md"}/>
+        <CallToActionButtons size={'sm'} />
         </div>
       </div>
 

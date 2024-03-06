@@ -6,7 +6,7 @@ export default function CallToActionButtons({size}) {
 
   return (
     <div>
-      <StartNow size={ size ?? null }/>
+      {/* <StartNow size={ size ?? null }/> */}
       <Whatsapp size={ size ?? null }/>
     </div>
   )

@@ -4,8 +4,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 export const dynamic = 'force-dynamic';
 
 // Components
-import StartNow from '../Buttons/StartNow';
-import Whatsapp from '../Buttons/Whatsapp';
+import CallToActionButtons from '../Buttons/CallToActionButtons';
 
 import Avatar from './Avatar';
 import LogoOrizontal from '../Logos/LogoOrizontal';
@@ -38,7 +37,7 @@ export default async function MainNavbar() {
 
             {data.session ? 
             (<Avatar session={data.session}/>):
-            (<><StartNow size={'sm'}/> <Whatsapp size={'sm'}/></>)}
+            (<CallToActionButtons size={'sm'} />)}
           </div>
 
       </div>

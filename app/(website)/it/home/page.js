@@ -17,11 +17,11 @@ export default function HomePage(){
         <Hero />
         <Partners />
         <Features />
-        <Marketing />
-        <Ecommerce />
-        <Website />
-        <WebApp />
         <Tech />
+        {/* <Ecommerce /> */}
+        {/* <Website /> */}
+        {/* <WebApp /> */}
+        {/* <Marketing /> */}
         <CallToAction />
         <About />
       </>
