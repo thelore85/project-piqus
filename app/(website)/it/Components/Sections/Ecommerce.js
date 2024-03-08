@@ -5,10 +5,9 @@ import wcLogo from '@/public/img/home/wc-logo.jpg'
 export default function Ecommerce() {
   return (
     <section id="ecommerce" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
-      <div className="container text-white pt-4" style={{ maxWidth: '1000px' }}>
+      <div className="container text-white pt-5 border-bottom">
 
-        <h2 className="text-decoration-underline small mb-4">E-commerce</h2>
-        <h3 className="h1 fw-bolder mb-3" style={{ textWrap:"pretty" }}>Porta il tuo <span className="text-primary">Negozio Online</span></h3>
+        <h2 className="h1 fw-bolder mb-3" style={{ textWrap:"pretty" }}>Porta il tuo <span className="text-primary">Negozio Online</span></h2>
 
         <div className="row border-bottom py-4 g-4">
 

@@ -16,9 +16,10 @@ export default function Features() {
         <div className="row row-cols-1 row-cols-lg-2 g-5">
 
           <div className="col d-flex flex-column align-items-start gap-2">
-            <h2 className="fw-bold h1">Fai crescere la tua attività, online.</h2>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Sviluppa la migliore strategia pubblicitaria online</p>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Scegli le ultime tecnologie di marketing e scala la tua attività.</p>
+            <h2 className="fw-bold h1">Il web ti sta aspettando.</h2>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Progetta il tuo Sito Web</p>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Sviluppa l'App  dei tuoi sogni</p>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Scegli la migliore strategia pubblicitaria online</p>
 
             <div className="d-none d-sm-block">
               <CallToActionButtons size={'sm'}/>
@@ -31,45 +32,45 @@ export default function Features() {
 
 
               <div className="col">
-                <Link href="#website" >
+                <Link href="/it/web-developing" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Sito Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Trasforma la tua visione in una presenza online accattivante con i nostri servizi di sviluppo web esperti. Siti web eleganti, reattivi e orientati all&#39;utente.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Crea una presenza online accattivante con i nostri siti eleganti, reattivi e user-friendly.</p>
                 </Link>
               </div>
 
 
               <div className="col">
-                <Link href="#marketing" >
+                <Link href="/it/marketing-online" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faRectangleAd} className="me-2" /> Pubblicità</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua portata e l&#39;impatto attraverso una strategia di pubblicità online. Campagne mirate, creatività coinvolgenti e risultati misurabili per una visibilità digitale ottimale.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Aumenta i clienti con campagne mirate per ottenere visibilità online.</p>
                 </Link>
               </div>
 
               <div className="col">
-                <Link href="#ecommerce" >
+                <Link href="/it/web-developing" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> E-commerce</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Lancia un prospero negozio online con il nostro sviluppo di e-commerce. Transazioni senza soluzione di continuità, design accattivante e funzionalità studiate per aumentare le vendite e l&#39;interazione.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Lancia il tuo negozio online progettato per aumentare le vendite.</p>
                 </Link>
               </div>
 
               <div className="col">
-                <Link href="#marketing" >
+                <Link href="/it/marketing-online" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faPenToSquare} className="me-2" /> SEO</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Aumenta la tua visibilità online con la nostra esperienza in SEO. Strategie personalizzate per scalare le classifiche di ricerca, aumentare il traffico organico e valorizzare la tua presenza digitale.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Scala le classifiche di ricerca e aumenta il traffico con strategie SEO personalizzate.</p>
                 </Link>
               </div>
 
               <div className="col">
-                <Link href="#webapp" >
+                <Link href="/it/web-developing" >
                   <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faLaptopCode} className="me-2" /> Applicazioni Web</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Potenzia la tua attività con applicazioni web personalizzate. Dalla concezione all&#39;implementazione, creiamo soluzioni dinamiche per un&#39;esperienza utente ottimale e processi razionalizzati.</p>
+                  <p className="fw-lighter small d-none d-sm-block">Realizza una Web App su misura con funzionalità specifiche per il tuo business.</p>
                 </Link>
               </div>
 
               <div className="col">
-                <Link href="#marketing">
-                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" /> Tecnologia di Marketing</h4>
-                  <p className="fw-lighter small d-none d-sm-block">Sfrutta l&#39;analisi per decisioni basate sui dati e il CRM per l&#39;interazione con i clienti. Le nostre soluzioni di tecnologia marketing ottimizzano le prestazioni, le conversioni e le relazioni con i clienti.</p>
+                <Link href="/it/marketing-online">
+                  <h4 className="fw-semibold mb-2 "><FontAwesomeIcon icon={faCompassDrafting} className="me-2" />Analytics</h4>
+                  <p className="fw-lighter small d-none d-sm-block">Eleva le prestazioni del tuo sito misurando i dati con Google Analytics.</p>
                 </Link>
               </div>
 

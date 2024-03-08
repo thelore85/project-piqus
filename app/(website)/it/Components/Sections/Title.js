@@ -4,7 +4,7 @@ import CallToActionButtons from '../Buttons/CallToActionButtons'
 
 export default function Title({ title, subtitle }) {
   return (
-    <section id='hero' className="dark-bg p-3 text-center d-flex justify-content-center align-items-center mb-5" style={{minHeight: '50vh',  backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
+    <section id='hero' className="dark-bg p-3 text-center d-flex justify-content-center align-items-center" style={{minHeight: '50vh',  backgroundImage : 'url(/img/home/net-bg-4.jpg)', backgroundSize : 'cover', backgroundPosition : 'center'}}>
     <div className="container text-white">
 
       <div className="">

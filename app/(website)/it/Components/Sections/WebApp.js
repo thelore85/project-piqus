@@ -5,10 +5,9 @@ import wcLogo from '@/public/img/home/wc-logo.jpg'
 export default function WebApp() {
   return (
     <section id="webapp" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
-      <div className="container text-white" style={{ maxWidth: '1000px' }}>
+      <div className="container text-white border-bottom">
 
-        <h2 className="text-decoration-underline small mb-4">Applicazione Web</h2>
-        <h3 className="h1 fw-bolder mb-3">Espandi le Funzionalità della tua <span className="" style={{ color: 'purple' }}>App</span></h3>
+        <h2 className="h1 fw-bolder mb-3 pt-5">Espandi le Funzionalità della tua <span className="" style={{ color: 'purple' }}>App</span></h2>
 
         <div className="row py-4 g-4 align-items-center">
 

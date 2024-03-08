@@ -15,27 +15,27 @@ useEffect(() => {
 }, []);
   
   return (
-      <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-lighter">
-        <li className="nav-item dropdown me-3">
+      <ul className="navbar-nav mb-2 me-auto mb-lg-0 small fw-light">
+        <li className="nav-item dropdown m-2">
           <Link className="text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </Link>
 
-          <ul className="dropdown-menu small fw-lighter">
-            <li className="me-3">
-              <Link className="" aria-current="page" href="/it/marketing-online">Marketing</Link>
+          <ul className="dropdown-menu small fw-normal text-primary px-4 mt-2 " style={{width:'auto', minWidth:"350px", listStyle:"disc"}}>
+            <li className="m-2">
+              <Link className="" aria-current="page" href="/it/web-developing">Web Developing</Link>
             </li>
-            <li className="me-3">
-              <Link className="" aria-current="page" href="/it/home/#website">Web Developing</Link>
-            </li>
-            <li className="me-3">
-              <Link className="" aria-current="page" href="/it/home/#ecommerce">Ecommerce</Link>
+            <li className="m-2">
+              <Link className="" aria-current="page" href="/it/marketing-online">Online Marketing</Link>
             </li>
           </ul>
         </li>
 
-        <li className="nav-item me-3">
+        <li className="nav-item m-2 ">
           <Link className="text-light" aria-current="page" href="/it/home/#about">About</Link>
+        </li>
+        <li className="nav-item m-2 ">
+          <Link className="text-light" aria-current="page" href="/it/home/#portfolio">Portfolio</Link>
         </li>
       </ul>
   )

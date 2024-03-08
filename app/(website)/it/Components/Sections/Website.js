@@ -5,10 +5,9 @@ import reactLogo from '@/public/img/home/react.png'
 export default function Website() {
   return (
     <section id="website" className="bg-black d-flex justify-content-center align-items-center py-5 px-4">
-      <div className="container text-white border-bottom" style={{ maxWidth: '1000px' }}>
+      <div className="container text-white pt-5 border-bottom">
 
-        <h2 className="text-decoration-underline small mb-4">Sito Web</h2>
-        <h3 className="h1 fw-bolder mb-5 text-en" style={{ textWrap:"pretty" }}>Costruisci un <span className="text-success">Sito Web</span> Performante</h3>
+        <h2 className="h1 fw-bolder mb-5 text-en" style={{ textWrap:"pretty" }}>Costruisci un <span className="text-success">Sito Web</span> Performante</h2>
 
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-md-3">
@@ -32,7 +31,7 @@ export default function Website() {
             <div className="p-3 bg-white rounded-1 text-dark">
               <h5 className="h5 fw-bolder">VELOCITÀ</h5>
               <p className="fw-bolder small">Veloce su Tutti i Dispositivi.</p>
-              <p className="fw-light small m-0">Next.js utilizza il rendering lato server, garantendo tempi di caricamento delle pagine e velocità di interazione più veloci.</p>
+              <p className="fw-light small m-0">Next.js utilizza il rendering lato server, garantendo tempi di caricamento delle pagine e interazione più veloci.</p>
             </div>
           </div>
 
