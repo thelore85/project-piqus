@@ -46,8 +46,8 @@ export default function ProjectLayout({params}) {
               <div className='border rounded p-3 bg-white'>
                 
                 <div className='mb-5'>
-                  <h1 className='mb-3 fw-bold border-bottom mb-5'>{project.title}</h1>
-                  <p className='mb-3 fw-bold'>{project.description}</p>
+                  <h1 className='fw-bold border-bottom mb-4 pb-3'>{project.title}</h1>
+                  <p className='mb-3 fw-bold d-none d-md-block'>{project.description}</p>
                   <img src={project.clientImage} className="w-100 shadow rounded "/>
                 </div>
                 

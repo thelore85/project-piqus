@@ -142,7 +142,7 @@ export const pjt =[
 },
 {
   "id": 9,
-  "title": "Doc Date",
+  "title": "Doctor Calendar Application",
   "strapLine": "Free to use Web Calendar dedicated to Medical professionals",
   "description": "Doc Date is a web application tailored for medical professionals, offering a comprehensive solution for appointment management and scheduling. With intuitive features and seamless navigation, medical practitioners can efficiently organize appointments, manage patient information, and optimize their schedules.",
   "content": "The project focused on the development of a user-friendly web calendar tailored specifically for medical professionals. Leveraging React and Python technologies, we created a comprehensive solution that integrates essential features required for managing medical schedules efficiently. The application, built with Flux architecture and Flask framework, offers seamless integration with Google Calendar API, enabling users to synchronize their appointments effortlessly. The intuitive UX/UI design, coupled with Bootstrap components, ensures a smooth and intuitive user experience across different devices and screen sizes. The project represents a valuable tool for medical practitioners, streamlining their scheduling processes and enhancing productivity.",

@@ -10,7 +10,7 @@ export default function Selector({ onProjectSelection, selection }) {
           <p className="fw-lighter mb-5">Scopri i miei progetti e immagina le possibilità che possiamo creare insieme.</p>
 
           <div className="selector-wrapper">
-            <select className="selector p-2 rounded" defaultValue={selection} onChange={onProjectSelection}>
+            <select className="selector p-2 rounded w-100" style={{maxWidth:"400px"}} defaultValue={selection} onChange={onProjectSelection}>
               <option className="" value="null" >Select category</option>
               <option className="" value="developing">Website and App</option>
               <option className="" value="marketing">Marketing and Communication</option>

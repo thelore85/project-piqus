@@ -18,7 +18,7 @@ export default function Features() {
           <div className="col d-flex flex-column align-items-start gap-2">
             <h2 className="fw-bold h1">Il web ti sta aspettando.</h2>
             <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Progetta il tuo Sito Web</p>
-            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Sviluppa l'App  dei tuoi sogni</p>
+            <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Sviluppa l&#39;App  dei tuoi sogni</p>
             <p className=" fw-lighter"><FontAwesomeIcon icon={faCheck} className="me-2" />Scegli la migliore strategia pubblicitaria online</p>
 
             <div className="d-none d-sm-block">
