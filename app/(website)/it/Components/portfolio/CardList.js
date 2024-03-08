@@ -6,8 +6,8 @@ export default function CardList({ filteredList}) {
     <div className="card-list text-center container">
 
       { filteredList ? filteredList.map( project =>
-      <div className='p-2 d-inline-block ' style={{width:"100%", maxWidth:"350px"}}>
-        <div key={project.id} className="card-wrapper rounded text-start  px-2 py-4 bg-light"  >
+      <div key={project.id} className='p-2 d-inline-block ' style={{width:"100%", maxWidth:"350px"}}>
+        <div className="card-wrapper rounded text-start  px-2 py-4 bg-light"  >
 
           <div className='card-element'>
             <div className="card-color w-100 mb-1" style={{backgroundColor:`rgb(${project.color[0]}, ${project.color[1]}, ${project.color[2]})`, height:"5px"}}></div>
