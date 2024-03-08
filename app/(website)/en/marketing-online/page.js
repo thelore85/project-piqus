@@ -9,10 +9,13 @@ import Title from "../Components/Sections/Title";
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Online Marketing | PIQUS.it',
-  description: 'Acquire new customers on Instagram, Google, or Facebook',
+  title: 'Online Marketing | Boost Sales with Tailor-Made Strategies | PIQUS.it',
+  description: 'Get more customers and sales through personalized online marketing strategies for Instagram, Google, and Facebook. Trust PIQUS.it!',
+  robots: 'index, follow',
+  keywords: 'online marketing, digital marketing, instagram marketing, google ads, facebook ads, online advertising campaigns, marketing strategy, lead generation, PIQUS.it',
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
+
 
 export default function MarketingOnlinePage() {
   return (

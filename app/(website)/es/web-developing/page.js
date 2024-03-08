@@ -11,19 +11,18 @@ import Tech from "../Components/Sections/Tech";
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Sviluppo Web | Crea il sito web o l\'app dei tuoi sogni | PIQUS.it',
-  description: 'Realizziamo siti web personalizzati, e-commerce e applicazioni mobili utilizzando tecnologie all\'avanguardia. Dai vita ai tuoi sogni online con PIQUS.it!',
+  title: 'Desarrollo Web | Crea el sitio web o la aplicación de tus sueños | PIQUS.it',
+  description: 'Creamos sitios web personalizados, tiendas online y aplicaciones móviles utilizando tecnologías de última generación. ¡Haz realidad tus sueños online con PIQUS.it!',
   robots: 'index, follow',
-  keywords: 'sviluppo web, sviluppo siti web, sviluppo app, sviluppo e-commerce, sviluppo app mobile, siti web personalizzati, tecnologie all\'avanguardia, PIQUS.it',
+  keywords: 'desarrollo web, desarrollo de sitios web, desarrollo de aplicaciones, desarrollo de comercio electrónico, desarrollo de aplicaciones móviles, sitios web personalizados, tecnologías de vanguardia, PIQUS.it',
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
 
 
-
-export default function WebDevelopingPage() {
+export default function MarketingOnlinePage() {
   return (
     <>
-      <Title title={'Sviluppo Web'} subtitle={'Applicazioni, Siti Internet e non solo'}/>
+      <Title title={'Sviluppo Web'} subtitle={'Website, App, E-Commerce'}/>
       <Website />
       <WebApp />
       <Ecommerce />

@@ -7,7 +7,7 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: 'https://piqus.it/it/',
+      url: 'https://piqus.it/it/home',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
@@ -25,7 +25,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: 'https://piqus.it/es/',
+      url: 'https://piqus.it/es/home',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
@@ -43,7 +43,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: 'https://piqus.it/en/',
+      url: 'https://piqus.it/en/home',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

@@ -9,21 +9,22 @@ import Partners from '../Components/Sections/Partners';
 import Website from '../Components/Sections/Website';
 import WebApp from '../Components/Sections/WebApp';
 import Hero from '../Components/Sections/Hero';
+import Portfolio from '../Components/portfolio/Portfolio';
 
 
 export default function HomePage(){
   return (
       <>
         <Hero />
-        <Partners />
         <Features />
         <Tech />
-        <Ecommerce />
-        <Website />
-        <WebApp />
-        <Marketing />
-        <CallToAction />
+        {/* <Ecommerce /> */}
+        {/* <Website /> */}
+        {/* <WebApp /> */}
         <About />
+        <Portfolio />
+        <Partners />
+        {/* <CallToAction /> */}
       </>
   )
 }

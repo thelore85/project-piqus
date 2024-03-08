@@ -9,10 +9,13 @@ import Title from "../Components/Sections/Title";
 
 // HEAD - metadata setting
 export const metadata = {
-  title: 'Online Marketing | PIQUS.it',
-  description: 'Acquisisci nuovi clienti su Instagram, Google o Facebook.',
+  title: 'Online Marketing | Aumenta le Vendite con Strategie su Misura | PIQUS.it',
+  description: 'Ottieni più clienti e vendite grazie a strategie di marketing online personalizzate per Instagram, Google e Facebook. Affidati a PIQUS.it!',
+  robots: 'index, follow',
+  keywords: 'online marketing, marketing digitale, instagram marketing, google ads, facebook ads, campagne pubblicitarie online, strategia di marketing, lead generation, PIQUS.it', // Added relevant keywords
   icons: { icon: "/img/favicon/favicon.ico", shortcut: "/img/favicon/favicon.ico", apple: "/img/favicon/favicon.ico", other: { rel: "apple-touch-icon-precomposed", url: "/img/favicon/favicon.ico", }, },
 };
+
 
 
 export default function MarketingOnlinePage() {

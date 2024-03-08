@@ -2,6 +2,7 @@
 import React from 'react'
 import StartNow from '../Buttons/StartNow'
 import Whatsapp from '../Buttons/Whatsapp'
+import CallToActionButtons from '../Buttons/CallToActionButtons'
 
 export default function CallToAction() {
   return (
@@ -10,13 +11,12 @@ export default function CallToAction() {
 
         <div className="row text-center text-md-start align-items-center py-4">
           <div className="col-md-8 ">
-            <h3>Looking for a Web Specialist?</h3>
-            <p className="fw-lighter small ">Send a message or open an account to start a project</p>
+            <h3>Book a free consultancy now</h3>
+            <p className="fw-lighter small ">Send a message with your contact details</p>
           </div>
 
           <div className="col-md-4 text-md-end">
-            <StartNow />
-            <Whatsapp />
+            <CallToActionButtons />
           </div>
 
         </div>
