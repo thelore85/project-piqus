@@ -32,9 +32,11 @@ export default function Portfolio() {
 
   return (
     <>
-      <section id="portfolio" className="py-5 px-1" style={{ minHeight: '50%', background: 'rgb(2, 13, 29)', border: '1rem solid white' }}>  
-        <Selector onProjectSelection={onProjectSelection} selection={selection}/>
-        <CardList filteredList = { filteredList }/>
+      <section id="portfolio" className="py-5 px-1" style={{background: 'rgb(2, 13, 29)', border: '2rem solid white' }}>
+        
+          <Selector onProjectSelection={onProjectSelection} selection={selection}/>
+          <CardList filteredList = { filteredList }/>
+        
       </section>    
     </>
   )
