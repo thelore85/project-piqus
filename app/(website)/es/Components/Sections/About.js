@@ -26,8 +26,7 @@ export default function About() {
           <div className="col-md-8 text-white text-start py-4">
             <h2 className="h1 text-white fw-bolder h1 mb-5">Más de 10 años en la Web</h2>
             <div className="mb-5">
-              <p className="fw-light small">Con una década de experiencia en comunicación en línea, aporto una perspectiva internacional como freelance experto y colaborador con empresas multinacionales en los sectores financiero, de la salud, del entretenimiento y de la moda.</p>
-              <p className="fw-light small">He dominado modernas estrategias de marketing en línea, implementado tecnologías de marketing complejas y mantenido sitios web y plataformas actualizados.</p>
+              <p className="fw-light small">Con más de diez años de experiencia en proyectos web y colaboraciones internacionales, he desarrollado una visión global y una experiencia profunda en el entorno digital, y puedo ayudar a desarrollar sitios web de alto rendimiento, orientados a la experiencia del usuario (UX), perfectamente integrables en estrategias complejas de marketing online.</p>
             </div>
 
             <div className="accordion mb-5">

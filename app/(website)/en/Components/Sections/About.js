@@ -29,8 +29,7 @@ export default function About() {
               <div className="col-md-8 text-white text-start py-4">
                 <h2 className="h1 text-white fw-bolder h1 mb-5">Connecting Businesses for Over 10 Years</h2>
                 <div className="mb-5">
-                  <p className="fw-light small">With a decade of experience in online communication, I bring an international perspective as a seasoned freelancer and collaborator with multinational companies in finance, healthcare, entertainment, and fashion. </p>
-                  <p className="fw-light small">I&#39;ve mastered modern online marketing strategies, implemented complex marketing technology, and kept websites and platforms up to date. </p>
+                  <p className="fw-light small">With over ten years of experience in web projects and international collaborations, I have developed a global perspective and deep expertise in the digital environment, and I can help develop high-performing websites, UX-oriented, perfectly integrable into complex online marketing strategies.</p>
                 </div>
 
                 <div className="accordion mb-5" >

@@ -11,10 +11,10 @@ export default function Selector({ onProjectSelection, selection }) {
 
           <div className="selector-wrapper">
             <select className="selector p-2 rounded w-100" style={{maxWidth:"400px"}} defaultValue={selection} onChange={onProjectSelection}>
-              <option className="" value="null" >Select category</option>
-              <option className="" value="developing">Website and App</option>
-              <option className="" value="marketing">Marketing and Communication</option>
-              <option className="" value="open_source">Opensource Projects</option>
+              <option className="" value="null" >Seleziona categoria</option>
+              <option className="" value="developing">Sviluppo Web</option>
+              <option className="" value="marketing">Marketing e Comunicazione</option>
+              <option className="" value="open_source">Progetti Open Source</option>
             </select>
           </div>
         </div>
