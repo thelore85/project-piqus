@@ -9,8 +9,8 @@ export default function CallToAction() {
 
         <div className="row text-center text-md-start align-items-center py-4">
           <div className="col-md-8 ">
-            <h3>Richiedi un consulenza gratuita</h3>
-            <p className="fw-lighter small ">Scrivi un messaggio su whatsapp!</p>
+            <h3>Richiedi una consulenza gratuita</h3>
+            <p className="fw-lighter small ">Scrivi un messaggio su whatsapp ora!</p>
           </div>
 
           <div className="col-md-4 text-md-end">

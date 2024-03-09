@@ -22,7 +22,7 @@ export default function CardList({ filteredList}) {
                 )}
               </ul>
             </div>
-            <a className="btn btn-light text-primary border-primary btn-sm me-3" href={`/it/project/${project.id}`}>Saber más</a>
+            <a className="btn btn-light text-primary border-primary btn-sm me-3" href={`/es/project/${project.id}`}>Saber más</a>
           </div>
 
         </div>
