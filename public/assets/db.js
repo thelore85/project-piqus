@@ -188,7 +188,26 @@ export const pjt =[
   "color": [0, 0, 20],
   "gitCode": "",
   "webUrl": "https://www.theoddwine.com/"
+},
+{
+  "id": 12,
+  "title": "Web App Template based on React and Python",
+  "strapLine": "A web template ready to be used for your App project. Open source projhect open to collaboration.",
+  "description": "I've developed a ready-to-use template for quickly starting a Web App project. This open source project includes all the essential technologies for both frontend and backend development, along with features such as authentication and password recovery.",
+  "content": "The Web App Template: React - Python is a comprehensive solution designed to expedite the process of launching web applications. Built with cutting-edge technologies including React, Bootstrap, Node.js, and Flask, the template offers a robust foundation for developing dynamic and responsive web applications. Leveraging JavaScript/HTML/CSS for frontend development and Python for backend functionality, developers can seamlessly integrate advanced features such as authentication and password recovery. The template's modular architecture and Flux design pattern ensure scalability and maintainability, making it an ideal choice for rapid application development. Moreover, this project is open source, welcoming contributions and collaboration from developers worldwide to enhance its features and functionalities.",
+  "clientName": "Piqus",
+  "clientDescription": "Web developing and marketing consultancy",
+  "clientIndustries": "Software development and advertising",
+  "clientLogo": "/img/partners/piqus/piqus.png",
+  "clientImage": "/img/partners/piqus/template_open_source.png",
+  "tech": ["React", "Bootstrap", "Node.js", "JavaScript/HTML/CSS", "Python", "Flask", "Flux"],
+  "category": ["open_source"],
+  "color": [0, 20, 220],
+  "gitCode": "https://github.com/thelore85/template-react-python",
+  "webUrl": ""
 }
+
+
 
 
 

@@ -24,7 +24,7 @@ export default function Tech() {
   return (
     <section id="tech" className="bg-body-tertiary d-flex justify-content-center align-items-center p-5" style={{minHeight: '40%'}}>
       <div className=" text-center">
-        <h1 className="mb-4 fw-bold" style={{ fontSize:"2rem", lineHeight:"2.5rem" }}>La mia competenza a tua disposiozione</h1>
+        <h1 className="mb-4 fw-bold" style={{ fontSize:"2rem", lineHeight:"2.5rem" }}>La mia competenza a tua disposizione</h1>
 
         <div>
           <div className="d-inline-block p-3">
