@@ -76,6 +76,10 @@ export default function About() {
                       <li className="small">Madrelingua <strong>Italiano</strong></li>
                     </ul>
 
+                    <div className="ms-3">
+                      <Link className="small text-primary" href="/assets/cv_developer.pdf" target="_blank" >Download my CV</Link>
+                    </div>
+
                     <div className="border-top p-3 mt-4">
                       <Image className="me-2" style={{ width: '14%', height: 'auto' }} alt="Università Politecnico di Milano" src={poli} />
                       <Image className="me-2" style={{ width: '17%', height: 'auto' }} alt="ZTM academy" src={ztm} />
